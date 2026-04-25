@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { toast } from "sonner";
 import { MapPin, Phone, Mail, Clock, CheckCircle, ArrowRight, ArrowLeft } from "lucide-react";
 import { formStepVariants, generateConfetti } from "@/lib/animations";
-import { BRAND, COUNTRIES, SERVICES } from "@/lib/constants";
+import { BRAND, COUNTRIES } from "@/lib/constants";
 
 // ─── Zod schemas per step ─────────────────────────────────────────────────────
 const step1Schema = z.object({
@@ -135,7 +135,7 @@ function Step1({ form }: { form: ReturnType<typeof useForm<Step1Data>> }) {
 
 // ─── Step 2 ───────────────────────────────────────────────────────────────────
 function Step2({ form }: { form: ReturnType<typeof useForm<Step2Data>> }) {
-  const { register, watch, formState: { errors } } = form;
+  const { register, formState: { errors } } = form;
   return (
     <div className="space-y-4">
       <h3 className="font-display font-bold text-2xl text-brand-navy">Visa Details</h3>
@@ -360,7 +360,7 @@ function SuccessState() {
 // ─── Multi-step form wrapper ──────────────────────────────────────────────────
 function MultiStepForm() {
   const [step, setStep] = useState(1);
-  const [formData, setFormData] = useState<Partial<FormData>>({});
+  const [, setFormData] = useState<Partial<FormData>>({});
   const [submitted, setSubmitted] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const TOTAL_STEPS = 4;

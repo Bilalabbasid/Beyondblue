@@ -2,13 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { MapPin, Phone, Globe, ChevronDown } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { cinematicReveal, sectionReveal, wordStaggerContainer, wordStaggerChild } from "@/lib/animations";
+import { sectionReveal, wordStaggerContainer, wordStaggerChild } from "@/lib/animations";
 import type { CountryData } from "@/lib/constants";
 import { BLUR_PLACEHOLDER } from "@/lib/constants";
 import Flag from "@/components/shared/Flag";
@@ -18,7 +17,6 @@ interface Props {
 }
 
 const VISA_TAB_KEYS = ["visit", "study", "work", "pr"] as const;
-type VisaTabKey = typeof VISA_TAB_KEYS[number];
 
 export default function CountryPageClient({ country }: Props) {
   const { scrollY } = useScroll();

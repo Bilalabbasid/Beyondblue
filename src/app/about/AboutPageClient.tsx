@@ -10,7 +10,7 @@ import { cinematicReveal, sectionReveal, staggerContainer, staggerItem } from "@
 import { STATS, TEAM, MILESTONES, WHY_CHOOSE_US, IMAGES, BLUR_PLACEHOLDER } from "@/lib/constants";
 import SectionHeader from "@/components/shared/SectionHeader";
 
-function TeamCard({ member, index }: { member: typeof TEAM[number]; index: number }) {
+function TeamCard({ member }: { member: typeof TEAM[number] }) {
   return (
     <motion.div variants={staggerItem} className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
       <div className="relative h-64 overflow-hidden">
@@ -227,8 +227,8 @@ export default function AboutPageClient() {
             animate={teamInView ? "visible" : "hidden"}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14"
           >
-            {TEAM.map((member, i) => (
-              <TeamCard key={member.name} member={member} index={i} />
+            {TEAM.map((member) => (
+              <TeamCard key={member.name} member={member} />
             ))}
           </motion.div>
         </div>

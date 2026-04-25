@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { BLOG_POSTS } from "@/lib/constants";
-import SectionHeader from "@/components/shared/SectionHeader";
 
 export const metadata: Metadata = {
   title: "Blog | Beyond Blue IELTS & Consultancy",

@@ -76,7 +76,7 @@ export default function WhyUs() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-slate-500 text-lg leading-relaxed"
           >
-            700+ clients chose us — here's exactly why they kept coming back and referring their family.
+            700+ clients chose us — here&apos;s exactly why they kept coming back and referring their family.
           </motion.p>
         </div>
 

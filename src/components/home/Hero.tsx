@@ -9,7 +9,7 @@ import {
   wordStaggerChild,
   floatingCard,
 } from "@/lib/animations";
-import { BRAND, IMAGES, BLUR_PLACEHOLDER } from "@/lib/constants";
+import { IMAGES, BLUR_PLACEHOLDER } from "@/lib/constants";
 
 const FLOATING_CARDS = [
   { flagCode: "ca", country: "Canada PR",          type: "Permanent Residency",  delay: 0 },
@@ -139,7 +139,7 @@ export default function Hero() {
 
           {/* Right column — floating approved cards */}
           <div className="hidden lg:flex lg:col-span-2 flex-col items-end gap-4 pr-4">
-            {FLOATING_CARDS.map((card, i) => (
+            {FLOATING_CARDS.map((card) => (
               <motion.div
                 key={card.country}
                 variants={floatingCard(card.delay)}

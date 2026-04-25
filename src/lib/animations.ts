@@ -1,4 +1,4 @@
-import { Variants, Transition } from "framer-motion";
+import { Variants } from "framer-motion";
 
 // ─── Shared Easings ─────────────────────────────────────────
 export const smoothEase = [0.22, 1, 0.36, 1] as const;

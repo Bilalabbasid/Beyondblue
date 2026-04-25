@@ -27,7 +27,7 @@ const COUNTRY_NAMES: Record<string, string> = {
   se: "Sweden", hu: "Hungary", nl: "Netherlands", nz: "New Zealand",
 };
 
-function ServiceCard({ service, index }: { service: typeof SERVICES[number]; index: number }) {
+function ServiceCard({ service }: { service: typeof SERVICES[number] }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
   const Icon = ICONS[service.icon] ?? Plane;
 
@@ -129,8 +129,8 @@ export default function ServicesGrid() {
           animate={inView ? "visible" : "hidden"}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14"
         >
-          {SERVICES.map((service, i) => (
-            <ServiceCard key={service.id} service={service} index={i} />
+          {SERVICES.map((service) => (
+            <ServiceCard key={service.id} service={service} />
           ))}
         </motion.div>
 
