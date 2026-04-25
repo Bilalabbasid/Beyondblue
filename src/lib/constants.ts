@@ -216,7 +216,7 @@ export const COUNTRIES: CountryData[] = [
     name: "Italy",
     flag: "🇮🇹",
     flagCode: "it",
-    image: "https://images.unsplash.com/photo-1515542622106-078bda69d5b4?w=800&q=85&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&q=85&auto=format&fit=crop",
     visaTypes: ["Visit", "Study", "Work"],
     processingTime: "2–6 weeks",
     difficulty: 2,
@@ -955,7 +955,7 @@ Beyond Blue has helped numerous Pakistani professionals successfully apply for G
     title: "Schengen Tourist Visa from Pakistan: Italy, Spain, France",
     excerpt:
       "Planning to visit Europe? Our step-by-step guide covers Schengen visa requirements, documents, and tips for Pakistani applicants.",
-    image: "https://images.unsplash.com/photo-1515542622106-078bda69d5b4?w=600&q=85&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&q=85&auto=format&fit=crop",
     category: "Visit Visa",
     date: "January 25, 2025",
     readTime: "7 min read",
