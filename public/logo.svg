@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 70" fill="none">
+  <!-- Location pin + plane group -->
+  <g transform="translate(4, 2)">
+    <!-- Pin outer shape -->
+    <path d="M24 2C15.163 2 8 9.163 8 18C8 26.5 24 46 24 46C24 46 40 26.5 40 18C40 9.163 32.837 2 24 2Z" fill="#1565C0"/>
+    <!-- Pin inner circle -->
+    <circle cx="24" cy="18" r="8" fill="#0D47A1"/>
+    <!-- Plane flying through -->
+    <path d="M14 18L34 14L30 18L34 22L14 18Z" fill="white"/>
+    <path d="M20 14L22 10L26 12L24 16L20 14Z" fill="white" opacity="0.7"/>
+  </g>
+  <!-- "Beyond Blue" text -->
+  <text x="54" y="28" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="700" fill="#1A1464" letter-spacing="0.5">Beyond Blue</text>
+  <!-- "IELTS & Consultancy" text -->
+  <text x="54" y="44" font-family="Arial, Helvetica, sans-serif" font-size="9.5" font-weight="500" fill="#1565C0" letter-spacing="1.2">IELTS &amp; CONSULTANCY</text>
+</svg>
