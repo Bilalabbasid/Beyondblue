@@ -166,12 +166,12 @@ export default function IELTSPageClient() {
             <table className="w-full">
               <thead className="bg-brand text-white">
                 <tr>
-                  <th className="px-6 py-4 text-left text-sm font-semibold">Batch</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold hidden md:table-cell">Time</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold hidden lg:table-cell">Days</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold hidden md:table-cell">Duration</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold">Availability</th>
-                  <th className="px-6 py-4 text-right text-sm font-semibold">Enroll</th>
+                  <th className="px-3 md:px-6 py-3 md:py-4 text-left text-sm font-semibold">Batch</th>
+                  <th className="px-3 md:px-6 py-3 md:py-4 text-left text-sm font-semibold hidden md:table-cell">Time</th>
+                  <th className="px-3 md:px-6 py-3 md:py-4 text-left text-sm font-semibold hidden lg:table-cell">Days</th>
+                  <th className="px-3 md:px-6 py-3 md:py-4 text-left text-sm font-semibold hidden md:table-cell">Duration</th>
+                  <th className="px-3 md:px-6 py-3 md:py-4 text-left text-sm font-semibold">Availability</th>
+                  <th className="px-3 md:px-6 py-3 md:py-4 text-right text-sm font-semibold">Enroll</th>
                 </tr>
               </thead>
               <tbody>
@@ -181,14 +181,14 @@ export default function IELTSPageClient() {
                     variants={staggerItem}
                     className={`border-t border-slate-100 ${i % 2 === 0 ? "bg-white" : "bg-brand-bg-light/50"} hover:bg-brand-bg-light transition-colors`}
                   >
-                    <td className="px-6 py-4 font-semibold text-brand-navy text-sm">{batch.batch}</td>
-                    <td className="px-6 py-4 text-slate-500 text-sm hidden md:table-cell">{batch.time}</td>
-                    <td className="px-6 py-4 text-slate-500 text-sm hidden lg:table-cell">{batch.days}</td>
-                    <td className="px-6 py-4 text-slate-500 text-sm hidden md:table-cell">{batch.duration}</td>
-                    <td className="px-6 py-4">
+                    <td className="px-3 md:px-6 py-3 md:py-4 font-semibold text-brand-navy text-sm">{batch.batch}</td>
+                    <td className="px-3 md:px-6 py-3 md:py-4 text-slate-500 text-sm hidden md:table-cell">{batch.time}</td>
+                    <td className="px-3 md:px-6 py-3 md:py-4 text-slate-500 text-sm hidden lg:table-cell">{batch.days}</td>
+                    <td className="px-3 md:px-6 py-3 md:py-4 text-slate-500 text-sm hidden md:table-cell">{batch.duration}</td>
+                    <td className="px-3 md:px-6 py-3 md:py-4">
                       <span className="bg-orange-50 text-orange-600 text-xs font-semibold px-2.5 py-1 rounded-full">{batch.seats}</span>
                     </td>
-                    <td className="px-6 py-4 text-right">
+                    <td className="px-3 md:px-6 py-3 md:py-4 text-right">
                       <Link href="/contact" className="text-brand text-sm font-semibold hover:underline">
                         Enroll →
                       </Link>

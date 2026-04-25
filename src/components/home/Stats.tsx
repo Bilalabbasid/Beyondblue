@@ -23,7 +23,7 @@ export default function Stats() {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.55, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="flex flex-col items-center text-center px-6 py-4 group"
+              className="flex flex-col items-center text-center px-2 sm:px-6 py-4 group"
             >
               {/* Trend icon */}
               <div className="flex items-center gap-1.5 text-brand-green text-xs font-bold mb-3 opacity-60">
@@ -33,7 +33,7 @@ export default function Stats() {
 
               {/* Number */}
               <div className="relative mb-1">
-                <span className="font-display font-bold text-5xl md:text-6xl lg:text-7xl text-brand leading-none tabular-nums">
+                <span className="font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-brand leading-none tabular-nums">
                   {inView ? (
                     <CountUp start={0} end={stat.value} duration={2.5} useEasing />
                   ) : (

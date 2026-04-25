@@ -81,7 +81,7 @@ export default function Hero() {
                 <div key={lineIdx} className="overflow-hidden">
                   <motion.span
                     variants={wordStaggerChild}
-                    className={`block text-5xl md:text-6xl lg:text-7xl xl:text-8xl ${
+                    className={`block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl ${
                       lineIdx === 2
                         ? "text-brand-sky italic"
                         : "text-white"

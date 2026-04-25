@@ -15,10 +15,10 @@ export default function BlogPage() {
       <div className="bg-brand pt-[80px] lg:pt-[100px] pb-20 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <span className="label-small text-brand-sky mb-4 block">Our Blog</span>
-          <h1 className="font-display font-bold text-5xl md:text-6xl text-white mb-4">
+          <h1 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-4">
             Visa & Immigration Guides
           </h1>
-          <p className="text-white/70 text-xl max-w-2xl mx-auto">
+          <p className="text-white/70 text-base md:text-xl max-w-2xl mx-auto">
             Expert articles to help you understand every immigration pathway, from Schengen to PR.
           </p>
         </div>

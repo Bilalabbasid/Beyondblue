@@ -111,7 +111,7 @@ export default function CountriesPageClient() {
             className="text-center px-4"
           >
             <span className="label-small text-brand-sky mb-4 block">Our Destinations</span>
-            <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl text-white mb-4">
+            <h1 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white mb-4">
               40+ Countries.{" "}
               <span className="text-brand-sky italic">One Trusted</span>
               <br />Consultant.

@@ -46,7 +46,7 @@ export default function CountryPageClient({ country }: Props) {
           <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/80 via-brand-navy/50 to-brand-navy/80" />
         </motion.div>
 
-        <div className="relative z-10 container-wide w-full mx-auto">
+        <div className="relative z-10 container-wide w-full mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={sectionReveal}
             initial="hidden"
@@ -57,16 +57,16 @@ export default function CountryPageClient({ country }: Props) {
               initial={{ opacity: 0, scale: 0.8, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-              className="mb-6 inline-block"
+              className="mb-4 md:mb-6 inline-block"
             >
-              <Flag code={country.flagCode} name={country.name} size={80} className="rounded-lg shadow-2xl" />
+              <Flag code={country.flagCode} name={country.name} size={52} className="rounded-lg shadow-2xl" />
             </motion.div>
 
             <motion.h1
               variants={wordStaggerContainer}
               initial="hidden"
               animate="visible"
-              className="font-display font-bold text-5xl md:text-6xl lg:text-7xl text-white mb-6"
+              className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4 md:mb-6"
             >
               {country.name.split(" ").map((word, i) => (
                 <motion.span key={i} variants={wordStaggerChild} className="inline-block mr-[0.2em]">
@@ -79,7 +79,7 @@ export default function CountryPageClient({ country }: Props) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9 }}
-              className="text-white/80 text-xl mb-4"
+              className="text-white/80 text-sm sm:text-base md:text-xl mb-3 md:mb-4"
             >
               {country.description}
             </motion.p>
@@ -122,8 +122,8 @@ export default function CountryPageClient({ country }: Props) {
 
       {/* Processing timeline */}
       <section className="bg-brand py-8">
-        <div className="container-wide">
-          <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-16">
+        <div className="container-wide px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-16">
             <div className="text-center">
               <div className="font-display font-bold text-3xl text-white">{country.processingTime}</div>
               <div className="text-white/60 text-sm">Processing Time</div>

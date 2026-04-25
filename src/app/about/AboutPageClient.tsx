@@ -72,7 +72,7 @@ export default function AboutPageClient() {
         </div>
 
         {/* Right: quote */}
-        <div className="bg-brand-navy flex items-center px-10 py-16 lg:py-0">
+        <div className="bg-brand-navy flex items-center px-6 lg:px-10 py-10 lg:py-0">
           <motion.div
             variants={sectionReveal}
             initial="hidden"
@@ -161,11 +161,11 @@ export default function AboutPageClient() {
 
       {/* Stats */}
       <section className="bg-brand py-16" ref={statsRef}>
-        <div className="container-wide">
+        <div className="container-wide px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {STATS.map((stat) => (
               <div key={stat.label} className="text-center">
-                <span className="font-display font-bold text-5xl md:text-6xl text-white">
+                <span className="font-display font-bold text-4xl sm:text-5xl md:text-6xl text-white">
                   {statsInView ? (
                     <CountUp start={0} end={stat.value} duration={2.5} useEasing />
                   ) : "0"}

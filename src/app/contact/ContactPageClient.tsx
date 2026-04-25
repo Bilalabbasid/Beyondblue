@@ -508,8 +508,8 @@ function MultiStepForm() {
 // ─── Main Page ────────────────────────────────────────────────────────────────
 export default function ContactPageClient() {
   return (
-    <section className="min-h-screen bg-brand-bg-light">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+    <section className="min-h-screen bg-brand-bg-light pt-[80px] lg:pt-[100px]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 lg:pt-12 pb-16 lg:pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] gap-12 lg:gap-16">
           {/* Left info panel */}
           <div className="bg-brand-navy rounded-3xl p-8 lg:p-10 text-white h-fit lg:sticky lg:top-28">
