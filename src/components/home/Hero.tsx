@@ -8,13 +8,15 @@ import { ChevronDown } from "lucide-react";
 
 const HERO_SLIDES = [
   { image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1920&q=90&auto=format&fit=crop", alt: "Passport and visa stamps" },
+  { image: "/ahshsh.jpeg", alt: "Real visa approval stamp", local: true },
   { image: "https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?w=1920&q=90&auto=format&fit=crop", alt: "Passport with visa stamps" },
+  { image: "/sjdsjkjd.jpeg", alt: "Real passport stamp approval", local: true },
   { image: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=1920&q=90&auto=format&fit=crop", alt: "Travel documents and passport" },
-  { image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=90&auto=format&fit=crop", alt: "Airplane wing over clouds" },
+  { image: "/sjsj.jpeg", alt: "Approved visa document", local: true },
   { image: "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1920&q=90&auto=format&fit=crop", alt: "Immigration passport stamps" },
-  { image: "https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?w=1920&q=90&auto=format&fit=crop", alt: "Traveller with passport at airport" },
+  { image: "/WhatsApp%20Image%202026-05-04%20at%2018.55.25.jpeg", alt: "Real client visa approval", local: true },
+  { image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=90&auto=format&fit=crop", alt: "Airplane wing over clouds" },
   { image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=1920&q=90&auto=format&fit=crop", alt: "New York City skyline" },
-  { image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=90&auto=format&fit=crop", alt: "Dubai skyline" },
 ];
 
 export default function Hero() {
@@ -47,6 +49,7 @@ export default function Hero() {
             className="object-cover"
             sizes="100vw"
             priority={index === 0}
+            unoptimized={!!HERO_SLIDES[index].local}
           />
         </motion.div>
       </AnimatePresence>
