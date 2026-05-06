@@ -1,14 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { motion, AnimatePresence } from "framer-motion";
 import { toast } from "sonner";
-import { MapPin, Phone, Mail, Clock, CheckCircle, ArrowRight, ArrowLeft } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, CheckCircle, ArrowRight, ArrowLeft, Users } from "lucide-react";
 import { formStepVariants, generateConfetti } from "@/lib/animations";
-import { BRAND, COUNTRIES } from "@/lib/constants";
+import { BRAND, COUNTRIES, TEAM } from "@/lib/constants";
 
 // ─── Zod schemas per step ─────────────────────────────────────────────────────
 const step1Schema = z.object({
@@ -16,6 +17,8 @@ const step1Schema = z.object({
   whatsapp: z.string().min(10, "Enter a valid WhatsApp number"),
   email: z.string().email("Enter a valid email address"),
   city: z.string().min(1, "Please select your city"),
+  purposeOfVisit: z.string().min(1, "Please select purpose of visit"),
+  visaCategory: z.string().min(1, "Please select visa category"),
 });
 
 const step2Schema = z.object({
@@ -127,6 +130,36 @@ function Step1({ form }: { form: ReturnType<typeof useForm<Step1Data>> }) {
             ))}
           </select>
           {errors.city && <p className="text-red-500 text-xs mt-1">{errors.city.message}</p>}
+        </div>
+        <div>
+          <label className="label-small text-slate-500 mb-1.5 block">Purpose of Visit *</label>
+          <select
+            {...register("purposeOfVisit")}
+            className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors text-slate-600"
+          >
+            <option value="">Select purpose</option>
+            {["Tourism / Holiday", "Business Meeting", "Family / Friends Visit", "Study Inquiry", "Work / Immigration", "Medical Treatment", "IELTS Coaching"].map((p) => (
+              <option key={p} value={p}>{p}</option>
+            ))}
+          </select>
+          {errors.purposeOfVisit && <p className="text-red-500 text-xs mt-1">{errors.purposeOfVisit.message}</p>}
+        </div>
+        <div className="md:col-span-2">
+          <label className="label-small text-slate-500 mb-1.5 block">Visa Category *</label>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            {["Visit Visa", "Student Visa", "Work / Jobseeker", "PR / Immigration", "Spouse / Family", "IELTS Preparation"].map((cat) => (
+              <label key={cat} className="flex items-center gap-2 cursor-pointer border border-slate-200 rounded-xl px-3 py-2.5 hover:border-brand transition-colors has-[:checked]:border-brand has-[:checked]:bg-brand/5">
+                <input
+                  type="radio"
+                  value={cat}
+                  {...register("visaCategory")}
+                  className="w-4 h-4 text-brand accent-brand"
+                />
+                <span className="text-sm text-slate-600 font-medium">{cat}</span>
+              </label>
+            ))}
+          </div>
+          {errors.visaCategory && <p className="text-red-500 text-xs mt-1">{errors.visaCategory.message}</p>}
         </div>
       </div>
     </div>
@@ -574,6 +607,33 @@ export default function ContactPageClient() {
               </svg>
               Chat with Us Now
             </a>
+
+            {/* Consultant Team */}
+            <div className="mt-6 pt-6 border-t border-white/10">
+              <div className="flex items-center gap-2 mb-4">
+                <Users className="w-4 h-4 text-brand-sky" />
+                <span className="text-white font-semibold text-sm">Meet Our Consultants</span>
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                {(TEAM as readonly { name: string; role: string; specialization: string; photo: string }[]).map((member) => (
+                  <div key={member.name} className="flex items-center gap-3 bg-white/5 rounded-xl p-2.5 hover:bg-white/10 transition-colors">
+                    <div className="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0 ring-2 ring-brand-sky/30">
+                      <Image
+                        src={member.photo}
+                        alt={`${member.name} — ${member.role}`}
+                        fill
+                        className="object-cover"
+                        sizes="40px"
+                      />
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-white text-xs font-semibold truncate">{member.name}</div>
+                      <div className="text-white/50 text-[10px] truncate">{member.role}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
 
             {/* Map */}
             <div className="mt-6 rounded-xl overflow-hidden h-48">

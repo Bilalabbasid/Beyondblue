@@ -252,6 +252,47 @@ export default function AboutPageClient() {
           </div>
         </div>
       </section>
+
+      {/* Careers */}
+      <section className="section-padding bg-brand-navy overflow-hidden relative">
+        <div className="absolute inset-0 opacity-[0.04]"
+          style={{ backgroundImage: "radial-gradient(#fff 1px, transparent 1px)", backgroundSize: "28px 28px" }}
+        />
+        <div className="container-wide relative z-10">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <span className="label-small text-brand-sky mb-4 block">Join Our Team</span>
+            <h2 className="font-display font-bold text-4xl md:text-5xl text-white mb-4 leading-tight">
+              We&apos;re Hiring — <span className="text-brand-gold italic">Grow With Us</span>
+            </h2>
+            <p className="text-white/60 text-lg leading-relaxed">
+              Passionate about immigration? Love helping people achieve their dreams? Beyond Blue is always looking for talented visa consultants, IELTS coaches, and client support specialists to join our growing team.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {[
+              { icon: "🧑‍💼", title: "Visa Consultant", type: "Full-time · Rawalpindi", desc: "Handle client cases for UK, USA, Canada and Schengen visas. Prior consultancy experience preferred." },
+              { icon: "📚", title: "IELTS Coach", type: "Full-time / Part-time", desc: "Prepare students for Band 7+. IELTS trainer certification required or equivalent teaching experience." },
+              { icon: "🤝", title: "Client Relations", type: "Full-time · Rawalpindi", desc: "First point of contact for new inquiries. Excellent communication and follow-up skills essential." },
+            ].map((job) => (
+              <div key={job.title} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
+                <div className="text-3xl mb-3">{job.icon}</div>
+                <h3 className="font-display font-bold text-white text-lg mb-1">{job.title}</h3>
+                <p className="text-brand-sky text-xs font-semibold mb-3">{job.type}</p>
+                <p className="text-white/50 text-sm leading-relaxed">{job.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center">
+            <p className="text-white/60 text-sm mb-5">Send your CV to <a href="mailto:beyondblue83@gmail.com" className="text-brand-sky hover:underline">beyondblue83@gmail.com</a> with the position in the subject line.</p>
+            <a
+              href="mailto:beyondblue83@gmail.com?subject=Job%20Application%20—%20Beyond%20Blue"
+              className="btn-gold inline-flex items-center gap-2"
+            >
+              Apply Now →
+            </a>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

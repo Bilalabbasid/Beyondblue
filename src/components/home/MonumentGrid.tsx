@@ -14,7 +14,7 @@ function MonumentCard({ country }: { country: typeof COUNTRIES[number] }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
   return (
-    <motion.div ref={ref} variants={staggerItem}>
+    <motion.div ref={ref} variants={staggerItem} className="w-full sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)]">
       <Tilt
         tiltMaxAngleX={10}
         tiltMaxAngleY={10}
@@ -78,12 +78,18 @@ export default function MonumentGrid() {
   const { ref, inView } = useInView({ threshold: 0.05, triggerOnce: true });
 
   return (
-    <section className="bg-white section-padding">
-      <div className="container-wide">
+    <section className="relative bg-brand-navy section-padding overflow-hidden">
+      {/* dot grid */}
+      <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "radial-gradient(#fff 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
+      {/* glow orbs */}
+      <div className="absolute -top-32 -left-32 w-96 h-96 bg-brand/20 blur-3xl rounded-full pointer-events-none" />
+      <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-brand-sky/10 blur-3xl rounded-full pointer-events-none" />
+      <div className="relative z-10 container-wide">
         <SectionHeader
           label="Destinations"
           title="Dream Destinations Await You"
           subtitle="40+ countries, every visa type. Your global journey starts with a single consultation."
+          light
         />
 
         <motion.div
@@ -91,7 +97,7 @@ export default function MonumentGrid() {
           variants={staggerContainer}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-14"
+          className="flex flex-wrap justify-center gap-5 mt-14"
         >
           {COUNTRIES.map((country) => (
             <MonumentCard key={country.slug} country={country} />

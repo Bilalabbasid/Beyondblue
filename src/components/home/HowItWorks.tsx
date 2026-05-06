@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { MessageCircle, FileText, Send, CheckCircle } from "lucide-react";
@@ -89,12 +90,12 @@ export default function HowItWorks() {
               const colors = STEP_COLORS[i];
 
               return (
+                <Link href="/contact" key={step.step} className="block">
                 <motion.div
-                  key={step.step}
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, delay: 0.2 + i * 0.15, ease: [0.22, 1, 0.36, 1] }}
-                  className="relative flex flex-col items-center text-center group"
+                  className="relative flex flex-col items-center text-center group cursor-pointer"
                 >
                   {/* Mobile connector */}
                   {!isLast && (
@@ -141,10 +142,23 @@ export default function HowItWorks() {
                     {isLast ? "✓ Goal" : `Step ${step.step}`}
                   </div>
                 </motion.div>
+                </Link>
               );
             })}
           </div>
         </div>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 1 }}
+          className="text-center mt-14"
+        >
+          <Link href="/contact" className="btn-gold text-base px-12 py-4 inline-block">
+            Start Your Free Assessment →
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

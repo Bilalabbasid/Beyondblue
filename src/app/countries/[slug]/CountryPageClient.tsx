@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -11,6 +12,7 @@ import { sectionReveal, wordStaggerContainer, wordStaggerChild } from "@/lib/ani
 import type { CountryData } from "@/lib/constants";
 import { BLUR_PLACEHOLDER } from "@/lib/constants";
 import Flag from "@/components/shared/Flag";
+import Lightbox from "@/components/shared/Lightbox";
 
 interface Props {
   country: CountryData;
@@ -22,6 +24,9 @@ export default function CountryPageClient({ country }: Props) {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 120]);
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  const approvalImages = (country.approvalImages ?? []).map((src) => ({ src, label: `${country.name} Visa Approved`, country: country.name }));
 
   const availableTabs = VISA_TAB_KEYS.filter(
     (key) => country.requirements[key].length > 0
@@ -29,6 +34,12 @@ export default function CountryPageClient({ country }: Props) {
 
   return (
     <>
+      <Lightbox
+        images={approvalImages}
+        activeIndex={lightboxIndex}
+        onClose={() => setLightboxIndex(null)}
+        onChangeIndex={setLightboxIndex}
+      />
       {/* Hero — full viewport with parallax */}
       <section className="relative h-screen max-h-[700px] overflow-hidden flex items-center">
         <motion.div className="absolute inset-0" style={{ y }}>
@@ -251,6 +262,54 @@ export default function CountryPageClient({ country }: Props) {
           </div>
         </div>
       </section>
+
+      {/* Approval Gallery */}
+      {country.approvalImages && country.approvalImages.length > 0 && (
+        <section className="section-padding bg-white">
+          <div className="container-wide">
+            <div className="mb-10 text-center">
+              <span className="label-small text-brand-green uppercase tracking-widest mb-3 block">Proof of Success</span>
+              <h2 className="font-display font-bold text-3xl md:text-4xl text-brand-navy">
+                Real {country.name} Approvals
+              </h2>
+              <p className="text-slate-500 mt-3 max-w-xl mx-auto text-sm md:text-base">
+                These are genuine visa approvals secured by our clients through Beyond Blue&apos;s expert guidance.
+              </p>
+            </div>
+            <div className={`grid gap-6 ${country.approvalImages.length === 1 ? "grid-cols-1 max-w-md mx-auto" : country.approvalImages.length === 2 ? "grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto" : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}`}>
+              {country.approvalImages.map((src, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 24, rotate: i % 2 === 0 ? -1.5 : 1.5 }}
+                  whileInView={{ opacity: 1, y: 0, rotate: i % 2 === 0 ? -1 : 1 }}
+                  whileHover={{ scale: 1.03, rotate: 0, zIndex: 10 }}
+                  viewport={{ once: true, margin: "-60px" }}
+                  transition={{ delay: i * 0.12, type: "spring", stiffness: 200, damping: 18 }}
+                  className="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-slate-50 aspect-[4/3] cursor-zoom-in"
+                  style={{ boxShadow: "0 8px 40px rgba(21,101,192,0.13), 0 2px 8px rgba(0,0,0,0.08)" }}
+                  onClick={() => setLightboxIndex(i)}
+                >
+                  <Image
+                    src={src}
+                    alt={`${country.name} visa approval — Beyond Blue client success`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-navy/80 to-transparent px-4 py-3">
+                    <span className="inline-flex items-center gap-1.5 bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full">
+                      ✓ VISA APPROVED
+                    </span>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+            <p className="text-center text-xs text-slate-400 mt-6">
+              All personal details have been watermarked for privacy. Approvals are genuine Beyond Blue client cases.
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* FAQ */}
       <section className="section-padding bg-white">

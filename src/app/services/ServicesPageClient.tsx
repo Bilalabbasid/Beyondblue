@@ -18,6 +18,7 @@ const COUNTRY_NAMES: Record<string, string> = {
   ca: "Canada", gb: "UK", au: "Australia", us: "USA",
   it: "Italy", es: "Spain", fr: "France", de: "Germany",
   se: "Sweden", hu: "Hungary", nl: "Netherlands", nz: "New Zealand",
+  at: "Austria", no: "Norway",
 };
 
 const ICONS: Record<string, React.ElementType> = {

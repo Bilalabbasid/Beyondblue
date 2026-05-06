@@ -1,19 +1,19 @@
 ﻿import type { Metadata } from "next";
 import Hero from "@/components/home/Hero";
 import Marquee from "@/components/home/Marquee";
-import Stats from "@/components/home/Stats";
+import DirectorSection from "@/components/home/DirectorSection";
+import VideoShowcase from "@/components/home/VideoShowcase";
 import Achievements from "@/components/home/Achievements";
 import ServicesGrid from "@/components/home/ServicesGrid";
 import MonumentGrid from "@/components/home/MonumentGrid";
 import HowItWorks from "@/components/home/HowItWorks";
-import WhyUs from "@/components/home/WhyUs";
 import Testimonials from "@/components/home/Testimonials";
 import CTABanner from "@/components/home/CTABanner";
 
 export const metadata: Metadata = {
   title: "Beyond Blue IELTS & Consultancy | Pakistan's Trusted Visa & IELTS Experts",
   description:
-    "Beyond Blue IELTS & Consultancy — 7+ years, 700+ approvals. Visit visas, study abroad, skilled immigration, IELTS coaching. UK, USA, Canada, Europe and beyond.",
+    "Beyond Blue IELTS & Consultancy — 5+ years, 400+ approvals. Visit visas, study abroad, skilled immigration, IELTS coaching. UK, USA, Canada, Europe and beyond.",
 };
 
 export default function Home() {
@@ -21,12 +21,12 @@ export default function Home() {
     <>
       <Hero />
       <Marquee />
-      <Stats />
+      <DirectorSection />
+      <VideoShowcase />
       <Achievements />
       <ServicesGrid />
       <MonumentGrid />
       <HowItWorks />
-      <WhyUs />
       <Testimonials />
       <CTABanner />
     </>

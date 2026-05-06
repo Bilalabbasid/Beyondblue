@@ -9,8 +9,8 @@ export const BRAND = {
   hours: "Monday – Saturday, 9:00 AM – 7:00 PM (PKT)",
   social: {
     whatsapp: "https://wa.me/923315502600?text=Hi%20Beyond%20Blue%2C%20I%20need%20visa%20help",
-    facebook: "https://facebook.com/beyondblue",
-    instagram: "https://instagram.com/beyondblue",
+    facebook: "https://web.facebook.com/profile.php?id=61553455649369",
+    instagram: "https://www.instagram.com/beyondblue83/",
     linkedin: "https://linkedin.com/company/beyondblue",
     youtube: "https://youtube.com/beyondblue",
     tiktok: "https://tiktok.com/@beyondblue",
@@ -19,10 +19,10 @@ export const BRAND = {
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
 export const STATS = [
-  { value: 7, suffix: "+", label: "Years of Experience" },
-  { value: 700, suffix: "+", label: "Happy Clients" },
-  { value: 40, suffix: "+", label: "Countries We Serve" },
-  { value: 50, suffix: "+", label: "Immigration Pathways" },
+  { value: 5, suffix: "+", label: "Years of Experience" },
+  { value: 400, suffix: "+", label: "Happy Clients" },
+  { value: 30, suffix: "+", label: "Countries We Serve" },
+  { value: 10, suffix: "+", label: "Immigration Pathways" },
 ] as const;
 
 export const ACHIEVEMENTS = [
@@ -64,6 +64,7 @@ export interface CountryData {
     website: string;
   };
   faqs: { question: string; answer: string }[];
+  approvalImages?: string[];
 }
 
 export const COUNTRIES: CountryData[] = [
@@ -102,6 +103,7 @@ export const COUNTRIES: CountryData[] = [
       { question: "Can I extend my UK visit visa from within the UK?", answer: "UK visit visas cannot typically be extended from within the UK. You would need to leave and re-apply." },
       { question: "What are the chances of UK visa approval for Pakistanis?", answer: "With proper documentation and clear ties to Pakistan (job, property, family), approval rates are high. Our success rate is above 90%." },
     ],
+    approvalImages: ["/sjdsjkjd.jpeg", "/WhatsApp%20Image%202026-05-04%20at%2018.55.25.jpeg"],
   },
   {
     slug: "usa",
@@ -118,13 +120,13 @@ export const COUNTRIES: CountryData[] = [
       visit: ["Valid passport", "DS-160 form", "Interview appointment", "Bank statements", "Strong ties to home country", "Purpose of visit clarity"],
       study: ["I-20 form from US institution", "TOEFL/IELTS score", "Proof of financial support", "F-1 visa application", "SEVIS fee payment"],
       work: ["H-1B specialty occupation", "Employer petition", "Bachelor's degree minimum", "LCA from DOL", "Annual lottery cap applies"],
-      pr: ["Employment-based EB visa", "PERM labor certification", "Priority date current", "Medical examination", "Biometrics"],
+      pr: ["EB-2 level: advanced degree or exceptional ability", "Substantial merit and national importance of proposed work", "Well positioned to advance the endeavor in the U.S.", "National Interest Waiver (NIW): no employer sponsor required in qualifying cases", "Recommendation letters from recognized experts in the field", "Personal statement / proposed endeavor statement", "Medical examination and biometrics"],
     },
     documents: {
       visit: ["DS-160 confirmation", "Passport", "Photo", "Bank statements", "Employment letter", "Property ownership"],
       study: ["I-20", "SEVIS receipt", "Financial statements", "Transcripts", "Test scores"],
       work: ["Petition approval I-797", "Labor condition application", "Degree certificates", "Experience letters"],
-      pr: ["I-485 form", "Medical exam", "I-864 affidavit", "Police clearance", "Birth certificate"],
+      pr: ["Valid passport", "Updated CV or resume showing education and work history", "Degree certificates, transcripts, and academic records", "Experience letters from employers", "Professional licenses or memberships (if available)", "Publications, citations, patents, awards, or media features", "Recommendation letters from experts in the field", "Personal statement or proposed endeavor statement", "Form I-140 and supporting immigration forms", "Medical exam and police clearance"],
     },
     embassy: {
       address: "US Embassy, Diplomatic Enclave, Ramna 5, Islamabad",
@@ -133,11 +135,14 @@ export const COUNTRIES: CountryData[] = [
     },
     faqs: [
       { question: "How long does US B1/B2 visa take?", answer: "Processing typically takes 4–12 weeks including interview. Wait times for interview appointments vary." },
-      { question: "What is the EB-2 NIW visa?", answer: "The National Interest Waiver allows highly skilled professionals to self-petition for US permanent residency without employer sponsorship." },
+      { question: "What is EB2-NIW and who can apply?", answer: "EB2-NIW (National Interest Waiver) is a U.S. immigration program for professionals whose work benefits the national interest — researchers, engineers, doctors, entrepreneurs, and IT experts. It may allow a U.S. green card without a permanent employer sponsor or PERM labor certification." },
+      { question: "What is the main benefit of EB2-NIW?", answer: "It may allow the applicant to seek a U.S. green card without a permanent job offer and without the normal labor certification process in qualifying cases, making it ideal for highly qualified self-petitioners." },
+      { question: "Do I need a job offer for EB2-NIW?", answer: "In many NIW cases, the job offer and PERM labor certification can be waived if the applicant proves the national interest standard through substantial merit, national importance, and strong positioning." },
+      { question: "Is EB2-NIW a permanent residence pathway?", answer: "Yes. It is an immigrant route that can lead to a U.S. green card if approved, followed by the required final immigration stage (Adjustment of Status or Consular Processing)." },
       { question: "Can Pakistani students study in the USA on F-1 visa?", answer: "Yes. You need an acceptance letter (I-20) from a US institution, proof of financial support, and strong academic credentials." },
-      { question: "How many times can a US visa be refused?", answer: "There is no limit on re-applications, but each refusal should be addressed. We analyze previous refusals and build stronger cases." },
       { question: "Is IELTS needed for US visa?", answer: "For student visas (F-1), TOEFL is typically preferred but IELTS is also accepted at most US universities." },
     ],
+    approvalImages: ["/ahshsh.jpeg", "/WhatsApp%20Image%202026-05-04%20at%2018.55.26.jpeg", "/WhatsApp%20Image%202026-05-0xcjjcxjc4%20at%2018.55.26.jpeg"],
   },
   {
     slug: "canada",
@@ -174,6 +179,7 @@ export const COUNTRIES: CountryData[] = [
       { question: "How much money do I need for Canada PR?", answer: "Proof of settlement funds: CAD $13,310 for a single person, more for families. This must be unencumbered savings." },
       { question: "Is Canadian PR valid permanently?", answer: "Canada PR is valid for 5 years but must be renewed. You must be physically present in Canada for 730 days every 5 years to maintain status." },
     ],
+    approvalImages: ["/WhatsApp%20Image%202026-05-04%20at%2018.55.23.jpeg"],
   },
   {
     slug: "australia",
@@ -190,13 +196,13 @@ export const COUNTRIES: CountryData[] = [
       visit: ["Valid passport", "Genuine visitor intention", "Sufficient funds", "Health insurance", "Clean immigration history"],
       study: ["CoE from Australian institution", "IELTS 5.5–6.5+", "Genuine Temporary Entrant statement", "Overseas Student Health Cover (OSHC)", "Financial capacity"],
       work: ["Employer sponsorship (TSS visa)", "Skills assessment", "IELTS 5.0+", "Occupation on skilled list", "Health and character requirements"],
-      pr: ["Points test 65+", "Skills assessment", "IELTS 6.0+", "State nomination or SkillSelect invite", "Medical and police checks"],
+      pr: ["Points test 65+ (Skilled Migration) OR outstanding achievements (Subclass 858)", "Skills assessment or evidence of exceptional talent", "IELTS 6.0+ or equivalent English proficiency", "State nomination / SkillSelect invite OR nominator for Subclass 858", "International recognition and outstanding achievements (Subclass 858)", "Health, character, and security checks"],
     },
     documents: {
       visit: ["Passport", "Bank statements", "Employment letter", "Travel itinerary"],
       study: ["CoE", "IELTS certificate", "Financial evidence", "GTE statement", "OSHC insurance"],
       work: ["Sponsorship nomination", "Skills assessment", "Employment contract"],
-      pr: ["Skills assessment", "IELTS", "EOI through SkillSelect", "Medical exam", "Police clearance"],
+      pr: ["Valid passport", "Skills assessment or portfolio of exceptional achievements", "Evidence of international recognition (awards, publications, patents, media)", "Updated CV or portfolio of achievements", "IELTS or English proficiency certificate", "Nomination from eligible Australian organization (Subclass 858)", "Evidence of contribution to priority sector", "Medical exam report", "Police clearance certificate"],
     },
     embassy: {
       address: "Australian High Commission, Plot No. 17-A, Sector G-5/4, Islamabad",
@@ -205,11 +211,15 @@ export const COUNTRIES: CountryData[] = [
     },
     faqs: [
       { question: "What points do I need for Australia PR?", answer: "You need a minimum of 65 points in the points test. However, invitations typically go to candidates with 80–90+ points depending on occupation." },
+      { question: "What is the National Innovation Visa Subclass 858?", answer: "Subclass 858 is a permanent residence visa for exceptionally talented individuals — researchers, entrepreneurs, innovative investors, athletes, and creatives — who can contribute significantly to Australia's future prosperity. It replaced the earlier Global Talent route in late 2024." },
+      { question: "Is Subclass 858 a permanent residence visa?", answer: "Yes. It is presented as a permanent visa for exceptionally talented migrants who can make significant contributions in Australia's priority areas." },
+      { question: "Do I need a nominator for Subclass 858?", answer: "Yes, the applicant must be nominated by an eligible Australian organization or individual with a national reputation in the relevant field." },
+      { question: "Do I need international recognition for Subclass 858?", answer: "Yes, strong international recognition and outstanding achievement are central parts of the eligibility picture for Subclass 858." },
       { question: "Can I work while studying in Australia?", answer: "Yes, student visa holders can work up to 48 hours per fortnight during study sessions and unlimited hours during scheduled course breaks." },
       { question: "What is the difference between TSS and ENS visas?", answer: "TSS (Subclass 482) is a temporary work visa. ENS (Subclass 186) is for permanent employer nomination. TSS can lead to ENS after 2–3 years." },
-      { question: "Which Australian states have the best nomination programs?", answer: "Victoria, New South Wales, and Queensland have popular nomination programs with various occupation streams." },
       { question: "How long does Australia student visa take?", answer: "Processing typically takes 4–8 weeks after submitting your complete application with a CoE from an Australian institution." },
     ],
+    approvalImages: ["/ashjsuajjas.jpeg", "/WhatsApp%20Image%202026-05-04%20at%2018.55.27.jpeg"],
   },
   {
     slug: "italy",
@@ -282,6 +292,7 @@ export const COUNTRIES: CountryData[] = [
       { question: "What Spanish language level is needed for immigration?", answer: "For student visas: Spanish or English proficiency depending on your course. For long-term residence: DELE A2 minimum, B1 for citizenship." },
       { question: "How much does a Spain Schengen visa cost?", answer: "The standard Schengen fee is €80. For Spain-specific national visas (student, work), fees are €80–€190." },
     ],
+    approvalImages: ["/sjsj.jpeg"],
   },
   {
     slug: "germany",
@@ -293,17 +304,17 @@ export const COUNTRIES: CountryData[] = [
     processingTime: "2–8 weeks",
     difficulty: 3,
     region: "europe",
-    description: "Germany's Jobseeker Visa is a game-changer for skilled professionals, allowing 6 months to find employment with one of Europe's strongest economies.",
+    description: "Germany's Opportunity Card (Chancenkarte) is a game-changer for skilled professionals, allowing non-EU nationals to enter Germany for up to one year to search for employment, with two routes: recognized qualification or the points-based system.",
     requirements: {
       visit: ["Schengen visa requirements", "Travel insurance", "Bank statements", "Employment letter"],
       study: ["University admission", "Blocked account €934/month", "German/English language proof", "Health insurance DAX"],
-      work: ["Jobseeker Visa: degree + 5 years exp", "IELTS/German B1", "€2,919 in blocked account", "German company recognition"],
+      work: ["Opportunity Card route 1: qualification recognized in Germany", "Opportunity Card route 2: minimum 6 points in points system", "Financial resources: blocked account €1,091/month net (2026) or declaration of commitment", "Language: German A1 or English B2 minimum (points route)", "Part-time work up to 20 hours/week permitted during job search", "Short job trials up to 2 weeks per employer permitted", "Card valid for maximum one year"],
       pr: ["Blue Card EU", "5 years residence (21 months with German B1)", "Pension contribution history"],
     },
     documents: {
       visit: ["Schengen form", "Passport", "Insurance", "Statements"],
       study: ["Admission letter", "Blocked account proof", "Language certificate", "Insurance"],
-      work: ["Degree recognition", "Language test", "Blocked account", "CV and cover letter"],
+      work: ["Valid passport", "Academic degree or vocational qualification documents", "Recognition proof in Germany (if using recognized qualification route)", "Statement of Comparability or qualification recognition evidence", "Language proof (German A1 or English B2 for points route)", "Evidence for points claimed (work experience, age, language, prior Germany stay, shortage occupation)", "Proof of financial resources (blocked account or declaration of commitment)", "CV or resume"],
       pr: ["Residence permits history", "Language certificate B1", "Employment record", "Pension statements"],
     },
     embassy: {
@@ -312,11 +323,13 @@ export const COUNTRIES: CountryData[] = [
       website: "https://pakistan.diplo.de",
     },
     faqs: [
-      { question: "What is the Germany Jobseeker Visa?", answer: "The Jobseeker Visa allows qualified professionals with a German-recognized degree and 5 years of experience to enter Germany for 6 months to find a job." },
-      { question: "How much money do I need for Germany Jobseeker Visa?", answer: "You must show proof of €2,919 (3 months minimum wage) to support yourself during your job search period in Germany." },
-      { question: "Is German language required for Jobseeker Visa?", answer: "No, German is not mandatory for the Jobseeker Visa itself, but B1 German significantly improves job prospects in Germany." },
-      { question: "Can I bring my family on Germany Jobseeker Visa?", answer: "The Jobseeker Visa is issued for the individual only. Family can join once you secure employment and obtain a work visa/Blue Card." },
-      { question: "What qualifications are recognized in Germany?", answer: "Degrees from most countries need recognition through anabin database or KMK. Engineering, IT, medicine, and sciences are highly in demand." },
+      { question: "What is the Germany Opportunity Card?", answer: "The Germany Opportunity Card (Chancenkarte) is a residence route for non-EU nationals to come to Germany to look for a job. There are two routes: having a qualification recognized in Germany, or qualifying through the points system with at least six points." },
+      { question: "Do I need a job offer before applying for the Opportunity Card?", answer: "No. The Opportunity Card is specifically designed for job search before securing a job. It allows you to enter Germany and look for employment." },
+      { question: "How long is the Germany Opportunity Card valid?", answer: "It is initially issued for a maximum of one year." },
+      { question: "Can I work while searching for a job on the Opportunity Card?", answer: "Yes. The holder may do part-time work for up to 20 hours per week and job trials for up to two weeks per employer under official rules." },
+      { question: "How much money do I need for the Germany Opportunity Card?", answer: "You must show financial resources such as a blocked account with at least €1,091 net per month in 2026, or a declaration of commitment covering the stay." },
+      { question: "What if my qualification is not fully recognized in Germany?", answer: "You may still qualify through the points-based route if you meet the education, language, and points requirements (minimum 6 points). Points are awarded for qualifications, language skills, age, work experience, and more." },
+      { question: "What qualifications are recognized in Germany?", answer: "Degrees from most countries need recognition through the anabin database or KMK. Engineering, IT, medicine, and sciences are highly in demand." },
     ],
   },
   {
@@ -361,21 +374,21 @@ export const COUNTRIES: CountryData[] = [
     flag: "🇸🇪",
     flagCode: "se",
     image: "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=800&q=85&auto=format&fit=crop",
-    visaTypes: ["Study", "Work"],
+    visaTypes: ["Study", "Work", "Job Seeker"],
     processingTime: "4–10 weeks",
     difficulty: 3,
     region: "europe",
-    description: "Sweden's Talent Visa and quality education system make it one of Europe's most sought-after destinations for skilled professionals and students.",
+    description: "Sweden's Job Seeker Visa and quality education system make it one of Europe's most sought-after destinations for skilled professionals and students. The job seeker permit allows highly qualified graduates to enter Sweden and look for work or explore starting a business.",
     requirements: {
       visit: ["Schengen requirements", "Purpose clarity", "Financial proof"],
       study: ["University admission", "English B2 (IELTS 6.0+)", "Proof of funds SEK 8,568/month", "No need for Swedish language"],
-      work: ["Talent Visa: skilled profession", "Job offer", "Competitive salary", "EU Blue Card eligible"],
+      work: ["Job Seeker Visa: completed second-cycle qualification (Master's or higher)", "Apply from outside Sweden", "Financial proof: SEK 13,000/month for intended stay", "Funds for return journey", "Comprehensive health insurance valid in Sweden", "Permit valid maximum nine months (not exceeding passport validity)", "Must apply for correct work permit if a job is found before starting work"],
       pr: ["4–5 years legal residence", "Swedish A1+ language", "Self-sufficiency", "No criminal record"],
     },
     documents: {
       visit: ["Passport", "Insurance", "Bank statements"],
       study: ["Admission notice", "IELTS", "Financial proof (bank/scholarship)"],
-      work: ["Employment contract", "Employer evidence", "Qualifications"],
+      work: ["Valid passport with copies of all relevant pages", "Degree certificate showing completed second-cycle qualification", "Transcript showing courses included in the education", "Proof of financial support (bank statements showing SEK 13,000/month)", "Proof of comprehensive health insurance valid in Sweden", "Certified translations if documents are not in Swedish or English", "Signed power of attorney for verification of study documents by Swedish authorities", "Embassy selection details for passport presentation"],
       pr: ["Residence permits", "Language certificate", "Income proof"],
     },
     embassy: {
@@ -384,11 +397,12 @@ export const COUNTRIES: CountryData[] = [
       website: "https://www.migrationsverket.se",
     },
     faqs: [
+      { question: "Who can apply for the Sweden Job Seeker Visa?", answer: "Applicants who have completed studies corresponding to a second-cycle qualification, such as a Master's or higher equivalent, may be eligible if other requirements are met, including financial support and health insurance." },
+      { question: "How long is the Sweden Job Seeker Visa valid?", answer: "It can be granted for up to nine months, depending on the case and passport validity. It is never granted for longer than the passport validity." },
+      { question: "How much money do I need for the Sweden Job Seeker Visa?", answer: "The official requirement is at least SEK 13,000 per month for the period requested, plus enough money for the return journey." },
+      { question: "Can I work immediately after entering Sweden on this permit?", answer: "No. If you find a job, you must apply for the correct work permit. You are not allowed to start working before applying for that new permit." },
       { question: "Is Swedish language required for studying in Sweden?", answer: "No. Most master's programs in Sweden are taught entirely in English. Swedish language is not required for admission or student visa." },
-      { question: "What is the Sweden Talent Visa?", answer: "Sweden's Talent Visa allows highly skilled professionals in shortage occupations to receive fast-track work permits, often with EU Blue Card eligibility." },
       { question: "Can Pakistani students work in Sweden while studying?", answer: "Yes, there are no work hour restrictions for international students in Sweden — you can work full-time alongside your studies." },
-      { question: "What are Sweden's in-demand occupations for work permits?", answer: "Sweden particularly needs IT professionals, engineers, healthcare workers, and academics. These occupations have the fastest processing times." },
-      { question: "How long does Sweden work permit processing take?", answer: "Standard work permit processing takes 4–10 weeks. Applications submitted through Migration Agency online are typically faster." },
     ],
   },
   {
@@ -499,6 +513,78 @@ export const COUNTRIES: CountryData[] = [
       { question: "How does the NZ points system work?", answer: "Points are awarded for age (max 30 for ages 20–39), qualifications (up to 70 points), skilled employment in NZ (50–60 points), and work experience." },
     ],
   },
+  {
+    slug: "austria",
+    name: "Austria",
+    flag: "🇦🇹",
+    flagCode: "at",
+    image: "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=800&q=85&auto=format&fit=crop",
+    visaTypes: ["Visit", "Work", "Job Seeker", "PR"],
+    processingTime: "4–10 weeks",
+    difficulty: 3,
+    region: "europe",
+    description: "Austria's Red-White-Red Card framework offers a points-based skilled migration system for highly qualified professionals who want to enter Austria, search for employment, and build a long-term future in one of Europe's most prosperous countries.",
+    requirements: {
+      visit: ["Valid Schengen passport", "Travel insurance €30,000 coverage", "Bank statements", "Return tickets", "Hotel bookings"],
+      study: [],
+      work: ["Red-White-Red Card: points-based system under legally defined criteria", "Achieve required points threshold for applicable category", "Very Highly Qualified Workers: advanced degree or exceptional qualifications", "Special Skills: relevant professional skills and experience", "Language certificates where applicable to points claimed", "Any evidence supporting the points calculation (research, awards, training)"],
+      pr: ["Settlement Permit — Permanent (after meeting residence requirements)", "Red-White-Red Card Plus → Settlement Permit pathway", "German language B1 certificate", "Financial self-sufficiency", "No criminal record"],
+    },
+    documents: {
+      visit: ["Schengen visa application", "Valid passport", "Travel insurance", "Bank statements", "Hotel bookings", "Return flight tickets"],
+      study: [],
+      work: ["Valid passport", "Educational certificates and degree documents", "CV or resume", "Work experience letters and employer references", "Documents proving special qualifications or skills", "Language certificates (if applicable to points)", "Evidence supporting points calculation (research achievements, awards, special training)", "Application forms and embassy submission documents"],
+      pr: ["Residence permit history", "Language certificate B1", "Income and financial proof", "Police clearance certificate"],
+    },
+    embassy: {
+      address: "Austrian Embassy, Plot 13, Street 88, G-6/3, Islamabad",
+      phone: "+92-51-282-9041",
+      website: "https://www.migration.gv.at",
+    },
+    faqs: [
+      { question: "What is the Austria Job Seeker Visa / Red-White-Red Card?", answer: "Austria's job seeker pathway is connected with the Red-White-Red Card framework, primarily for very highly qualified workers who score enough points to enter Austria and search for matching employment." },
+      { question: "Is Austria's immigration system points-based?", answer: "Yes. Austria uses a legally defined points system under the Red-White-Red Card framework. Applicants must reach the required threshold under the applicable category." },
+      { question: "What factors increase points in Austria?", answer: "Qualifications, special skills, relevant work experience, language proficiency, and supporting evidence connected to the applicant's profession can help increase points." },
+      { question: "Do I need to meet a minimum points score?", answer: "Yes, applicants must achieve the required number of points under the applicable category to qualify for the Red-White-Red Card." },
+      { question: "Can I bring family to Austria on a work permit?", answer: "Yes, family members can apply for a Red-White-Red Card Plus, which grants access to the Austrian labour market without restrictions." },
+    ],
+  },
+  {
+    slug: "norway",
+    name: "Norway",
+    flag: "🇳🇴",
+    flagCode: "no",
+    image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&q=85&auto=format&fit=crop",
+    visaTypes: ["Work", "Medical", "PR"],
+    processingTime: "4–12 weeks",
+    difficulty: 3,
+    region: "europe",
+    description: "Norway offers a high standard of living and a strong demand for healthcare professionals. Foreign medical and healthcare workers must obtain Norwegian authorization or license before working in protected healthcare professions, followed by the appropriate work or residence permit.",
+    requirements: {
+      visit: [],
+      study: [],
+      work: ["Norwegian authorization or license for healthcare professions (mandatory before starting work)", "Two-stage process: professional authorization from Norwegian authorities + immigration permission", "Degree in medicine, nursing, or relevant healthcare field", "Professional license or registration from home country (if applicable)", "Work experience documents relevant to the profession", "Certified translations of documents where required", "Additional requirements depending on final residence or work application stage"],
+      pr: ["Permanent residence after 3 years on valid work permit", "Norwegian language level A2+", "Financial self-sufficiency", "No criminal record"],
+    },
+    documents: {
+      visit: [],
+      study: [],
+      work: ["Valid passport or identity documents", "Degree certificates and academic records (medical or healthcare field)", "Professional license or registration from home country", "Work experience documents", "Documents required for authorization or licensing assessment", "Certified translations where required", "Additional immigration documents depending on the final residence or work application stage"],
+      pr: ["Residence permit history", "Language certificate", "Income proof", "Police clearance certificate"],
+    },
+    embassy: {
+      address: "Royal Norwegian Embassy, 25 Street 19, F-6/2, Islamabad",
+      phone: "+92-51-227-9190",
+      website: "https://www.udi.no",
+    },
+    faqs: [
+      { question: "Who needs the Norway Medical Program pathway?", answer: "Doctors, nurses, and other regulated healthcare professionals who want to work in Norway must apply for Norwegian authorization or license before starting work in protected occupations." },
+      { question: "Is professional recognition required in Norway?", answer: "Yes, official guidance says healthcare personnel must apply for Norwegian authorization or license before starting work in protected healthcare professions." },
+      { question: "Is this only a visa process?", answer: "No. It is usually both a professional licensing matter and an immigration matter, involving two stages: professional authorization from Norwegian authorities, then the appropriate work or residence permission." },
+      { question: "Can all healthcare workers apply under one single category?", answer: "Not always. Different professions may have different requirements, and the exact pathway depends on the profession and qualifications held." },
+      { question: "How long does Norway work permit processing take?", answer: "Processing typically takes 4–12 weeks depending on profession, qualifications, and completeness of the application. Healthcare professionals with recognized qualifications tend to have smoother processes." },
+    ],
+  },
 ];
 
 // ─── Services ─────────────────────────────────────────────────────────────────
@@ -527,8 +613,8 @@ export const SERVICES: ServiceData[] = [
     description: "Explore the world with our expert visit visa assistance for Canada, Australia, USA, and Schengen countries.",
     longDescription:
       "A visitor visa opens doors to the world's most beautiful countries for tourism, family visits, business meetings, and medical treatment. Our consultants have a deep understanding of each embassy's requirements and craft applications that present your case in the strongest possible light. From gathering the right documents to coaching you for the visa interview, we handle everything.",
-    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&q=85&auto=format&fit=crop",
-    pageImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=85&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=85&auto=format&fit=crop",
+    pageImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=85&auto=format&fit=crop",
     icon: "Plane",
     countries: ["Canada", "Australia", "USA", "Italy", "Spain", "France", "Germany"],
     countryFlags: ["ca", "au", "us", "it", "es", "fr", "de"],
@@ -560,7 +646,7 @@ export const SERVICES: ServiceData[] = [
     description: "Your dream of studying in Canada, UK, Australia, Italy, or Hungary starts here with our complete student visa service.",
     longDescription:
       "Studying abroad is one of the most transformative decisions of your life. Our education consultants help you choose the right university, prepare your application, and secure your student visa. We have partnerships with institutions across Canada, UK, Australia, Italy, and Hungary, ensuring you get admission to the best programs that match your profile.",
-    image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=85&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=85&auto=format&fit=crop",
     pageImage: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=85&auto=format&fit=crop",
     icon: "GraduationCap",
     countries: ["Canada", "UK", "Australia", "Italy", "Hungary"],
@@ -590,14 +676,14 @@ export const SERVICES: ServiceData[] = [
     id: "skilled-immigration",
     slug: "skilled-immigration",
     title: "Skilled Immigration",
-    description: "Permanent residency pathways in Canada Express Entry, Australia PR, UK Skilled Worker, and USA EB-2 NIW for qualified professionals.",
+    description: "Permanent residency pathways in Canada Express Entry, Australia PR (incl. Subclass 858), UK Skilled Worker, and USA EB-2 NIW for qualified professionals.",
     longDescription:
-      "Skilled immigration is the path to permanent residency and a new life abroad. Whether it's Canada's Express Entry, Australia's Skilled Migrant Category, UK Skilled Worker visa, or US EB-2 National Interest Waiver — we analyze your profile, maximize your points, and build a case that gets approved. Our immigration specialists stay current with every policy change.",
-    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=85&auto=format&fit=crop",
+      "Skilled immigration is the path to permanent residency and a new life abroad. Whether it's Canada's Express Entry, Australia's Skilled Migrant Category or National Innovation Visa Subclass 858, UK Skilled Worker visa, or US EB-2 National Interest Waiver — we analyze your profile, maximize your points, and build a case that gets approved. Our immigration specialists stay current with every policy change.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=85&auto=format&fit=crop",
     pageImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=85&auto=format&fit=crop",
     icon: "Briefcase",
-    countries: ["Canada", "UK", "Australia", "USA"],
-    countryFlags: ["ca", "gb", "au", "us"],
+    countries: ["Canada", "UK", "Australia", "USA", "Norway"],
+    countryFlags: ["ca", "gb", "au", "us", "no"],
     requirements: [
       "Bachelor's or higher degree",
       "Minimum 3 years relevant work experience",
@@ -624,27 +710,28 @@ export const SERVICES: ServiceData[] = [
     id: "jobseeker-visa",
     slug: "jobseeker-visa",
     title: "Jobseeker Visa",
-    description: "Germany's Jobseeker Visa and Sweden's Talent Visa for qualified Pakistani professionals seeking employment in Europe.",
+    description: "Germany Opportunity Card, Sweden Job Seeker Visa, and Austria Red-White-Red Card for qualified Pakistani professionals seeking employment in Europe.",
     longDescription:
-      "Europe is actively recruiting skilled talent, and Pakistan has a wealth of qualified professionals. Germany's Jobseeker Visa allows you 6 months to search for work in one of the world's largest economies, while Sweden's Talent Visa fast-tracks highly skilled individuals. We prepare your applications, get your qualifications recognized, and coach you for success.",
+      "Europe is actively recruiting skilled talent, and Pakistan has a wealth of qualified professionals. Germany's Opportunity Card (Chancenkarte) allows qualified non-EU applicants to come to Germany for up to one year to search for employment — with two routes via recognized qualification or the points system. Sweden's Job Seeker Visa lets highly qualified graduates explore work opportunities, while Austria's Red-White-Red Card framework opens doors for very highly qualified workers. We prepare your applications, get your qualifications recognized, and coach you for success.",
     image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=85&auto=format&fit=crop",
     pageImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=85&auto=format&fit=crop",
     icon: "Search",
-    countries: ["Germany", "Sweden"],
-    countryFlags: ["de", "se"],
+    countries: ["Germany", "Sweden", "Austria"],
+    countryFlags: ["de", "se", "at"],
     requirements: [
-      "Degree recognized or recognizable in Germany/Sweden",
-      "5 years relevant work experience (Germany)",
-      "German B1 or English B2 language proficiency",
-      "€2,919 blocked account (Germany)",
+      "Degree recognized or recognizable in Germany/Sweden/Austria",
+      "Language proficiency: German A1 or English B2 (Germany points route)",
+      "Financial resources: blocked account or equivalent (Germany/Austria)",
+      "Second-cycle qualification — Master's or higher (Sweden Job Seeker)",
+      "Points threshold under applicable category (Austria RWR Card)",
       "Comprehensive CV in European format",
-      "Motivation letter addressing German/Swedish market",
+      "Motivation letter addressing target market",
     ],
     documents: [
-      "Degree certificates + German recognition proof",
+      "Degree certificates + recognition/comparability proof",
       "Work experience letters",
       "Language test certificate",
-      "Blocked account confirmation",
+      "Blocked account confirmation or financial proof",
       "European-format CV",
       "Motivation letter",
       "Passport-size photographs",
@@ -712,6 +799,38 @@ export const SERVICES: ServiceData[] = [
     processingTime: "3–12 months",
     successRate: 90,
   },
+  {
+    id: "hajj-umrah",
+    slug: "hajj-umrah",
+    title: "Hajj & Umrah",
+    description: "Complete Hajj and Umrah packages for Pakistani pilgrims — visa processing, accommodation near Haram, group travel, and end-to-end support.",
+    longDescription:
+      "The sacred journey to Makkah is the most spiritual experience of a Muslim's life. Beyond Blue arranges complete Hajj and Umrah packages for Pakistani pilgrims — handling Saudi visa processing, accommodation near the Haram, group and private travel arrangements, guided ziyarat, and comprehensive end-to-end support. Our experienced team ensures every detail is handled so you can focus entirely on your ibadah.",
+    image: "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=600&q=85&auto=format&fit=crop",
+    pageImage: "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1400&q=85&auto=format&fit=crop",
+    icon: "Heart",
+    countries: ["Saudi Arabia"],
+    countryFlags: ["sa"],
+    requirements: [
+      "Valid Pakistani passport with at least 6 months validity",
+      "Confirmed mahram relationship (for women under 45)",
+      "Meningitis vaccination certificate (ACYW135)",
+      "No prior Hajj within last 5 years (for Hajj quota)",
+      "Proof of Pakistani nationality / CNIC",
+      "Medical fitness certificate",
+    ],
+    documents: [
+      "Original passport + 2 attested copies",
+      "4 recent passport-size photographs (white background)",
+      "CNIC copy (attested)",
+      "Meningitis vaccination certificate",
+      "Nikah Nama / family registration (for mahram proof)",
+      "Medical fitness certificate",
+      "Hajj/Umrah application form (provided by us)",
+    ],
+    processingTime: "2–6 weeks",
+    successRate: 99,
+  },
 ];
 
 // ─── Testimonials ─────────────────────────────────────────────────────────────
@@ -729,50 +848,61 @@ export interface TestimonialData {
 export const TESTIMONIALS: TestimonialData[] = [
   {
     id: "1",
-    name: "Rai Romi",
-    photo: "https://i.pravatar.cc/100?img=12",
-    visa: "Canada Visit Visa",
-    country: "Canada",
-    flag: "🇨🇦",
-    flagCode: "ca",
+    name: "Waresha Khan",
+    photo: "/ahshsh.jpeg",
+    visa: "USA B1/B2 Visa",
+    country: "United States",
+    flag: "🇺🇸",
+    flagCode: "us",
     quote:
-      "Exceptional service. Got my Canadian visitor visa approved. They are very thorough and efficient in visa application submissions.",
+      "Exceptional service. Got my USA B1/B2 visa approved. Beyond Blue guided me through every step — from DS-160 to interview prep. Highly professional and thorough.",
   },
   {
     id: "2",
-    name: "Dr. Esther",
-    photo: "https://i.pravatar.cc/100?img=44",
-    visa: "Canada Immigration",
-    country: "Canada",
-    flag: "🇨🇦",
-    flagCode: "ca",
+    name: "Hamza Khalid",
+    photo: "/WhatsApp%20Image%202026-05-04%20at%2018.55.26.jpeg",
+    visa: "USA B1/B2 Visa",
+    country: "United States",
+    flag: "🇺🇸",
+    flagCode: "us",
     quote:
-      "One of the top Canada immigration consultants. Throughout my process from case officer to the executive staff had given the greatest services possible. Great job. Keep rocking — would definitely recommend.",
+      "Beyond Blue made my US visa dream a reality. Their consultants knew exactly what the embassy looks for and my application was approved first time. Amazing team.",
   },
   {
     id: "3",
+    name: "Muhammad Zeerak",
+    photo: "/WhatsApp%20Image%202026-05-0xcjjcxjc4%20at%2018.55.26.jpeg",
+    visa: "USA B1/B2 Visa",
+    country: "United States",
+    flag: "🇺🇸",
+    flagCode: "us",
+    quote:
+      "I had a very good experience during my consultations for the USA visitor visa. They have great knowledge and insight into what the embassy needs. Highly recommended.",
+  },
+  {
+    id: "4",
+    name: "Muhammad Arib",
+    photo: "/WhatsApp%20Image%202026-05-04%20at%2018.55.24.jpeg",
+    visa: "Greece Schengen Visa",
+    country: "Greece",
+    flag: "🇬🇷",
+    flagCode: "gr",
+    quote:
+      "Got my Schengen visa approved with the help of Beyond Blue. The team was professional and made the documentation process very smooth. Would recommend to everyone.",
+  },
+  {
+    id: "5",
     name: "Ipsa Suahny",
     photo: "https://i.pravatar.cc/100?img=23",
     visa: "Student Visa",
-    country: "Multi",
+    country: "Canada",
     flag: "🎓",
     flagCode: "ca",
     quote:
       "I had a very good experience with them during my consultations regarding Student Visa. They have good and insightful knowledge about process for USA, Canada and Australian immigration.",
   },
   {
-    id: "4",
-    name: "Muhammad Usman",
-    photo: "https://i.pravatar.cc/100?img=11",
-    visa: "UK Skilled Worker",
-    country: "UK",
-    flag: "🇬🇧",
-    flagCode: "gb",
-    quote:
-      "Beyond Blue made my UK dream a reality. Their consultants knew exactly what the Home Office looks for and my application was approved first time. Highly professional team.",
-  },
-  {
-    id: "5",
+    id: "6",
     name: "Ayesha Malik",
     photo: "https://i.pravatar.cc/100?img=41",
     visa: "Germany Jobseeker",
@@ -781,17 +911,6 @@ export const TESTIMONIALS: TestimonialData[] = [
     flagCode: "de",
     quote:
       "I was skeptical about the Jobseeker Visa but Beyond Blue guided me through every step. Within 4 months of arriving in Germany I had secured a job. Life-changing!",
-  },
-  {
-    id: "6",
-    name: "Bilal Hassan",
-    photo: "https://i.pravatar.cc/100?img=7",
-    visa: "Australia PR",
-    country: "Australia",
-    flag: "🇦🇺",
-    flagCode: "au",
-    quote:
-      "The team at Beyond Blue are genuine experts. They maximized my CRS score with strategies I didn't know about and I received my ITA within 3 months. Amazing service.",
   },
 ];
 

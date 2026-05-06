@@ -1,58 +1,46 @@
-"use client";
+﻿"use client";
 
-import Image from "next/image";
-import { Plane } from "lucide-react";
+import { Flame } from "lucide-react";
 
-const DESTINATIONS = [
-  { name: "United Kingdom",  code: "gb" },
-  { name: "United States",   code: "us" },
-  { name: "Canada",          code: "ca" },
-  { name: "Australia",       code: "au" },
-  { name: "Italy",           code: "it" },
-  { name: "Spain",           code: "es" },
-  { name: "Germany",         code: "de" },
-  { name: "France",          code: "fr" },
-  { name: "Sweden",          code: "se" },
-  { name: "Hungary",         code: "hu" },
-  { name: "Netherlands",     code: "nl" },
-  { name: "New Zealand",     code: "nz" },
+const HOT_DEALS = [
+  { label: "USA EB2-NIW - Green Card Pathway",    tag: "HOT" },
+  { label: "USA Visit Visa - B1/B2 Tourist",       tag: "HOT" },
+  { label: "Spain La Tomatina Festival Tour",       tag: "NEW" },
+  { label: "Germany Opportunity Card - Job Search", tag: "HOT" },
+  { label: "Australia Subclass 858 - Global Talent",tag: "NEW" },
+  { label: "Sweden Job Seeker Visa",                tag: "HOT" },
+  { label: "Canada Express Entry - Open Draws",    tag: "NEW" },
+  { label: "UK Skilled Worker Visa",                tag: "HOT" },
 ];
 
-const MarqueeItem = ({ items }: { items: typeof DESTINATIONS }) => (
+const DealsItem = ({ items }: { items: typeof HOT_DEALS }) => (
   <div className="flex items-center">
-    {items.map((dest, i) => (
-      <span key={`${dest.code}-${i}`} className="flex items-center">
-        <span className="flex items-center gap-2.5 px-6 text-brand-sky font-semibold text-sm whitespace-nowrap">
-          <Image
-            src={`https://flagcdn.com/w40/${dest.code}.png`}
-            width={22}
-            height={15}
-            alt={dest.name}
-            className="rounded-sm object-cover shadow-sm flex-shrink-0"
-            unoptimized
-          />
-          {dest.name}
+    {items.map((deal, i) => (
+      <span key={i} className="flex items-center">
+        <span className="flex items-center gap-2 px-5 whitespace-nowrap">
+          <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-full ${deal.tag === "HOT" ? "bg-red-500 text-white" : "bg-brand-gold text-brand-navy"}`}>
+            {deal.tag}
+          </span>
+          <span className="text-white/80 font-medium text-sm">{deal.label}</span>
         </span>
-        <Plane className="w-3.5 h-3.5 text-white/30 mx-2 flex-shrink-0" />
+        <Flame className="w-3 h-3 text-brand-gold/60 mx-2 flex-shrink-0" />
       </span>
     ))}
   </div>
 );
 
 export default function Marquee() {
-  const doubled = [...DESTINATIONS, ...DESTINATIONS];
-
+  const doubled = [...HOT_DEALS, ...HOT_DEALS];
   return (
-    <div className="bg-brand-navy py-3.5 overflow-hidden border-y border-white/5">
-      <div className="flex">
+    <div className="bg-brand-navy overflow-hidden border-y border-white/5">
+      <div className="py-3 flex">
         <div className="flex animate-marquee flex-shrink-0 min-w-full">
-          <MarqueeItem items={doubled} />
+          <DealsItem items={doubled} />
         </div>
         <div className="flex animate-marquee flex-shrink-0 min-w-full">
-          <MarqueeItem items={doubled} />
+          <DealsItem items={doubled} />
         </div>
       </div>
     </div>
   );
 }
-
