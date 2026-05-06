@@ -28,6 +28,10 @@ export const metadata: Metadata = {
     "Beyond Blue IELTS & Consultancy — helping Pakistanis reach the UK, USA, Canada, Europe and beyond. Visit visas, study abroad, skilled immigration, IELTS coaching. 700+ approved cases.",
   keywords:
     "visa consultancy Pakistan, IELTS coaching Rawalpindi, Canada immigration, UK visa, study abroad Pakistan, immigration consultant",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     title: "Beyond Blue IELTS & Consultancy",
     description: "Trust us to get you there. Pakistan's #1 visa & IELTS consultancy.",

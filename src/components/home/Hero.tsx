@@ -1,53 +1,58 @@
 ﻿"use client";
 
 import Link from "next/link";
-import { useState, useRef, useEffect } from "react";
-import { motion } from "framer-motion";
+import Image from "next/image";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
-const HERO_VIDEOS = [
-  "https://cdn.pixabay.com/video/2016/09/14/5293-183619062_large.mp4",
-  "https://cdn.pixabay.com/video/2021/04/01/70377-533600671_large.mp4",
-  "https://cdn.pixabay.com/video/2020/04/18/36510-411342239_large.mp4",
-  "https://cdn.pixabay.com/video/2019/04/09/23116-330288605_large.mp4",
-  "https://cdn.pixabay.com/video/2017/07/23/10874-226635348_large.mp4",
+const HERO_SLIDES = [
+  { image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1920&q=90&auto=format&fit=crop", alt: "Passport and visa stamps" },
+  { image: "https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?w=1920&q=90&auto=format&fit=crop", alt: "Passport with visa stamps" },
+  { image: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=1920&q=90&auto=format&fit=crop", alt: "Travel documents and passport" },
+  { image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=90&auto=format&fit=crop", alt: "Airplane wing over clouds" },
+  { image: "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1920&q=90&auto=format&fit=crop", alt: "Immigration passport stamps" },
+  { image: "https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?w=1920&q=90&auto=format&fit=crop", alt: "Traveller with passport at airport" },
+  { image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=1920&q=90&auto=format&fit=crop", alt: "New York City skyline" },
+  { image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=90&auto=format&fit=crop", alt: "Dubai skyline" },
 ];
 
 export default function Hero() {
-  const [videoIndex, setVideoIndex] = useState(0);
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const v = videoRef.current;
-    if (!v) return;
-    // Must set as DOM property — JSX attribute alone is insufficient in some browsers
-    v.muted = true;
-    v.src = HERO_VIDEOS[videoIndex];
-    v.load();
-    const play = () => { v.play().catch(() => {}); };
-    // Listen to both events — whichever fires first triggers play
-    v.addEventListener("loadedmetadata", play, { once: true });
-    v.addEventListener("canplay", play, { once: true });
-    // Timeout fallback: attempt play after 1.5 s regardless
-    const t = setTimeout(play, 1500);
-    return () => {
-      v.removeEventListener("loadedmetadata", play);
-      v.removeEventListener("canplay", play);
-      clearTimeout(t);
-    };
-  }, [videoIndex]);
+    const t = setInterval(() => setIndex((p) => (p + 1) % HERO_SLIDES.length), 4000);
+    return () => clearInterval(t);
+  }, []);
 
   return (
     <section className="relative h-screen min-h-[600px] overflow-hidden flex items-center justify-center bg-brand-navy">
-      <video
-        ref={videoRef}
-        muted
-        playsInline
-        preload="auto"
-        onEnded={() => setVideoIndex((p) => (p + 1) % HERO_VIDEOS.length)}
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+      {/* Ken Burns animated image slideshow */}
+      <AnimatePresence mode="popLayout">
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, scale: 1.06 }}
+          animate={{ opacity: 1, scale: 1.12 }}
+          exit={{ opacity: 0, scale: 1.0 }}
+          transition={{
+            opacity: { duration: 0.4, ease: "easeOut" },
+            scale: { duration: 5, ease: "linear" },
+          }}
+          className="absolute inset-0"
+        >
+          <Image
+            src={HERO_SLIDES[index].image}
+            alt={HERO_SLIDES[index].alt}
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority={index === 0}
+          />
+        </motion.div>
+      </AnimatePresence>
+
       <div className="absolute inset-0 bg-brand-navy/60" />
+
       <div className="relative z-10 text-center px-4 w-full max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
@@ -80,15 +85,17 @@ export default function Hero() {
           <Link href="/services" className="btn-outline-white text-base px-10 py-4">Our Services</Link>
         </motion.div>
       </div>
+
       <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-10 flex gap-2">
-        {HERO_VIDEOS.map((_, i) => (
+        {HERO_SLIDES.map((_, i) => (
           <button
             key={i}
-            onClick={() => setVideoIndex(i)}
-            className={`h-1 rounded-full transition-all duration-300 ${i === videoIndex ? "w-8 bg-brand-gold" : "w-2 bg-white/40"}`}
+            onClick={() => setIndex(i)}
+            className={`h-1 rounded-full transition-all duration-300 ${i === index ? "w-8 bg-brand-gold" : "w-2 bg-white/40"}`}
           />
         ))}
       </div>
+
       <motion.div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
         animate={{ y: [0, 10, 0] }}
