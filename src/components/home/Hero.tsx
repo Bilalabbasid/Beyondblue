@@ -1,23 +1,35 @@
 ﻿"use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
+// Passport / immigration / travel themed HD videos from Pixabay (free license)
+const VIDEOS = [
+  "https://cdn.pixabay.com/video/2018/03/20/15129-261402885_large.mp4",   // passport & documents
+  "https://cdn.pixabay.com/video/2020/09/22/50611-460792415_large.mp4",   // close-up stamp action
+  "https://cdn.pixabay.com/video/2022/10/13/134789-760690952_large.mp4",  // airport departure board
+  "https://cdn.pixabay.com/video/2015/11/26/1383-147055496_large.mp4",    // airport terminal timelapse
+  "https://cdn.pixabay.com/video/2020/02/27/32948-395456400_large.mp4",   // plane take-off
+];
+
 export default function Hero() {
+  const [idx, setIdx] = useState(0);
+
   return (
     <section className="relative h-screen min-h-[600px] overflow-hidden flex items-center justify-center bg-brand-navy">
-      {/* HD video background */}
+      {/* Video playlist — key forces remount + autoplay on each new video */}
       <video
+        key={idx}
         autoPlay
         muted
-        loop
         playsInline
+        onEnded={() => setIdx((i) => (i + 1) % VIDEOS.length)}
         className="absolute inset-0 w-full h-full object-cover"
-        poster="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=80&auto=format&fit=crop"
+        poster="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1920&q=80&auto=format&fit=crop"
       >
-        <source src="https://cdn.pixabay.com/video/2015/11/26/1383-147055496_large.mp4" type="video/mp4" />
-        <source src="https://cdn.pixabay.com/video/2020/02/27/32948-395456400_large.mp4" type="video/mp4" />
+        <source src={VIDEOS[idx]} type="video/mp4" />
       </video>
 
       <div className="absolute inset-0 bg-brand-navy/55" />
