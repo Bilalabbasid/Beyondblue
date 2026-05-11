@@ -14,7 +14,7 @@ function MonumentCard({ country }: { country: typeof COUNTRIES[number] }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
   return (
-    <motion.div ref={ref} variants={staggerItem} className="w-full sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)]">
+      <motion.div ref={ref} variants={staggerItem} className="w-full sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)] min-w-0">
       <Tilt
         tiltMaxAngleX={10}
         tiltMaxAngleY={10}

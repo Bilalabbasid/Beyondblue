@@ -26,11 +26,11 @@ export const STATS = [
 ] as const;
 
 export const ACHIEVEMENTS = [
-  { icon: "Users", value: "700+", label: "Clients Served", color: "#1565C0" },
-  { icon: "Globe2", value: "40+", label: "Countries Covered", color: "#42A5F5" },
+  { icon: "Users", value: "300+", label: "Clients Served", color: "#1565C0" },
+  { icon: "Globe2", value: "30+", label: "Countries Covered", color: "#42A5F5" },
   { icon: "GraduationCap", value: "10+", label: "Study Destinations", color: "#FFB300" },
-  { icon: "UserCheck", value: "15+", label: "Expert Consultants", color: "#00C853" },
-  { icon: "FileCheck", value: "50+", label: "Visa Pathways", color: "#1E88E5" },
+  { icon: "UserCheck", value: "8+", label: "Expert Consultants", color: "#00C853" },
+  { icon: "FileCheck", value: "20+", label: "Visa Pathways", color: "#1E88E5" },
   { icon: "Star", value: "100%", label: "Client Satisfaction", color: "#FFB300" },
 ] as const;
 

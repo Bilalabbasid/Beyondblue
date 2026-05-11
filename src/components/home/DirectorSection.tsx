@@ -19,7 +19,7 @@ export default function DirectorSection() {
           className="absolute inset-0"
         >
           <Image
-            src="/managing%20director.jpeg"
+            src="/md-photo.jpeg"
             alt="Beyond Blue — Managing Director, immigration consultant Rawalpindi"
             fill
             className="object-cover object-top"
@@ -31,7 +31,7 @@ export default function DirectorSection() {
       </div>
 
       {/* Right — company pitch */}
-      <div className="bg-white flex items-center px-8 sm:px-12 lg:px-16 py-14">
+      <div className="bg-white flex items-center px-5 sm:px-10 lg:px-16 py-10 sm:py-14">
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -41,7 +41,7 @@ export default function DirectorSection() {
           <p className="text-brand text-xs font-bold uppercase tracking-[0.2em] mb-3">
             Beyond Blue IELTS &amp; Consultancy
           </p>
-          <h2 className="font-display font-black text-3xl md:text-4xl text-brand-navy uppercase mb-6 leading-tight">
+          <h2 className="font-display font-black text-2xl sm:text-3xl md:text-4xl text-brand-navy uppercase mb-4 sm:mb-6 leading-tight">
             Managing Director
           </h2>
 

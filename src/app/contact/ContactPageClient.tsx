@@ -434,7 +434,7 @@ function MultiStepForm() {
   ];
 
   return (
-    <div className="bg-white rounded-3xl shadow-2xl border border-slate-100 p-8 lg:p-10">
+    <div className="bg-white rounded-3xl shadow-2xl border border-slate-100 p-5 sm:p-8 lg:p-10">
       {showConfetti && <Confetti />}
 
       {!submitted ? (
@@ -444,7 +444,7 @@ function MultiStepForm() {
             <div className="flex items-center gap-2 mb-3">
               {steps.map((s, i) => (
                 <div key={i} className="flex items-center gap-2 flex-1 last:flex-none">
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${
+                  <div className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${
                     i + 1 < step ? "bg-brand-green text-white" :
                     i + 1 === step ? "bg-brand text-white shadow-lg shadow-brand/30" :
                     "bg-slate-100 text-slate-400"

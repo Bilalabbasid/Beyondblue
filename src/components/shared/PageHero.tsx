@@ -26,7 +26,7 @@ export default function PageHero({
   const words = title.split(" ");
 
   return (
-    <section className="relative h-[55vh] min-h-[420px] flex items-end pb-12 md:items-center md:pb-0 overflow-hidden pt-[80px] lg:pt-[100px]">
+    <section className="relative h-[42vh] sm:h-[52vh] min-h-[300px] sm:min-h-[380px] flex items-end pb-8 sm:pb-12 md:items-center md:pb-0 overflow-hidden pt-[72px] sm:pt-[80px] lg:pt-[100px]">
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
@@ -63,7 +63,7 @@ export default function PageHero({
             variants={wordStaggerContainer}
             initial="hidden"
             animate="visible"
-            className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-5"
+            className="font-display font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-3 sm:mb-5"
           >
             {words.map((word, i) => (
               <motion.span key={i} variants={wordStaggerChild} className="inline-block mr-[0.3em]">
@@ -77,7 +77,7 @@ export default function PageHero({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="text-white/80 text-lg md:text-xl leading-relaxed"
+              className="text-white/80 text-sm sm:text-base md:text-xl leading-relaxed"
             >
               {subtitle}
             </motion.p>

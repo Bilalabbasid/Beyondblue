@@ -58,7 +58,7 @@ export default function Achievements() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-5">
           {ACHIEVEMENTS.map((item, i) => {
             const Icon = ICON_MAP[item.icon] ?? Star;
             return (
@@ -69,7 +69,7 @@ export default function Achievements() {
                 transition={{ duration: 0.55, delay: 0.15 + i * 0.08, ease: [0.22, 1, 0.36, 1] }}
                 className="group relative"
               >
-                <div className="relative h-full rounded-2xl p-7 border border-white/8 bg-white/5 hover:bg-white/10 hover:border-brand-sky/40 transition-all duration-400 overflow-hidden cursor-default backdrop-blur-sm">
+                  <div className="relative h-full rounded-2xl p-4 sm:p-7 border border-white/8 bg-white/5 hover:bg-white/10 hover:border-brand-sky/40 transition-all duration-400 overflow-hidden cursor-default backdrop-blur-sm">
                   {/* Glow on hover */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
                     style={{ background: `radial-gradient(circle at 30% 30%, ${item.color}18 0%, transparent 70%)` }}
@@ -88,14 +88,14 @@ export default function Achievements() {
                   </div>
 
                   {/* Value */}
-                  <div className="font-display font-bold text-4xl md:text-5xl mb-2 leading-none"
+                  <div className="font-display font-bold text-3xl sm:text-4xl md:text-5xl mb-2 leading-none"
                     style={{ color: item.color }}
                   >
                     {item.value}
                   </div>
 
                   {/* Label */}
-                  <div className="text-white/60 text-sm font-medium tracking-wide">
+                  <div className="text-white/60 text-xs sm:text-sm font-medium tracking-wide">
                     {item.label}
                   </div>
 

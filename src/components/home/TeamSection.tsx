@@ -23,7 +23,7 @@ export default function TeamSection() {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
   return (
-    <section ref={ref} className="bg-brand-bg-light py-20 px-4">
+    <section ref={ref} className="bg-brand-bg-light py-12 sm:py-20 px-4">
       <div className="container-wide">
         {/* Heading */}
         <motion.div
@@ -46,7 +46,7 @@ export default function TeamSection() {
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="bg-white rounded-2xl shadow-md overflow-hidden w-full sm:w-[340px] lg:w-[380px]"
+              className="bg-white rounded-2xl shadow-md overflow-hidden w-full sm:w-[340px] lg:w-[380px] max-w-sm sm:max-w-none"
             >
               <div className="relative h-80 w-full">
                 <Image

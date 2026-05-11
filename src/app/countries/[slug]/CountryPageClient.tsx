@@ -77,7 +77,7 @@ export default function CountryPageClient({ country }: Props) {
               variants={wordStaggerContainer}
               initial="hidden"
               animate="visible"
-              className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4 md:mb-6"
+              className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-4 md:mb-6"
             >
               {country.name.split(" ").map((word, i) => (
                 <motion.span key={i} variants={wordStaggerChild} className="inline-block mr-[0.2em]">
@@ -90,7 +90,7 @@ export default function CountryPageClient({ country }: Props) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9 }}
-              className="text-white/80 text-sm sm:text-base md:text-xl mb-3 md:mb-4"
+              className="text-white/80 text-sm md:text-xl mb-3 md:mb-4"
             >
               {country.description}
             </motion.p>
