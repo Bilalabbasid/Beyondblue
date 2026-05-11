@@ -191,6 +191,13 @@ export default function CountryPageClient({ country }: Props) {
 
               {availableTabs.map((key) => (
                 <TabsContent key={key} value={key}>
+                  {/* Overview paragraph if available */}
+                  {country.overviews?.[key] && (
+                    <div className="bg-brand-bg-light rounded-xl p-5 mb-8 border-l-4 border-brand-sky">
+                      <h4 className="font-semibold text-brand-navy mb-2 text-base">Overview</h4>
+                      <p className="text-slate-600 text-sm leading-relaxed">{country.overviews[key]}</p>
+                    </div>
+                  )}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
                       <h4 className="font-semibold text-brand-navy mb-4 text-lg">Requirements</h4>

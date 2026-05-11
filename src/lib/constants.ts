@@ -58,6 +58,12 @@ export interface CountryData {
     work: string[];
     pr: string[];
   };
+  overviews?: {
+    visit?: string;
+    study?: string;
+    work?: string;
+    pr?: string;
+  };
   embassy: {
     address: string;
     phone: string;
@@ -127,6 +133,9 @@ export const COUNTRIES: CountryData[] = [
       study: ["I-20", "SEVIS receipt", "Financial statements", "Transcripts", "Test scores"],
       work: ["Petition approval I-797", "Labor condition application", "Degree certificates", "Experience letters"],
       pr: ["Valid passport", "Updated CV or resume showing education and work history", "Degree certificates, transcripts, and academic records", "Experience letters from employers", "Professional licenses or memberships (if available)", "Publications, citations, patents, awards, or media features", "Recommendation letters from experts in the field", "Personal statement or proposed endeavor statement", "Form I-140 and supporting immigration forms", "Medical exam and police clearance"],
+    },
+    overviews: {
+      pr: "EB2-NIW is a U.S. immigration program for professionals whose work can benefit the national interest of the United States. It is popular among researchers, engineers, doctors, entrepreneurs, IT experts, and other highly qualified professionals because it can allow a person to apply without a permanent employer sponsor. To qualify, the applicant generally needs to meet the EB-2 level first — such as having an advanced degree or exceptional ability — and then show that their work has substantial merit, national importance, and that they are well positioned to continue that work in the U.S.",
     },
     embassy: {
       address: "US Embassy, Diplomatic Enclave, Ramna 5, Islamabad",
@@ -203,6 +212,9 @@ export const COUNTRIES: CountryData[] = [
       study: ["CoE", "IELTS certificate", "Financial evidence", "GTE statement", "OSHC insurance"],
       work: ["Sponsorship nomination", "Skills assessment", "Employment contract"],
       pr: ["Valid passport", "Skills assessment or portfolio of exceptional achievements", "Evidence of international recognition (awards, publications, patents, media)", "Updated CV or portfolio of achievements", "IELTS or English proficiency certificate", "Nomination from eligible Australian organization (Subclass 858)", "Evidence of contribution to priority sector", "Medical exam report", "Police clearance certificate"],
+    },
+    overviews: {
+      pr: "The National Innovation Visa Subclass 858 is an Australian permanent residence pathway for exceptionally talented individuals. It is a permanent visa for people with outstanding achievements who can contribute to Australia's future prosperity, including researchers, entrepreneurs, innovative investors, athletes, and creatives. The visa replaced the earlier Global Talent style route in late 2024 and is aimed at people who can make significant contributions in priority areas. Successful applicants may live and work permanently in Australia.",
     },
     embassy: {
       address: "Australian High Commission, Plot No. 17-A, Sector G-5/4, Islamabad",
@@ -317,6 +329,9 @@ export const COUNTRIES: CountryData[] = [
       work: ["Valid passport", "Academic degree or vocational qualification documents", "Recognition proof in Germany (if using recognized qualification route)", "Statement of Comparability or qualification recognition evidence", "Language proof (German A1 or English B2 for points route)", "Evidence for points claimed (work experience, age, language, prior Germany stay, shortage occupation)", "Proof of financial resources (blocked account or declaration of commitment)", "CV or resume"],
       pr: ["Residence permits history", "Language certificate B1", "Employment record", "Pension statements"],
     },
+    overviews: {
+      work: "The Germany Opportunity Card is a residence route for non-EU nationals who want to come to Germany to look for a job. There are two main options: either the applicant has a qualification recognized in Germany, or the applicant qualifies through the points system with at least six points. A person must also show enough financial resources for the stay, such as a blocked account with at least €1,091 net per month in 2026 or a declaration of commitment. The card is usually issued for a maximum of one year and allows job search, part-time work up to 20 hours per week, and short job trials.",
+    },
     embassy: {
       address: "German Embassy, Ramna 5, Diplomatic Enclave, Islamabad",
       phone: "+92-51-208-5800",
@@ -390,6 +405,9 @@ export const COUNTRIES: CountryData[] = [
       study: ["Admission notice", "IELTS", "Financial proof (bank/scholarship)"],
       work: ["Valid passport with copies of all relevant pages", "Degree certificate showing completed second-cycle qualification", "Transcript showing courses included in the education", "Proof of financial support (bank statements showing SEK 13,000/month)", "Proof of comprehensive health insurance valid in Sweden", "Certified translations if documents are not in Swedish or English", "Signed power of attorney for verification of study documents by Swedish authorities", "Embassy selection details for passport presentation"],
       pr: ["Residence permits", "Language certificate", "Income proof"],
+    },
+    overviews: {
+      work: "The Sweden Job Seeker Visa is generally used by highly qualified individuals who have completed studies equivalent to a second-cycle qualification and want to come to Sweden to look for work or explore starting a business. Official Swedish guidance states that the applicant must apply from outside Sweden and must be able to support themselves financially during the stay. This permit can be granted for a maximum of nine months, but never longer than the passport validity. Sweden also requires comprehensive health insurance and proof of funds of at least SEK 13,000 per month for the intended stay, plus return travel funds.",
     },
     embassy: {
       address: "Swedish Embassy, 6-A, Street 17, F-8/2, Islamabad",
@@ -536,6 +554,9 @@ export const COUNTRIES: CountryData[] = [
       work: ["Valid passport", "Educational certificates and degree documents", "CV or resume", "Work experience letters and employer references", "Documents proving special qualifications or skills", "Language certificates (if applicable to points)", "Evidence supporting points calculation (research achievements, awards, special training)", "Application forms and embassy submission documents"],
       pr: ["Residence permit history", "Language certificate B1", "Income and financial proof", "Police clearance certificate"],
     },
+    overviews: {
+      work: "The Austria Job Seeker Visa is connected with Austria's points-based skilled migration system under the Red-White-Red Card framework. It is mainly relevant for highly qualified workers who can score enough points based on qualifications, skills, experience, and other legal criteria. Official Austrian guidance explains that applicants must reach the required points threshold under the legally defined system. It is commonly used by very highly qualified workers who want to enter Austria and search for employment opportunities that match their background.",
+    },
     embassy: {
       address: "Austrian Embassy, Plot 13, Street 88, G-6/3, Islamabad",
       phone: "+92-51-282-9041",
@@ -571,6 +592,9 @@ export const COUNTRIES: CountryData[] = [
       study: [],
       work: ["Valid passport or identity documents", "Degree certificates and academic records (medical or healthcare field)", "Professional license or registration from home country", "Work experience documents", "Documents required for authorization or licensing assessment", "Certified translations where required", "Additional immigration documents depending on the final residence or work application stage"],
       pr: ["Residence permit history", "Language certificate", "Income proof", "Police clearance certificate"],
+    },
+    overviews: {
+      work: "The Norway Medical Program is a pathway for foreign healthcare professionals who want to work in Norway. Official Norwegian guidance states that if a person wants to work in Norway as healthcare personnel, they must apply for Norwegian authorization or license before they can start working in protected healthcare professions. This route is not just a visa process — it often involves two stages: professional authorization from Norwegian authorities, and then the appropriate work or residence permission if required.",
     },
     embassy: {
       address: "Royal Norwegian Embassy, 25 Street 19, F-6/2, Islamabad",
