@@ -11,7 +11,7 @@ export default function DirectorSection() {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2" ref={ref}>
       {/* Left — large portrait photo */}
-      <div className="relative min-h-[380px] lg:min-h-[560px] overflow-hidden bg-slate-100">
+      <div className="relative min-h-[500px] lg:min-h-[640px] overflow-hidden bg-slate-100">
         <motion.div
           initial={{ scale: 1.08 }}
           animate={inView ? { scale: 1 } : {}}
@@ -22,7 +22,7 @@ export default function DirectorSection() {
             src="/md-photo.jpeg"
             alt="Beyond Blue — Managing Director, immigration consultant Rawalpindi"
             fill
-            className="object-cover object-top"
+            className="object-cover object-[center_30%]"
             sizes="(max-width: 1024px) 100vw, 50vw"
             unoptimized
           />
