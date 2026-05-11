@@ -23,12 +23,12 @@ export default function Home() {
       <Hero />
       <Marquee />
       <DirectorSection />
-      <TeamSection />
       <VideoShowcase />
       <Achievements />
       <ServicesGrid />
       <MonumentGrid />
       <HowItWorks />
+      <TeamSection />
       <Testimonials />
       <CTABanner />
     </>
