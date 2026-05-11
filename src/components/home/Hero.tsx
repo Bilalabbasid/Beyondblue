@@ -7,8 +7,8 @@ import { ChevronDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen min-h-[600px] overflow-hidden flex items-center justify-center bg-brand-navy">
-      {/* Local video from /public/0511.mp4 — loops forever */}
+    <section className="relative h-screen min-h-[600px] overflow-hidden bg-brand-navy">
+      {/* Local video — no overlay blur, just a light dark tint */}
       <video
         autoPlay
         muted
@@ -19,9 +19,10 @@ export default function Hero() {
         <source src="/0511.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute inset-0 bg-brand-navy/40" />
+      {/* Thin dark tint only — keeps video crisp */}
+      <div className="absolute inset-0 bg-black/30" />
 
-      {/* Beyond Blue logo — top left corner */}
+      {/* Beyond Blue logo — top left */}
       <div className="absolute top-24 left-6 sm:left-10 z-20 flex items-center gap-3">
         <Image src="/logo.svg" alt="Beyond Blue" width={40} height={40} className="drop-shadow-lg" />
         <div className="leading-tight">
@@ -32,8 +33,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* CTA buttons centred */}
-      <div className="relative z-10 flex flex-wrap items-center justify-center gap-4">
+      {/* CTA buttons — bottom centre */}
+      <div className="absolute bottom-16 left-0 right-0 z-20 flex justify-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -46,11 +47,11 @@ export default function Hero() {
       </div>
 
       <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
-        animate={{ y: [0, 10, 0] }}
+        className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20"
+        animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
       >
-        <ChevronDown className="w-8 h-8 text-white/50" />
+        <ChevronDown className="w-7 h-7 text-white/40" />
       </motion.div>
     </section>
   );

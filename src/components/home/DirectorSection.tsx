@@ -45,19 +45,13 @@ export default function DirectorSection() {
           </h2>
 
           <p className="text-slate-600 leading-relaxed mb-4 text-sm md:text-base">
-            That&apos;s where Beyond Blue comes in. With over 7 years of expertise, we have been a career facilitation force in navigating the complexities of immigration. With the help of competent professionals and holistic knowledge, we are providing unparalleled immigration services in Pakistan.
+            At Beyond Blue IELTS and Consultancy, our mission is to bridge the gap between Pakistani talent and global opportunities through transparent, professional, and trustworthy consultancy services.
           </p>
           <p className="text-slate-600 leading-relaxed mb-4 text-sm md:text-base">
-            At Beyond Blue, we understand that each individual&apos;s journey is unique. That&apos;s why we offer personalized advisory services to help you make the best decisions for your future. Our team will analyze your case and provide tailored solutions specific to your needs.
+            We aim to remove the service gap in Pakistan&apos;s visa and immigration industry by providing honest guidance for education, visit visas, immigration, and international pathways.
           </p>
           <p className="text-slate-600 leading-relaxed mb-8 text-sm md:text-base">
-            We specialize in{" "}
-            <Link href="/countries/usa" className="text-brand font-semibold hover:underline">USA EB2-NIW</Link>,{" "}
-            <Link href="/countries/canada" className="text-brand font-semibold hover:underline">Canada immigration</Link>,{" "}
-            <Link href="/countries/australia" className="text-brand font-semibold hover:underline">Australia Subclass 858</Link>,{" "}
-            <Link href="/countries/germany" className="text-brand font-semibold hover:underline">Germany Opportunity Card</Link>,
-            and <Link href="/countries/uk" className="text-brand font-semibold hover:underline">UK Skilled Worker</Link>.
-            Don&apos;t hesitate to reach out — we value every client and offer a personalized approach to all visa and immigration inquiries.
+            Our vision is to empower Pakistani youth with global opportunities and establish Beyond Blue as one of the leading and most trusted consultancy firms in Pakistan, built on integrity, transparency, and client success.
           </p>
 
           <div className="flex flex-wrap gap-3">
