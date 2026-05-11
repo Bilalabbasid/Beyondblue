@@ -51,7 +51,7 @@ const NAV_LINKS = [
       { label: "Hungary Study Visa", href: "/countries/hungary" },
     ],
   },
-  { label: "IELTS", href: "/ielts" },
+  { label: "Career", href: "/career" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
