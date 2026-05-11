@@ -1,65 +1,43 @@
 ﻿"use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
-// Passport / immigration / travel themed HD videos from Pixabay (free license)
-const VIDEOS = [
-  "https://cdn.pixabay.com/video/2018/03/20/15129-261402885_large.mp4",   // passport & documents
-  "https://cdn.pixabay.com/video/2020/09/22/50611-460792415_large.mp4",   // close-up stamp action
-  "https://cdn.pixabay.com/video/2022/10/13/134789-760690952_large.mp4",  // airport departure board
-  "https://cdn.pixabay.com/video/2015/11/26/1383-147055496_large.mp4",    // airport terminal timelapse
-  "https://cdn.pixabay.com/video/2020/02/27/32948-395456400_large.mp4",   // plane take-off
-];
-
 export default function Hero() {
-  const [idx, setIdx] = useState(0);
-
   return (
     <section className="relative h-screen min-h-[600px] overflow-hidden flex items-center justify-center bg-brand-navy">
-      {/* Video playlist — key forces remount + autoplay on each new video */}
+      {/* Local video from /public/0511.mp4 — loops forever */}
       <video
-        key={idx}
         autoPlay
         muted
+        loop
         playsInline
-        onEnded={() => setIdx((i) => (i + 1) % VIDEOS.length)}
         className="absolute inset-0 w-full h-full object-cover"
-        poster="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1920&q=80&auto=format&fit=crop"
       >
-        <source src={VIDEOS[idx]} type="video/mp4" />
+        <source src="/0511.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute inset-0 bg-brand-navy/55" />
+      <div className="absolute inset-0 bg-brand-navy/40" />
 
-      <div className="relative z-10 text-center px-4 w-full max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 60 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <h1
-            className="font-display font-black text-white leading-[0.88] tracking-tight mb-6 uppercase"
-            style={{ fontSize: "clamp(4.5rem, 15vw, 15rem)" }}
-          >
-            BEYOND<br />
-            <span className="text-brand-sky italic">BLUE</span>
-          </h1>
-        </motion.div>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.45, duration: 0.6 }}
-          className="text-white/80 text-base sm:text-xl md:text-2xl font-medium tracking-widest uppercase mb-10"
-        >
-          Pakistan&apos;s Trusted Visa &amp; IELTS Consultancy
-        </motion.p>
+      {/* Beyond Blue logo — top left corner */}
+      <div className="absolute top-24 left-6 sm:left-10 z-20 flex items-center gap-3">
+        <Image src="/logo.svg" alt="Beyond Blue" width={40} height={40} className="drop-shadow-lg" />
+        <div className="leading-tight">
+          <p className="text-white font-display font-black text-xl sm:text-2xl tracking-tight uppercase drop-shadow-lg">
+            Beyond <span className="text-brand-sky italic">Blue</span>
+          </p>
+          <p className="text-white/60 text-[10px] sm:text-xs tracking-widest uppercase">IELTS &amp; Consultancy</p>
+        </div>
+      </div>
+
+      {/* CTA buttons centred */}
+      <div className="relative z-10 flex flex-wrap items-center justify-center gap-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.65, duration: 0.5 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
           className="flex flex-wrap items-center justify-center gap-4"
         >
           <Link href="/contact" className="btn-gold text-base px-10 py-4">Free Assessment</Link>
