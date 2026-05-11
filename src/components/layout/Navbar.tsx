@@ -111,7 +111,7 @@ export default function Navbar() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
               <Link href="/" className="flex-shrink-0 mr-6">
-                <Image src="/logo.svg" alt="Beyond Blue IELTS & Consultancy" width={150} height={46} className="h-9 w-auto" priority />
+                <Image src="/navbar%20logo.jpeg" alt="Beyond Blue IELTS & Consultancy" width={150} height={46} className="h-9 w-auto" priority unoptimized />
               </Link>
 
               <nav className="hidden xl:flex items-center gap-0.5 flex-1">
@@ -158,7 +158,7 @@ export default function Navbar() {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm" onClick={() => setMobileOpen(false)} />
             <motion.div variants={drawerVariants} initial="hidden" animate="visible" exit="exit" className="fixed right-0 top-0 bottom-0 z-50 w-80 max-w-[90vw] bg-brand-navy flex flex-col shadow-2xl">
               <div className="flex items-center justify-between px-6 py-4 border-b border-white/10">
-                <Image src="/logo.svg" alt="Beyond Blue" width={130} height={40} className="h-8 w-auto" />
+                <Image src="/navbar%20logo.jpeg" alt="Beyond Blue" width={130} height={40} className="h-8 w-auto" unoptimized />
                 <button onClick={() => setMobileOpen(false)} className="text-white/60 hover:text-white p-1 transition-colors"><X className="w-5 h-5" /></button>
               </div>
 
