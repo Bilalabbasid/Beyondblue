@@ -2,6 +2,7 @@
 import Hero from "@/components/home/Hero";
 import Marquee from "@/components/home/Marquee";
 import DirectorSection from "@/components/home/DirectorSection";
+import TeamSection from "@/components/home/TeamSection";
 import VideoShowcase from "@/components/home/VideoShowcase";
 import Achievements from "@/components/home/Achievements";
 import ServicesGrid from "@/components/home/ServicesGrid";
@@ -22,6 +23,7 @@ export default function Home() {
       <Hero />
       <Marquee />
       <DirectorSection />
+      <TeamSection />
       <VideoShowcase />
       <Achievements />
       <ServicesGrid />

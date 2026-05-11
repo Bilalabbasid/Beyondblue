@@ -19,11 +19,12 @@ export default function DirectorSection() {
           className="absolute inset-0"
         >
           <Image
-            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=900&q=85&auto=format&fit=crop&crop=top"
+            src="/managing%20director.jpeg"
             alt="Beyond Blue — Managing Director, immigration consultant Rawalpindi"
             fill
             className="object-cover object-top"
             sizes="(max-width: 1024px) 100vw, 50vw"
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white/10" />
         </motion.div>
