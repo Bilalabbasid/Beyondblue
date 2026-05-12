@@ -11,7 +11,7 @@ export default function DirectorSection() {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2" ref={ref}>
       {/* Left — large portrait photo */}
-      <div className="relative min-h-[500px] lg:min-h-[640px] overflow-hidden bg-slate-100">
+      <div className="relative min-h-[500px] lg:min-h-[640px] overflow-hidden bg-brand-bg-light">
         <motion.div
           initial={{ scale: 1.08 }}
           animate={inView ? { scale: 1 } : {}}
@@ -31,7 +31,7 @@ export default function DirectorSection() {
       </div>
 
       {/* Right — company pitch */}
-      <div className="bg-white flex items-center px-5 sm:px-10 lg:px-16 py-10 sm:py-14">
+      <div className="bg-brand-bg-light flex items-center px-5 sm:px-10 lg:px-16 py-10 sm:py-14">
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}

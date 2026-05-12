@@ -68,7 +68,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-xs">
-              Pakistan&apos;s trusted IELTS and immigration consultancy. 7+ years, 700+ approvals, 40+ countries served.
+              Pakistan&apos;s trusted IELTS and immigration consultancy. 7+ years, 300+ approvals, 30+ countries served.
             </p>
             <p className="text-brand-gold text-sm italic font-medium mb-6">
               &quot;{BRAND.slogan}&quot;

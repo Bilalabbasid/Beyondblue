@@ -87,7 +87,7 @@ export default function AboutPageClient() {
             <cite className="text-white/50 text-sm not-italic">— Beyond Blue, est. in Rawalpindi</cite>
             <div className="mt-8 h-px bg-white/10" />
             <p className="text-white/60 text-sm leading-relaxed mt-6">
-              Pakistan&apos;s most trusted IELTS and immigration consultancy with 7+ years of expertise and 700+ successful approvals.
+              Pakistan&apos;s most trusted IELTS and immigration consultancy with 7+ years of expertise and 300+ successful approvals.
             </p>
           </motion.div>
         </div>
@@ -116,7 +116,7 @@ export default function AboutPageClient() {
               We believe that looking for perfect opportunities for you is our utmost responsibility. We work according to your profile and search for the best opportunities in Pakistan and overseas. Beyond Blue also works in study visas — we help you find the best universities around the globe.
             </p>
             <p className="text-slate-500 leading-relaxed mb-8">
-              We also deal in tour packages, visit visas, and our services include Hajj &amp; Umrah. Founded in Rawalpindi with 7+ years of experience and 700+ successful cases, we remain Pakistan&apos;s most trusted IELTS and immigration consultancy.
+              We also deal in tour packages, visit visas, and our services include Hajj &amp; Umrah. Founded in Rawalpindi with 7+ years of experience and 300+ successful cases, we remain Pakistan&apos;s most trusted IELTS and immigration consultancy.
             </p>
             <Link href="/contact" className="btn-gold inline-block">
               Book Free Consultation →

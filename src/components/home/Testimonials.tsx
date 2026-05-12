@@ -50,9 +50,9 @@ export default function Testimonials() {
   }, [emblaApi]);
 
   return (
-    <section className="relative bg-brand-bg-light section-padding overflow-hidden" ref={ref}>
+    <section className="relative bg-brand-navy section-padding overflow-hidden" ref={ref}>
       {/* dot pattern */}
-      <div className="absolute inset-0 opacity-[0.35]" style={{ backgroundImage: "radial-gradient(circle, #42A5F520 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
+      <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "radial-gradient(#fff 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
       {/* colour blobs */}
       <div className="absolute -top-24 right-0 w-96 h-96 bg-brand-sky/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 -left-24 w-80 h-80 bg-brand/10 rounded-full blur-3xl pointer-events-none" />
@@ -67,6 +67,7 @@ export default function Testimonials() {
           label="Client Stories"
           title="Real Stories, Real Approvals"
           subtitle="Don't take our word for it — hear directly from the people whose lives we've changed."
+          light
         />
 
         <motion.div
@@ -133,7 +134,7 @@ export default function Testimonials() {
           <div className="flex items-center justify-center gap-4 mt-8">
             <button
               onClick={scrollPrev}
-              className="w-10 h-10 rounded-full border border-brand/30 flex items-center justify-center text-brand hover:bg-brand hover:text-white transition-colors"
+              className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white/70 hover:bg-white/10 hover:text-white transition-colors"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
@@ -142,7 +143,7 @@ export default function Testimonials() {
                 <button
                   key={i}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    i === selectedIndex ? "bg-brand w-6" : "bg-slate-200"
+                    i === selectedIndex ? "bg-brand-sky w-6" : "bg-white/20"
                   }`}
                   onClick={() => {
                     emblaApi?.scrollTo(i);
@@ -153,7 +154,7 @@ export default function Testimonials() {
             </div>
             <button
               onClick={scrollNext}
-              className="w-10 h-10 rounded-full border border-brand/30 flex items-center justify-center text-brand hover:bg-brand hover:text-white transition-colors"
+              className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white/70 hover:bg-white/10 hover:text-white transition-colors"
             >
               <ChevronRight className="w-5 h-5" />
             </button>
@@ -163,11 +164,11 @@ export default function Testimonials() {
         {/* Visa Approvals Gallery */}
         <div className="mt-20">
           <div className="text-center mb-10">
-            <span className="label-small text-brand-green uppercase tracking-widest mb-3 block">Real Approvals</span>
-            <h3 className="font-display font-bold text-2xl md:text-3xl text-brand-navy">
+            <span className="label-small text-brand-sky uppercase tracking-widest mb-3 block">Real Approvals</span>
+            <h3 className="font-display font-bold text-2xl md:text-3xl text-white">
               Visa Approvals That Speak for Themselves
             </h3>
-            <p className="text-slate-500 mt-3 max-w-xl mx-auto text-sm">
+            <p className="text-white/50 mt-3 max-w-xl mx-auto text-sm">
               A snapshot of genuine approvals — from USA to Australia, UK to Canada — secured by our clients.
             </p>
           </div>

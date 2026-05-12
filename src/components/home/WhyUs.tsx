@@ -76,7 +76,7 @@ export default function WhyUs() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-slate-500 text-lg leading-relaxed"
           >
-            700+ clients chose us — here&apos;s exactly why they kept coming back and referring their family.
+            300+ clients chose us — here&apos;s exactly why they kept coming back and referring their family.
           </motion.p>
         </div>
 
@@ -148,7 +148,7 @@ export default function WhyUs() {
         >
           <div>
             <p className="text-white font-display font-bold text-xl">Ready to experience the difference?</p>
-            <p className="text-white/50 text-sm mt-1">Join 700+ clients who trusted Beyond Blue with their journey.</p>
+            <p className="text-white/50 text-sm mt-1">Join 300+ clients who trusted Beyond Blue with their journey.</p>
           </div>
           <a
             href="/contact"

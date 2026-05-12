@@ -59,7 +59,7 @@ export default function HowItWorks() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-white/50 text-lg"
           >
-            A clear, proven process that has delivered 700+ successful approvals.
+            A clear, proven process that has delivered 300+ successful approvals.
           </motion.p>
         </div>
 

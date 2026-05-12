@@ -25,7 +25,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Beyond Blue IELTS & Consultancy | Pakistan's Trusted Visa Experts",
   description:
-    "Beyond Blue IELTS & Consultancy — helping Pakistanis reach the UK, USA, Canada, Europe and beyond. Visit visas, study abroad, skilled immigration, IELTS coaching. 700+ approved cases.",
+    "Beyond Blue IELTS & Consultancy — helping Pakistanis reach the UK, USA, Canada, Europe and beyond. Visit visas, study abroad, skilled immigration, IELTS coaching. 300+ approved cases.",
   keywords:
     "visa consultancy Pakistan, IELTS coaching Rawalpindi, Canada immigration, UK visa, study abroad Pakistan, immigration consultant",
   icons: {

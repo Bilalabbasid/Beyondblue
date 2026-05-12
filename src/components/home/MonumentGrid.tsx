@@ -78,18 +78,17 @@ export default function MonumentGrid() {
   const { ref, inView } = useInView({ threshold: 0.05, triggerOnce: true });
 
   return (
-    <section className="relative bg-brand-navy section-padding overflow-hidden">
+    <section className="relative bg-white section-padding overflow-hidden">
       {/* dot grid */}
-      <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "radial-gradient(#fff 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
+      <div className="absolute inset-0 opacity-[0.35]" style={{ backgroundImage: "radial-gradient(circle, #42A5F520 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
       {/* glow orbs */}
-      <div className="absolute -top-32 -left-32 w-96 h-96 bg-brand/20 blur-3xl rounded-full pointer-events-none" />
-      <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-brand-sky/10 blur-3xl rounded-full pointer-events-none" />
+      <div className="absolute -top-32 -left-32 w-96 h-96 bg-brand-sky/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-brand/5 rounded-full blur-3xl pointer-events-none" />
       <div className="relative z-10 container-wide">
         <SectionHeader
           label="Destinations"
           title="Dream Destinations Await You"
           subtitle="40+ countries, every visa type. Your global journey starts with a single consultation."
-          light
         />
 
         <motion.div

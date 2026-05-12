@@ -1320,8 +1320,8 @@ export const WHY_CHOOSE_US = [
   {
     icon: "ShieldCheck",
     title: "Proven Track Record",
-    description: "700+ success stories that speak for themselves — real approvals, real people.",
-    stat: "700+ Approved",
+    description: "300+ success stories that speak for themselves — real approvals, real people.",
+    stat: "300+ Approved",
   },
   {
     icon: "Globe2",
@@ -1406,7 +1406,7 @@ export const MILESTONES = [
   { year: "2020", event: "Launched IELTS preparation program" },
   { year: "2021", event: "Expanded to Schengen & European pathways" },
   { year: "2023", event: "500+ happy clients milestone" },
-  { year: "2024", event: "700+ approvals, 40+ countries served" },
+  { year: "2024", event: "300+ approvals, 30+ countries served" },
 ] as const;
 
 // ─── Shared blur placeholder (navy-tinted base64) ─────────────────────────────

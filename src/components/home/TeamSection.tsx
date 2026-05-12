@@ -23,7 +23,7 @@ export default function TeamSection() {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
   return (
-    <section ref={ref} className="bg-brand-bg-light py-12 sm:py-20 px-4">
+    <section ref={ref} className="bg-white py-12 sm:py-20 px-4">
       <div className="container-wide">
         {/* Heading */}
         <motion.div
