@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Logo — hidden on mobile (navbar shows it), visible sm+ */}
-      <div className="hidden sm:flex absolute top-20 left-10 z-20 items-center gap-3">
+      <div className="hidden sm:flex absolute top-28 left-10 z-20 items-center gap-3">
         <Image src="/logo.svg" alt="Beyond Blue" width={40} height={40} className="drop-shadow-lg" />
         <div className="leading-tight">
           <p className="text-white font-display font-black text-xl md:text-2xl tracking-tight uppercase drop-shadow-lg">
