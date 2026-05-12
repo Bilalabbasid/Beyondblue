@@ -29,8 +29,9 @@ export const metadata: Metadata = {
   keywords:
     "visa consultancy Pakistan, IELTS coaching Rawalpindi, Canada immigration, UK visa, study abroad Pakistan, immigration consultant",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
   },
   openGraph: {
     title: "Beyond Blue IELTS & Consultancy",

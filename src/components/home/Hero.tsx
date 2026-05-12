@@ -21,8 +21,8 @@ export default function Hero() {
           <source src="/0511.mp4" type="video/mp4" />
         </video>
 
-        {/* Overlay — only on desktop where video is positioned absolute */}
-        <div className="hidden sm:block absolute inset-0 bg-black/40" />
+        {/* Subtle overlay for text readability on desktop */}
+        <div className="hidden sm:block absolute inset-0 bg-black/15" />
 
         {/* Logo — hidden on mobile, visible sm+ */}
         <div className="hidden sm:flex absolute top-28 left-10 z-20 items-center gap-3">
