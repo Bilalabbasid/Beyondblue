@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { COUNTRIES } from "@/lib/constants";
@@ -23,5 +24,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function CountryPage({ params }: Props) {
   const country = COUNTRIES.find((c) => c.slug === params.slug);
   if (!country) notFound();
-  return <CountryPageClient country={country} />;
+  return (
+    <Suspense>
+      <CountryPageClient country={country} />
+    </Suspense>
+  );
 }

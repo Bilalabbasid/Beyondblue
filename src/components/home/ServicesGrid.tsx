@@ -35,7 +35,7 @@ const IMMIGRATION_PROGRAMS = [
     subtitle: "Job Seeker Visa",
     desc: "Sweden's Job Seeker Visa allows Master's and PhD graduates to enter Sweden and search for employment with leading tech and research firms.",
     flags: ["se"],
-    href: "/countries/sweden",
+    href: "/countries/sweden?program=work",
     badge: "HOT",
     image: "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=600&q=80&auto=format&fit=crop", // Stockholm
   },
@@ -45,7 +45,7 @@ const IMMIGRATION_PROGRAMS = [
     subtitle: "National Innovation Visa",
     desc: "Australia's most prestigious visa for globally recognised academics, researchers, and innovators. No age limit, no skills assessment.",
     flags: ["au"],
-    href: "/countries/australia",
+    href: "/countries/australia?program=pr",
     badge: "NEW",
     image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600&q=80&auto=format&fit=crop", // Sydney Opera House
   },
@@ -55,7 +55,7 @@ const IMMIGRATION_PROGRAMS = [
     subtitle: "Chancenkarte â€” Points System",
     desc: "Germany's new Opportunity Card lets qualified Pakistani professionals enter Germany for up to 1 year to find a job.",
     flags: ["de"],
-    href: "/countries/germany",
+    href: "/countries/germany?program=work",
     badge: null,
     image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80&auto=format&fit=crop", // Brandenburg Gate
   },
@@ -65,7 +65,7 @@ const IMMIGRATION_PROGRAMS = [
     subtitle: "Skilled Worker Visa",
     desc: "Norway's Skilled Worker visa for doctors, engineers, and specialists. Fast-track processing for high-demand occupations.",
     flags: ["no"],
-    href: "/countries/norway",
+    href: "/countries/norway?program=work",
     badge: null,
     image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&q=80&auto=format&fit=crop", // Norwegian fjord
   },

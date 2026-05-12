@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <div className="bg-brand-navy">
       {/* Desktop: full viewport hero | Mobile: video at natural 16:9 + buttons below */}
-      <section className="relative sm:h-[100svh] sm:min-h-[500px] overflow-hidden">
+      <section className="relative pt-16 sm:pt-0 sm:h-[100svh] sm:min-h-[500px] overflow-hidden">
         {/* Video — natural aspect on mobile, cover on desktop */}
         <video
           autoPlay

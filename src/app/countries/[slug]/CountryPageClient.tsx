@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useSearchParams } from "next/navigation";
 import { MapPin, Phone, Globe, ChevronDown } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -25,12 +26,18 @@ export default function CountryPageClient({ country }: Props) {
   const y = useTransform(scrollY, [0, 500], [0, 120]);
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const searchParams = useSearchParams();
+  const programFilter = searchParams.get("program") as typeof VISA_TAB_KEYS[number] | null;
 
   const approvalImages = (country.approvalImages ?? []).map((src) => ({ src, label: `${country.name} Visa Approved`, country: country.name }));
 
-  const availableTabs = VISA_TAB_KEYS.filter(
+  const allTabs = VISA_TAB_KEYS.filter(
     (key) => country.requirements[key].length > 0
   );
+
+  // If ?program= param is set, only show that specific tab
+  const availableTabs = programFilter && allTabs.includes(programFilter) ? [programFilter] : allTabs;
+  const isSingleProgram = availableTabs.length === 1 && programFilter !== null;
 
   return (
     <>
@@ -173,21 +180,25 @@ export default function CountryPageClient({ country }: Props) {
           >
             <h2 className="font-display font-bold text-3xl md:text-4xl text-brand-navy mb-8">
               <Flag code={country.flagCode} name={country.name} size={20} />
-              <span>{country.name} Visa Types</span>
+              <span>{isSingleProgram
+                ? `${country.name} — ${programFilter === "pr" ? "PR / Immigration" : programFilter!.charAt(0).toUpperCase() + programFilter!.slice(1)} Program`
+                : `${country.name} Visa Types`}</span>
             </h2>
 
             <Tabs defaultValue={availableTabs[0]}>
-              <TabsList className="flex gap-2 bg-brand-bg-light rounded-xl p-1 mb-8 flex-wrap h-auto">
-                {availableTabs.map((key) => (
-                  <TabsTrigger
-                    key={key}
-                    value={key}
-                    className="capitalize rounded-lg px-5 py-2 text-sm font-semibold data-[state=active]:bg-brand data-[state=active]:text-white data-[state=active]:shadow-sm"
-                  >
-                    {key === "pr" ? "PR / Immigration" : key}
-                  </TabsTrigger>
-                ))}
-              </TabsList>
+              {!isSingleProgram && (
+                <TabsList className="flex gap-2 bg-brand-bg-light rounded-xl p-1 mb-8 flex-wrap h-auto">
+                  {availableTabs.map((key) => (
+                    <TabsTrigger
+                      key={key}
+                      value={key}
+                      className="capitalize rounded-lg px-5 py-2 text-sm font-semibold data-[state=active]:bg-brand data-[state=active]:text-white data-[state=active]:shadow-sm"
+                    >
+                      {key === "pr" ? "PR / Immigration" : key}
+                    </TabsTrigger>
+                  ))}
+                </TabsList>
+              )}
 
               {availableTabs.map((key) => (
                 <TabsContent key={key} value={key}>
