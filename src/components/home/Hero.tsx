@@ -8,23 +8,13 @@ import { ChevronDown } from "lucide-react";
 export default function Hero() {
   return (
     <section className="relative h-[100svh] min-h-[580px] overflow-hidden bg-brand-navy">
-      {/* Local video — min-width/height trick ensures full cover on portrait mobile */}
+      {/* Local video — natural width on mobile (no crop), full cover on desktop */}
       <video
         autoPlay
         muted
         loop
         playsInline
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          minWidth: "100%",
-          minHeight: "100%",
-          width: "auto",
-          height: "auto",
-          transform: "translate(-50%, -50%)",
-          objectFit: "cover",
-        }}
+        className="absolute left-0 w-full top-1/2 -translate-y-1/2 sm:inset-0 sm:h-full sm:translate-y-0 sm:object-cover"
       >
         <source src="/0511.mp4" type="video/mp4" />
       </video>
