@@ -7,22 +7,22 @@ import { ChevronDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full overflow-hidden bg-brand-navy sm:h-[100svh] sm:min-h-[580px]">
-      {/* Local video — top-aligned on mobile (no empty gap), full cover on desktop */}
+    <section className="relative h-[100svh] min-h-[500px] overflow-hidden bg-brand-navy">
+      {/* Video */}
       <video
         autoPlay
         muted
         loop
         playsInline
-        className="absolute left-0 w-full top-0 sm:inset-0 sm:h-full sm:object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-center"
       >
         <source src="/0511.mp4" type="video/mp4" />
       </video>
 
-      {/* Light tint only */}
-      <div className="absolute inset-0 bg-black/30" />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40" />
 
-      {/* Beyond Blue logo — hidden on mobile (already in navbar), visible on sm+ */}
+      {/* Logo — hidden on mobile (navbar shows it), visible sm+ */}
       <div className="hidden sm:flex absolute top-20 left-10 z-20 items-center gap-3">
         <Image src="/logo.svg" alt="Beyond Blue" width={40} height={40} className="drop-shadow-lg" />
         <div className="leading-tight">
@@ -33,8 +33,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* CTA buttons — overlaid at bottom on desktop, below video on mobile */}
-      <div className="relative sm:absolute sm:bottom-14 left-0 right-0 z-20 flex justify-center px-4 py-5 sm:py-0 bg-brand-navy sm:bg-transparent">
+      {/* CTA buttons — bottom centre */}
+      <div className="absolute bottom-14 sm:bottom-16 left-0 right-0 z-20 flex justify-center px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -47,7 +47,7 @@ export default function Hero() {
       </div>
 
       <motion.div
-        className="hidden sm:block absolute bottom-5 left-1/2 -translate-x-1/2 z-20"
+        className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20"
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
       >
