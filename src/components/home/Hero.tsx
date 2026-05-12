@@ -7,7 +7,7 @@ import { ChevronDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative h-[100svh] min-h-[500px] overflow-hidden bg-brand-navy">
+    <section className="relative h-[60svh] sm:h-[100svh] min-h-[400px] sm:min-h-[500px] overflow-hidden bg-brand-navy">
       {/* Video */}
       <video
         autoPlay
