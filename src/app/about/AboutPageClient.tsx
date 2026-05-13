@@ -5,11 +5,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Award, Target, FolderCheck, MessageSquare, ShieldCheck, Globe2, Crosshair, Eye, Scale, type LucideIcon } from "lucide-react";
 import CountUp from "react-countup";
 import { cinematicReveal, sectionReveal, staggerContainer, staggerItem } from "@/lib/animations";
-import { STATS, TEAM, MILESTONES, WHY_CHOOSE_US, IMAGES, BLUR_PLACEHOLDER } from "@/lib/constants";
+import { STATS, TEAM, WHY_CHOOSE_US, IMAGES, BLUR_PLACEHOLDER } from "@/lib/constants";
 import SectionHeader from "@/components/shared/SectionHeader";
+
+const WHY_ICON_MAP: Record<string, LucideIcon> = {
+  Award, Target, FolderCheck, MessageSquare, ShieldCheck, Globe2,
+};
 
 function TeamCard({ member }: { member: typeof TEAM[number] }) {
   return (
@@ -42,7 +46,6 @@ function TeamCard({ member }: { member: typeof TEAM[number] }) {
 
 export default function AboutPageClient() {
   const { ref: statsRef, inView: statsInView } = useInView({ threshold: 0.3, triggerOnce: true });
-  const { ref: timelineRef, inView: timelineInView } = useInView({ threshold: 0.1, triggerOnce: true });
   const { ref: teamRef, inView: teamInView } = useInView({ threshold: 0.1, triggerOnce: true });
   const { ref: heroRef, inView: heroInView } = useInView({ threshold: 0.1, triggerOnce: true });
 
@@ -87,7 +90,7 @@ export default function AboutPageClient() {
             <cite className="text-white/50 text-sm not-italic">— Beyond Blue, est. in Rawalpindi</cite>
             <div className="mt-8 h-px bg-white/10" />
             <p className="text-white/60 text-sm leading-relaxed mt-6">
-              Pakistan&apos;s most trusted IELTS and immigration consultancy with 7+ years of expertise and 300+ successful approvals.
+              Pakistan&apos;s most trusted IELTS and immigration consultancy with 5+ years of expertise and 400+ successful approvals.
             </p>
           </motion.div>
         </div>
@@ -116,7 +119,7 @@ export default function AboutPageClient() {
               We believe that looking for perfect opportunities for you is our utmost responsibility. We work according to your profile and search for the best opportunities in Pakistan and overseas. Beyond Blue also works in study visas — we help you find the best universities around the globe.
             </p>
             <p className="text-slate-500 leading-relaxed mb-8">
-              We also deal in tour packages, visit visas, and our services include Hajj &amp; Umrah. Founded in Rawalpindi with 7+ years of experience and 300+ successful cases, we remain Pakistan&apos;s most trusted IELTS and immigration consultancy.
+              We also deal in tour packages, visit visas, and our services include Hajj &amp; Umrah. Founded in Rawalpindi with 5+ years of experience and 400+ successful cases, we remain Pakistan&apos;s most trusted IELTS and immigration consultancy.
             </p>
             <Link href="/contact" className="btn-gold inline-block">
               Book Free Consultation →
@@ -135,23 +138,25 @@ export default function AboutPageClient() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             {[
               {
-                icon: "🎯",
+                Icon: Crosshair,
                 title: "Mission",
-                text: "Provide ethical, personalized immigration solutions that enable our clients to thrive in their desired destinations.",
+                text: "To bridge the gap between Pakistani talent and global opportunities through transparent, professional, and trustworthy consultancy services.",
               },
               {
-                icon: "🔭",
+                Icon: Eye,
                 title: "Vision",
-                text: "Empower global citizens by transforming borders into pathways to opportunity for every Pakistani.",
+                text: "To empower Pakistani youth with global opportunities and establish Beyond Blue as one of the leading and most trusted consultancy firms in Pakistan, built on integrity, transparency, and client success.",
               },
               {
-                icon: "⚖️",
+                Icon: Scale,
                 title: "Values",
                 text: "Upholding the highest ethical standards of trust, transparency, and accountability in every client interaction.",
               },
             ].map((item) => (
               <div key={item.title} className="bg-brand-bg-light rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
-                <div className="text-4xl mb-4">{item.icon}</div>
+                <div className="w-14 h-14 rounded-2xl bg-brand/10 flex items-center justify-center mx-auto mb-4">
+                  <item.Icon className="w-7 h-7 text-brand" />
+                </div>
                 <h3 className="font-display font-bold text-xl text-brand-navy mb-3">{item.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">{item.text}</p>
               </div>
@@ -179,40 +184,6 @@ export default function AboutPageClient() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="section-padding bg-brand-navy" ref={timelineRef}>
-        <div className="container-wide">
-          <SectionHeader
-            label="Our Journey"
-            title="Milestones That Shaped Us"
-            light
-          />
-          <div className="mt-14 max-w-3xl mx-auto">
-            {MILESTONES.map((milestone, i) => (
-              <motion.div
-                key={milestone.year}
-                initial={{ opacity: 0, x: i % 2 === 0 ? -60 : 60 }}
-                animate={timelineInView ? { opacity: 1, x: 0 } : { opacity: 0, x: i % 2 === 0 ? -60 : 60 }}
-                transition={{ delay: i * 0.12, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className="flex items-start gap-6 mb-8 last:mb-0"
-              >
-                <div className="flex-shrink-0 flex flex-col items-center">
-                  <div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center shadow-lg shadow-brand/30 font-bold text-white text-sm">
-                    {milestone.year.slice(2)}
-                  </div>
-                  {i < MILESTONES.length - 1 && (
-                    <div className="w-px h-12 bg-white/20 mt-1" />
-                  )}
-                </div>
-                <div className="pt-2.5">
-                  <div className="text-brand-sky font-bold text-sm mb-1">{milestone.year}</div>
-                  <div className="text-white font-medium">{milestone.event}</div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Team */}
       <section className="section-padding bg-white" ref={teamRef}>
@@ -243,13 +214,18 @@ export default function AboutPageClient() {
             title="Why Clients Choose Us"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
-            {WHY_CHOOSE_US.map((item) => (
-              <div key={item.title} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md border border-slate-100 transition-all">
-                <div className="text-3xl mb-4">{item.icon}</div>
-                <h3 className="font-display font-bold text-lg text-brand-navy mb-2">{item.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{item.description}</p>
-              </div>
-            ))}
+            {WHY_CHOOSE_US.map((item) => {
+              const Icon = WHY_ICON_MAP[item.icon] ?? ShieldCheck;
+              return (
+                <div key={item.title} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md border border-slate-100 transition-all group">
+                  <div className="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center mb-4 group-hover:bg-brand group-hover:text-white transition-colors">
+                    <Icon className="w-6 h-6 text-brand group-hover:text-white transition-colors" />
+                  </div>
+                  <h3 className="font-display font-bold text-lg text-brand-navy mb-2">{item.title}</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">{item.description}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

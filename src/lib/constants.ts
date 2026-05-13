@@ -26,11 +26,11 @@ export const STATS = [
 ] as const;
 
 export const ACHIEVEMENTS = [
-  { icon: "Users", value: "300+", label: "Clients Served", color: "#1565C0" },
+  { icon: "Users", value: "400+", label: "Clients Served", color: "#1565C0" },
   { icon: "Globe2", value: "30+", label: "Countries Covered", color: "#42A5F5" },
   { icon: "GraduationCap", value: "10+", label: "Study Destinations", color: "#FFB300" },
   { icon: "UserCheck", value: "8+", label: "Expert Consultants", color: "#00C853" },
-  { icon: "FileCheck", value: "20+", label: "Visa Pathways", color: "#1E88E5" },
+  { icon: "FileCheck", value: "10+", label: "Visa Pathways", color: "#1E88E5" },
   { icon: "Star", value: "100%", label: "Client Satisfaction", color: "#FFB300" },
 ] as const;
 
@@ -117,7 +117,7 @@ export const COUNTRIES: CountryData[] = [
     flag: "🇺🇸",
     flagCode: "us",
     image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&q=85&auto=format&fit=crop",
-    visaTypes: ["Visit", "Study", "Work", "PR"],
+    visaTypes: ["PR"],
     processingTime: "4–12 weeks",
     difficulty: 4,
     region: "north-america",
@@ -308,7 +308,7 @@ export const COUNTRIES: CountryData[] = [
     flag: "🇩🇪",
     flagCode: "de",
     image: "https://images.unsplash.com/photo-1587330979470-3595ac045ab0?w=800&q=85&auto=format&fit=crop",
-    visaTypes: ["Visit", "Study", "Work"],
+    visaTypes: ["Work"],
     processingTime: "2–8 weeks",
     difficulty: 3,
     region: "europe",
@@ -384,7 +384,7 @@ export const COUNTRIES: CountryData[] = [
     flag: "🇸🇪",
     flagCode: "se",
     image: "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=800&q=85&auto=format&fit=crop",
-    visaTypes: ["Study", "Work", "Job Seeker"],
+    visaTypes: ["Job Seeker"],
     processingTime: "4–10 weeks",
     difficulty: 3,
     region: "europe",
@@ -571,7 +571,7 @@ export const COUNTRIES: CountryData[] = [
     flag: "🇳🇴",
     flagCode: "no",
     image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&q=85&auto=format&fit=crop",
-    visaTypes: ["Work", "Medical", "PR"],
+    visaTypes: ["Work"],
     processingTime: "4–12 weeks",
     difficulty: 3,
     region: "europe",
@@ -1372,25 +1372,25 @@ export const TEAM = [
     name: "Ahmad Raza",
     role: "Managing Director",
     specialization: "Canada & UK Immigration",
-    photo: "https://i.pravatar.cc/300?img=51",
+    photo: "/md-photo.jpeg",
   },
   {
     name: "Sadia Khan",
     role: "Senior Visa Consultant",
     specialization: "Schengen & European Pathways",
-    photo: "https://i.pravatar.cc/300?img=48",
+    photo: "/ceo.jpeg",
   },
   {
     name: "Usman Tariq",
     role: "IELTS Expert",
     specialization: "Band 7+ Achievement Coach",
-    photo: "https://i.pravatar.cc/300?img=33",
+    photo: "/GM.jpeg",
   },
   {
     name: "Zara Ali",
     role: "Immigration Specialist",
     specialization: "Australia PR & USA EB-2 NIW",
-    photo: "https://i.pravatar.cc/300?img=47",
+    photo: "/SALES%20man.jpeg",
   },
 ] as const;
 

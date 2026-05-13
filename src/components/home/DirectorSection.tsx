@@ -30,13 +30,13 @@ export default function DirectorSection() {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
   return (
-    <section ref={ref} className="bg-brand-bg-light py-16 sm:py-24 px-4">
+    <section ref={ref} className="bg-brand-bg-light py-10 sm:py-14 px-4">
       <div className="container-wide">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-14"
+          className="text-center mb-8"
         >
           <p className="text-brand text-xs font-bold uppercase tracking-[0.2em] mb-3">Beyond Blue IELTS &amp; Consultancy</p>
           <h2 className="font-display font-black text-3xl md:text-5xl text-brand-navy uppercase">
@@ -44,7 +44,7 @@ export default function DirectorSection() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-8">
           {LEADERS.map((leader, i) => (
             <motion.div
               key={leader.role}

@@ -22,7 +22,7 @@ export default function Hero() {
         </video>
 
         {/* Subtle overlay for text readability on desktop */}
-        <div className="hidden sm:block absolute inset-0 bg-black/15" />
+        <div className="hidden sm:block absolute inset-0 bg-black/0" />
 
         {/* Logo — hidden on mobile, visible sm+ */}
         <div className="hidden sm:flex absolute top-28 left-10 z-20 items-center gap-3">
