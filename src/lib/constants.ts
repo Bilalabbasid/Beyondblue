@@ -1369,27 +1369,27 @@ export const IELTS_SKILLS = [
 // ─── Team ─────────────────────────────────────────────────────────────────────
 export const TEAM = [
   {
-    name: "Ahmad Raza",
+    name: "Mohsin Javed",
+    role: "Chief Executive Officer",
+    specialization: "Australia PR & Skilled Immigration",
+    photo: "/ceo.jpeg",
+  },
+  {
+    name: "Mubashir",
     role: "Managing Director",
     specialization: "Canada & UK Immigration",
     photo: "/md-photo.jpeg",
   },
   {
-    name: "Sadia Khan",
-    role: "Senior Visa Consultant",
-    specialization: "Schengen & European Pathways",
-    photo: "/ceo.jpeg",
-  },
-  {
-    name: "Usman Tariq",
-    role: "IELTS Expert",
-    specialization: "Band 7+ Achievement Coach",
+    name: "Faizan",
+    role: "General Manager & Processor",
+    specialization: "Visa Processing & Case Management",
     photo: "/GM.jpeg",
   },
   {
-    name: "Zara Ali",
-    role: "Immigration Specialist",
-    specialization: "Australia PR & USA EB-2 NIW",
+    name: "Zaryab",
+    role: "Sales Manager & Processor",
+    specialization: "Client Relations & Visa Sales",
     photo: "/SALES%20man.jpeg",
   },
 ] as const;

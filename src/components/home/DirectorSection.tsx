@@ -7,21 +7,23 @@ import { useInView } from "react-intersection-observer";
 
 const LEADERS = [
   {
-    role: "Managing Director",
-    photo: "/md-photo.jpeg",
-    objectPosition: "object-[center_20%]",
-    bio: [
-      "At Beyond Blue IELTS and Consultancy, our mission is to bridge the gap between Pakistani talent and global opportunities through transparent, professional, and trustworthy consultancy services.",
-      "Our vision is to empower Pakistani youth with global opportunities and establish Beyond Blue as one of the leading and most trusted consultancy firms in Pakistan, built on integrity, transparency, and client success.",
-    ],
-  },
-  {
+    name: "Mohsin Javed",
     role: "Chief Executive Officer",
     photo: "/ceo.jpeg",
     objectPosition: "object-[center_15%]",
     bio: [
       "As a Pakistani-Australian Citizen, I understand the challenges individuals face while pursuing international opportunities. The purpose of establishing Beyond Blue IELTS and Consultancy is to provide ease, transparency, and reliable guidance to people who dream of studying, traveling, or settling abroad.",
       "Our mission is to simplify the visa and consultancy process while connecting Pakistani talent with global opportunities through professional and trustworthy services.",
+    ],
+  },
+  {
+    name: "Mubashir",
+    role: "Managing Director",
+    photo: "/md-photo.jpeg",
+    objectPosition: "object-[center_20%]",
+    bio: [
+      "At Beyond Blue IELTS and Consultancy, our mission is to bridge the gap between Pakistani talent and global opportunities through transparent, professional, and trustworthy consultancy services.",
+      "Our vision is to empower Pakistani youth with global opportunities and establish Beyond Blue as one of the leading and most trusted consultancy firms in Pakistan, built on integrity, transparency, and client success.",
     ],
   },
 ];
@@ -65,6 +67,7 @@ export default function DirectorSection() {
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-navy/90 to-transparent px-6 pt-10 pb-5">
                   <p className="text-brand-gold text-xs font-bold uppercase tracking-[0.2em] mb-0.5">Beyond Blue</p>
                   <h3 className="font-display font-black text-xl text-white uppercase">{leader.role}</h3>
+                  <p className="text-white/70 text-sm mt-0.5">{leader.name}</p>
                 </div>
               </div>
               <div className="px-7 py-7">

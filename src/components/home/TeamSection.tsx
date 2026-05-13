@@ -6,13 +6,13 @@ import { useInView } from "react-intersection-observer";
 
 const TEAM = [
   {
-    name: "General Manager & Processor",
+    name: "Faizan",
     photo: "/GM.jpeg",
     quote:
       "Our mission at Beyond Blue IELTS and Consultancy is to deliver trusted and efficient consultancy services by maintaining high professional standards and transparent procedures. We strive to help individuals achieve their global goals through proper guidance, smooth processing, and exceptional client support.",
   },
   {
-    name: "Sales Manager & Processor",
+    name: "Zaryab",
     photo: "/SALES%20man.jpeg",
     quote:
       "At Beyond Blue IELTS and Consultancy, we are committed to guiding our clients with transparency, professionalism, and personalized support. Our goal is to understand every client's needs and provide the best possible international opportunities with complete dedication and reliable processing services.",
