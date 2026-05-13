@@ -6,7 +6,6 @@ import TeamSection from "@/components/home/TeamSection";
 import VideoShowcase from "@/components/home/VideoShowcase";
 import Achievements from "@/components/home/Achievements";
 import ServicesGrid from "@/components/home/ServicesGrid";
-import MonumentGrid from "@/components/home/MonumentGrid";
 import HowItWorks from "@/components/home/HowItWorks";
 import Testimonials from "@/components/home/Testimonials";
 import CTABanner from "@/components/home/CTABanner";
@@ -26,7 +25,6 @@ export default function Home() {
       <VideoShowcase />
       <Achievements />
       <ServicesGrid />
-      <MonumentGrid />
       <HowItWorks />
       <TeamSection />
       <Testimonials />
