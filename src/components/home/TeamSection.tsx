@@ -19,8 +19,16 @@ const TEAM = [
   },
 ];
 
+const CERTS = [
+  "/certs/WhatsApp%20Image%202026-05-13%20at%2020.42.24.jpeg",
+  "/certs/WhatsApp%20Image%202026-05-13%20at%2020.42.25.jpeg",
+  "/certs/WhatsApp%20Image%202026-05-13%20at%2020.42.26.jpeg",
+  "/certs/WhatsApp%20Image%202026-05-14%20at%2000.52.05.jpeg",
+];
+
 export default function TeamSection() {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+  const { ref: certRef, inView: certInView } = useInView({ threshold: 0.1, triggerOnce: true });
 
   return (
     <section ref={ref} className="bg-white py-12 sm:py-20 px-4">
@@ -66,6 +74,40 @@ export default function TeamSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* Certificates */}
+        <motion.div
+          ref={certRef}
+          initial={{ opacity: 0, y: 30 }}
+          animate={certInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="mt-16 text-center"
+        >
+          <p className="text-brand-sky text-xs font-bold uppercase tracking-[0.2em] mb-2">Officially Recognised</p>
+          <h3 className="font-display font-black text-2xl md:text-4xl text-brand-navy uppercase mb-10">
+            Our <span className="text-brand-sky italic">Certifications</span>
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+            {CERTS.map((src, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 24 }}
+                animate={certInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border-2 border-brand-bg-light"
+              >
+                <Image
+                  src={src}
+                  alt={`Beyond Blue certification ${i + 1}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 50vw, 25vw"
+                  unoptimized
+                />
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
