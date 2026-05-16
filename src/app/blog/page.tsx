@@ -6,7 +6,7 @@ import { BLOG_POSTS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Blog | Beyond Blue IELTS & Consultancy",
   description:
-    "Expert guides on UK visa, Canada Express Entry, Germany Jobseeker Visa, IELTS Band 7, Schengen visa, and Australia PR from Pakistan's trusted immigration consultancy.",
+    "Expert guides on UK visa, Canada Express Entry, Germany Jobseeker Visa, Schengen visa, and Australia PR from Pakistan's trusted immigration consultancy.",
 };
 
 export default function BlogPage() {

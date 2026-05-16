@@ -23,19 +23,19 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Beyond Blue IELTS & Consultancy | Pakistan's Trusted Visa Experts",
+  title: "Beyond Blue Consultancy | Pakistan's Trusted Visa Experts",
   description:
-    "Beyond Blue IELTS & Consultancy — helping Pakistanis reach the UK, USA, Canada, Europe and beyond. Visit visas, study abroad, skilled immigration, IELTS coaching. 300+ approved cases.",
+    "Beyond Blue Consultancy — helping Pakistanis reach the UK, USA, Canada, Europe and beyond. Visit visas, study abroad, skilled immigration. 300+ approved cases.",
   keywords:
-    "visa consultancy Pakistan, IELTS coaching Rawalpindi, Canada immigration, UK visa, study abroad Pakistan, immigration consultant",
+    "visa consultancy Pakistan, Canada immigration, UK visa, study abroad Pakistan, immigration consultant Rawalpindi",
   icons: {
     icon: "/logo.svg",
     shortcut: "/logo.svg",
     apple: "/logo.svg",
   },
   openGraph: {
-    title: "Beyond Blue IELTS & Consultancy",
-    description: "Trust us to get you there. Pakistan's #1 visa & IELTS consultancy.",
+    title: "Beyond Blue Consultancy",
+    description: "Trust us to get you there. Pakistan's trusted visa & immigration consultancy.",
     type: "website",
     locale: "en_US",
   },

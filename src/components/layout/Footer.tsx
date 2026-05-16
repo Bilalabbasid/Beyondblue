@@ -24,7 +24,6 @@ const FOOTER_LINKS = {
     { label: "Immigration", href: "/services#skilled-immigration" },
     { label: "Jobseeker Visa", href: "/services#jobseeker-visa" },
     { label: "Study Abroad", href: "/services#study-abroad" },
-    { label: "IELTS Preparation", href: "/ielts" },
     { label: "Spouse & Family", href: "/services#spouse-family" },
   ],
   countries: [
@@ -68,7 +67,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-xs">
-              Pakistan&apos;s trusted IELTS and immigration consultancy. 7+ years, 300+ approvals, 30+ countries served.
+              Pakistan&apos;s trusted immigration consultancy. 7+ years, 300+ approvals, 30+ countries served.
             </p>
             <p className="text-brand-gold text-sm italic font-medium mb-6">
               &quot;{BRAND.slogan}&quot;
@@ -181,7 +180,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
-          <p>© 2026 Beyond Blue IELTS & Consultancy. Rawalpindi, Pakistan. All rights reserved.</p>
+          <p>© 2026 Beyond Blue Consultancy. Rawalpindi, Pakistan. All rights reserved.</p>
           <p>Licensed immigration consultancy — not a government or embassy representative.</p>
         </div>
       </div>

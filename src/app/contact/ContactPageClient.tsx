@@ -18,23 +18,16 @@ const step1Schema = z.object({
   email: z.string().email("Enter a valid email address"),
   city: z.string().min(1, "Please select your city"),
   purposeOfVisit: z.string().min(1, "Please select purpose of visit"),
-  visaCategory: z.string().min(1, "Please select visa category"),
 });
 
 const step2Schema = z.object({
   country: z.string().min(1, "Please select a destination"),
-  visaType: z.string().min(1, "Please select a visa type"),
-  travelFrom: z.string().optional(),
-  travelTo: z.string().optional(),
   firstApplication: z.enum(["yes", "no"]),
 });
 
 const step3Schema = z.object({
-  passportExpiry: z.string().optional(),
   previousRefusal: z.enum(["yes", "no"]),
   refusalCountry: z.string().optional(),
-  employmentStatus: z.string().min(1, "Please select employment status"),
-  monthlyIncome: z.string().min(1, "Please select income range"),
 });
 
 const step4Schema = z.object({
@@ -47,8 +40,6 @@ type Step1Data = z.infer<typeof step1Schema>;
 type Step2Data = z.infer<typeof step2Schema>;
 type Step3Data = z.infer<typeof step3Schema>;
 type Step4Data = z.infer<typeof step4Schema>;
-
-type FormData = Step1Data & Step2Data & Step3Data & Step4Data;
 
 // ─── Confetti Component ───────────────────────────────────────────────────────
 function Confetti() {
@@ -138,28 +129,11 @@ function Step1({ form }: { form: ReturnType<typeof useForm<Step1Data>> }) {
             className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors text-slate-600"
           >
             <option value="">Select purpose</option>
-            {["Tourism / Holiday", "Business Meeting", "Family / Friends Visit", "Study Inquiry", "Work / Immigration", "Medical Treatment", "IELTS Coaching"].map((p) => (
+            {["Tourism / Holiday", "Business Meeting", "Family / Friends Visit", "Study Inquiry", "Work / Immigration", "Medical Treatment"].map((p) => (
               <option key={p} value={p}>{p}</option>
             ))}
           </select>
           {errors.purposeOfVisit && <p className="text-red-500 text-xs mt-1">{errors.purposeOfVisit.message}</p>}
-        </div>
-        <div className="md:col-span-2">
-          <label className="label-small text-slate-500 mb-1.5 block">Visa Category *</label>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {["Visit Visa", "Student Visa", "Work / Jobseeker", "PR / Immigration", "Spouse / Family", "IELTS Preparation"].map((cat) => (
-              <label key={cat} className="flex items-center gap-2 cursor-pointer border border-slate-200 rounded-xl px-3 py-2.5 hover:border-brand transition-colors has-[:checked]:border-brand has-[:checked]:bg-brand/5">
-                <input
-                  type="radio"
-                  value={cat}
-                  {...register("visaCategory")}
-                  className="w-4 h-4 text-brand accent-brand"
-                />
-                <span className="text-sm text-slate-600 font-medium">{cat}</span>
-              </label>
-            ))}
-          </div>
-          {errors.visaCategory && <p className="text-red-500 text-xs mt-1">{errors.visaCategory.message}</p>}
         </div>
       </div>
     </div>
@@ -174,7 +148,7 @@ function Step2({ form }: { form: ReturnType<typeof useForm<Step2Data>> }) {
       <h3 className="font-display font-bold text-2xl text-brand-navy">Visa Details</h3>
       <p className="text-slate-400 text-sm">Tell us about the visa you&apos;re applying for.</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-        <div>
+        <div className="md:col-span-2">
           <label className="label-small text-slate-500 mb-1.5 block">Destination Country *</label>
           <select
             {...register("country")}
@@ -186,35 +160,6 @@ function Step2({ form }: { form: ReturnType<typeof useForm<Step2Data>> }) {
             ))}
           </select>
           {errors.country && <p className="text-red-500 text-xs mt-1">{errors.country.message}</p>}
-        </div>
-        <div>
-          <label className="label-small text-slate-500 mb-1.5 block">Visa Type *</label>
-          <select
-            {...register("visaType")}
-            className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors text-slate-600"
-          >
-            <option value="">Select visa type</option>
-            {["Visit", "Study", "Work / Jobseeker", "PR / Immigration", "IELTS", "Spouse / Family"].map((type) => (
-              <option key={type} value={type}>{type}</option>
-            ))}
-          </select>
-          {errors.visaType && <p className="text-red-500 text-xs mt-1">{errors.visaType.message}</p>}
-        </div>
-        <div>
-          <label className="label-small text-slate-500 mb-1.5 block">Travel Date (From)</label>
-          <input
-            {...register("travelFrom")}
-            type="date"
-            className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors"
-          />
-        </div>
-        <div>
-          <label className="label-small text-slate-500 mb-1.5 block">Travel Date (To)</label>
-          <input
-            {...register("travelTo")}
-            type="date"
-            className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors"
-          />
         </div>
         <div className="md:col-span-2">
           <label className="label-small text-slate-500 mb-3 block">First visa application? *</label>
@@ -240,47 +185,13 @@ function Step2({ form }: { form: ReturnType<typeof useForm<Step2Data>> }) {
 
 // ─── Step 3 ───────────────────────────────────────────────────────────────────
 function Step3({ form }: { form: ReturnType<typeof useForm<Step3Data>> }) {
-  const { register, watch, formState: { errors } } = form;
+  const { register, watch } = form;
   const showRefusalCountry = watch("previousRefusal") === "yes";
   return (
     <div className="space-y-4">
       <h3 className="font-display font-bold text-2xl text-brand-navy">Your Background</h3>
       <p className="text-slate-400 text-sm">Help us build the strongest possible case for you.</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-        <div>
-          <label className="label-small text-slate-500 mb-1.5 block">Passport Expiry Date</label>
-          <input
-            {...register("passportExpiry")}
-            type="date"
-            className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors"
-          />
-        </div>
-        <div>
-          <label className="label-small text-slate-500 mb-1.5 block">Employment Status *</label>
-          <select
-            {...register("employmentStatus")}
-            className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors text-slate-600"
-          >
-            <option value="">Select status</option>
-            {["Employed", "Self-Employed", "Business Owner", "Student", "Retired", "Other"].map((s) => (
-              <option key={s} value={s}>{s}</option>
-            ))}
-          </select>
-          {errors.employmentStatus && <p className="text-red-500 text-xs mt-1">{errors.employmentStatus.message}</p>}
-        </div>
-        <div>
-          <label className="label-small text-slate-500 mb-1.5 block">Monthly Income (PKR) *</label>
-          <select
-            {...register("monthlyIncome")}
-            className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors text-slate-600"
-          >
-            <option value="">Select range</option>
-            {["Under 50,000", "50,000 – 100,000", "100,000 – 200,000", "200,000 – 500,000", "500,000 – 1,000,000", "Over 1,000,000"].map((r) => (
-              <option key={r} value={r}>{r}</option>
-            ))}
-          </select>
-          {errors.monthlyIncome && <p className="text-red-500 text-xs mt-1">{errors.monthlyIncome.message}</p>}
-        </div>
         <div>
           <label className="label-small text-slate-500 mb-3 block">Previous visa refusals?</label>
           <div className="flex gap-4">
@@ -354,7 +265,7 @@ function Step4({ form }: { form: ReturnType<typeof useForm<Step4Data>> }) {
 }
 
 // ─── Success State ────────────────────────────────────────────────────────────
-function SuccessState() {
+function SuccessState({ gmailUrl, mailtoUrl }: { gmailUrl: string; mailtoUrl: string }) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
@@ -371,21 +282,47 @@ function SuccessState() {
         <CheckCircle className="w-10 h-10 text-brand-green" />
       </motion.div>
       <h3 className="font-display font-bold text-3xl text-brand-navy mb-3">
-        Assessment Submitted!
+        Form Complete!
       </h3>
-      <p className="text-slate-500 max-w-sm mx-auto">
-        We&apos;ll review your details and contact you within 24 hours on WhatsApp and email.
+      <p className="text-slate-500 max-w-sm mx-auto mb-8">
+        Your inquiry is ready. Click the button below to open your email with all details pre-filled — then just press <strong>Send</strong>.
       </p>
-      <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-        <a
-          href={BRAND.social.whatsapp}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-green-500 hover:bg-green-400 text-white font-semibold px-6 py-3 rounded-full transition-colors text-sm"
-        >
-          Chat on WhatsApp Now
-        </a>
-      </div>
+
+      {/* Primary: Gmail */}
+      <a
+        href={gmailUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center gap-2 bg-[#EA4335] hover:bg-[#d33426] text-white font-bold px-8 py-4 rounded-full transition-colors text-base w-full max-w-xs mx-auto mb-3"
+      >
+        <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" aria-hidden="true">
+          <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+        </svg>
+        Send via Gmail
+      </a>
+
+      {/* Fallback: default email app */}
+      <a
+        href={mailtoUrl}
+        className="flex items-center justify-center gap-2 bg-brand-navy hover:bg-brand text-white font-semibold px-8 py-3 rounded-full transition-colors text-sm w-full max-w-xs mx-auto mb-6"
+      >
+        <Users className="w-4 h-4" />
+        Open in Email App
+      </a>
+
+      <p className="text-slate-400 text-xs max-w-xs mx-auto mb-6">
+        Buttons not working? Copy the email address <span className="font-semibold text-brand-navy">beyondblue83@gmail.com</span> and paste your details manually.
+      </p>
+
+      {/* WhatsApp alternative */}
+      <a
+        href={BRAND.social.whatsapp}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-green-500 hover:bg-green-400 text-white font-semibold px-6 py-3 rounded-full transition-colors text-sm inline-block"
+      >
+        Or Chat on WhatsApp Instead →
+      </a>
     </motion.div>
   );
 }
@@ -393,9 +330,9 @@ function SuccessState() {
 // ─── Multi-step form wrapper ──────────────────────────────────────────────────
 function MultiStepForm() {
   const [step, setStep] = useState(1);
-  const [, setFormData] = useState<Partial<FormData>>({});
   const [submitted, setSubmitted] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
+  const [emailUrls, setEmailUrls] = useState({ gmail: "", mailto: "" });
   const TOTAL_STEPS = 4;
 
   const form1 = useForm<Step1Data>({ resolver: zodResolver(step1Schema) });
@@ -403,26 +340,52 @@ function MultiStepForm() {
   const form3 = useForm<Step3Data>({ resolver: zodResolver(step3Schema) });
   const form4 = useForm<Step4Data>({ resolver: zodResolver(step4Schema) });
 
-  const handleStep1 = form1.handleSubmit((data) => {
-    setFormData((prev) => ({ ...prev, ...data }));
-    setStep(2);
-  });
-
-  const handleStep2 = form2.handleSubmit((data) => {
-    setFormData((prev) => ({ ...prev, ...data }));
-    setStep(3);
-  });
-
-  const handleStep3 = form3.handleSubmit((data) => {
-    setFormData((prev) => ({ ...prev, ...data }));
-    setStep(4);
-  });
+  const handleStep1 = form1.handleSubmit(() => { setStep(2); });
+  const handleStep2 = form2.handleSubmit(() => { setStep(3); });
+  const handleStep3 = form3.handleSubmit(() => { setStep(4); });
 
   const handleStep4 = form4.handleSubmit((data) => {
-    setFormData((prev) => ({ ...prev, ...data }));
+    const s1 = form1.getValues();
+    const s2 = form2.getValues();
+    const s3 = form3.getValues();
+
+    const subject = `Visa Inquiry – ${s1.fullName || "Client"} – ${s2.country || "Destination TBD"}`;
+
+    const body = [
+      "VISA INQUIRY FORM — BEYOND BLUE CONSULTANCY",
+      "============================================",
+      "",
+      "=== PERSONAL DETAILS ===",
+      `Full Name        : ${s1.fullName || ""}`,
+      `WhatsApp         : ${s1.whatsapp || ""}`,
+      `Email            : ${s1.email || ""}`,
+      `City             : ${s1.city || ""}`,
+      `Purpose of Visit : ${s1.purposeOfVisit || ""}`,
+      "",
+      "=== VISA DETAILS ===",
+      `Destination      : ${s2.country || ""}`,
+      `First Application: ${s2.firstApplication || ""}`,
+      "",
+      "=== BACKGROUND ===",
+      `Previous Refusal : ${s3.previousRefusal || ""}`,
+      `Refusal Country  : ${s3.refusalCountry || ""}`,
+      "",
+      "=== ADDITIONAL ===",
+      `Message          : ${data.message || ""}`,
+      `Heard About Us   : ${data.hearAboutUs || ""}`,
+    ].join("\n");
+
+    const recipient = "beyondblue83@gmail.com";
+    const encodedSubject = encodeURIComponent(subject);
+    const encodedBody = encodeURIComponent(body);
+
+    const mailtoUrl = `mailto:${recipient}?subject=${encodedSubject}&body=${encodedBody}`;
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipient)}&su=${encodedSubject}&body=${encodedBody}`;
+
+    setEmailUrls({ gmail: gmailUrl, mailto: mailtoUrl });
     setShowConfetti(true);
     setSubmitted(true);
-    toast.success("✓ We'll contact you within 24 hours!");
+    toast.success("✓ Click 'Send via Gmail' to submit your inquiry!");
     setTimeout(() => setShowConfetti(false), 3000);
   });
 
@@ -532,7 +495,7 @@ function MultiStepForm() {
           </AnimatePresence>
         </>
       ) : (
-        <SuccessState />
+        <SuccessState gmailUrl={emailUrls.gmail} mailtoUrl={emailUrls.mailto} />
       )}
     </div>
   );

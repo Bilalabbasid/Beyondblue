@@ -760,32 +760,6 @@ export const SERVICES: ServiceData[] = [
     successRate: 85,
   },
   {
-    id: "ielts-preparation",
-    slug: "ielts-preparation",
-    title: "IELTS Preparation",
-    description: "Expert IELTS coaching by certified trainers targeting Band 7+ for immigration, study, and work visa requirements.",
-    longDescription:
-      "IELTS is the gateway to your global journey. Our certified IELTS trainers have helped hundreds of students achieve their target band scores. We offer intensive courses for all four skills — Listening, Reading, Writing, and Speaking — with personalized feedback, mock tests, and proven strategies to maximize your score. Our students consistently achieve Band 7 and above.",
-    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=85&auto=format&fit=crop",
-    pageImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&q=85&auto=format&fit=crop",
-    icon: "BookOpen",
-    countries: [],
-    countryFlags: [],
-    requirements: [
-      "No minimum English level required to enroll",
-      "Commitment to complete course (1–3 months)",
-      "Regular attendance and practice",
-      "Official IELTS test booking recommended alongside",
-    ],
-    documents: [
-      "CNIC / Passport copy for registration",
-      "Previous IELTS scores (if retaking)",
-      "Enrollment fee payment receipt",
-    ],
-    processingTime: "1–3 months preparation",
-    successRate: 94,
-  },
-  {
     id: "spouse-family",
     slug: "spouse-family",
     title: "Spouse & Family Visa",
@@ -1051,44 +1025,6 @@ Recent draws have selected candidates with scores between 470–510. However, ta
 Book a free profile assessment with Beyond Blue today.`,
   },
   {
-    slug: "ielts-band-7-strategies",
-    title: "IELTS Band 7+: How Our Students Consistently Achieve It",
-    excerpt:
-      "Our proven IELTS preparation methodology has helped hundreds of students achieve Band 7 and above. Here are the strategies that work.",
-    image: "https://images.unsplash.com/photo-1513258496099-48168024aec0?w=600&q=85&auto=format&fit=crop",
-    category: "IELTS",
-    date: "February 10, 2025",
-    readTime: "4 min read",
-    content: `Germany is facing a critical shortage of skilled workers, and the German government has responded by making it easier for qualified professionals from countries like Pakistan to enter and work in Germany through the Jobseeker Visa.
-
-## What is the Germany Jobseeker Visa?
-
-The Jobseeker Visa (Arbeitsuchende-Visum) allows qualified professionals to enter Germany for up to 6 months to search for employment. Unlike a work visa, you don't need a job offer before arriving — you get to network, attend interviews, and explore the German job market in person.
-
-## Who Qualifies?
-
-To be eligible for the Germany Jobseeker Visa, you must:
-1. Hold a university degree that is recognized or recognizable in Germany
-2. Have at least 5 years of relevant work experience
-3. Demonstrate sufficient German or English language skills
-4. Show proof of funds of at least €2,919 (3 months minimum wage)
-5. Have health insurance for your stay
-
-## In-Demand Sectors in Germany
-
-- **IT & Software**: Developers, data scientists, cybersecurity specialists
-- **Engineering**: Mechanical, electrical, civil, chemical engineers  
-- **Healthcare**: Doctors, nurses, medical technicians
-- **Finance & Banking**: Accountants, financial analysts
-- **Skilled Trades**: Electricians, plumbers, construction workers
-
-## Converting to a Work Visa
-
-Once you find a job, you can convert your Jobseeker Visa to a work permit without leaving Germany. The process typically takes 4–8 weeks.
-
-Beyond Blue has helped numerous Pakistani professionals successfully apply for Germany Jobseeker Visas and secure employment. Let us help you too.`,
-  },
-  {
     slug: "schengen-visa-pakistan-italy-spain-france",
     title: "Schengen Tourist Visa from Pakistan: Italy, Spain, France",
     excerpt:
@@ -1097,58 +1033,48 @@ Beyond Blue has helped numerous Pakistani professionals successfully apply for G
     category: "Visit Visa",
     date: "January 25, 2025",
     readTime: "7 min read",
-    content: `IELTS Band 7 is the magic number for most immigration programs and prestigious universities. At Beyond Blue, our certified trainers have developed a proven system that consistently gets our students to Band 7 and beyond.
+    content: `The Schengen Area comprises 26 European countries. A single Schengen visa allows you to travel freely among all of them — making it one of the most valuable travel documents for Pakistani passport holders.
 
-## Why Band 7 Matters
+## Which Countries Are in the Schengen Area?
 
-- Canada Express Entry: CLB 9 = Band 7 in all sections
-- UK Skilled Worker Visa: CEFR B2 = Band 5.5–6.5 depending on role
-- Australia PR (FSW): IELTS 7.0 required in all four bands
-- UK/Canadian Universities: IELTS 6.5–7.5 for graduate programs
+Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden, Switzerland.
 
-## Section-by-Section Strategies
+## Italy vs Spain vs France — Which to Apply Through?
 
-### Listening (Target: 7.0+)
+Apply through the embassy of the country where you'll spend the most time. If equal, apply through the first country you'll enter.
 
-**Key techniques:**
-- Predict answers before listening using the 30-second preview
-- Focus on keywords and synonyms — answers are rarely word-for-word
-- Practise with a wide variety of accents (British, Australian, American, Indian)
-- Don't leave blanks — write something, you can revise
+**Italy**: Generally considered to have better approval rates. Popular for first-time Schengen applicants.
 
-### Reading (Target: 7.0+)
+**Spain**: Good approval rates. The Spanish consulate in Islamabad is efficient. Popular for tourism.
 
-**Key techniques:**
-- Skim first (2 minutes per passage for structure and headings)
-- True/False/Not Given: "Not Given" means the text simply doesn't address it
-- Matching headings: read topic sentences, not entire paragraphs
-- Use process of elimination on multiple choice
+**France**: Requires Campus France registration for students. Good for business travel and tourism.
 
-### Writing (Target: 7.0+)
+## Schengen Visa Requirements
 
-**Task 2 (essay) structure:**
-- Paragraph 1: Paraphrase question + clear position/thesis
-- Paragraphs 2–3: Main arguments with examples and evidence
-- Paragraph 4: Counterargument + rebuttal (for balanced approach)
-- Conclusion: Restate thesis + summary
+**Mandatory for all countries:**
+- Valid passport (must remain valid 3 months after intended departure from Schengen)
+- Completed Schengen visa application form
+- Recent passport photographs (35×45mm, white background)
+- Travel medical insurance (minimum €30,000 coverage, valid for all Schengen countries)
+- Round-trip flight bookings
+- Hotel reservations or invitation letter
+- Bank statements (last 3–6 months)
 
-**Key errors to avoid:**
-- Using the same words as the question without paraphrasing
-- Not addressing all parts of the task
-- Short paragraphs with insufficient development
+**Recommended:**
+- Employment letter confirming position, salary, and approved leave
+- CNIC copy
+- Property ownership documents (shows ties to home country)
 
-### Speaking (Target: 7.0+)
+## How to Maximize Approval Chances
 
-- Record yourself daily — fluency comes from habit
-- Use discourse markers: "To be honest...", "Having said that...", "In my experience..."
-- Elaborate every answer with examples: "For instance, when I..."
-- Don't memorize prepared answers — examiners detect them
+1. Apply to the country where you'll spend most time
+2. Show strong financial and social ties to Pakistan
+3. Have comprehensive travel insurance from day one
+4. Book refundable flights and hotels
+5. Write a clear cover letter with your travel itinerary
+6. Apply 4–6 weeks before departure
 
-## Our Proven Results
-
-Our IELTS students have an average score improvement of 1.2 bands over our 8-week intensive course. 94% of our students who target Band 7 achieve it within their first or second attempt.
-
-Enroll in our next batch by contacting Beyond Blue today.`,
+Contact Beyond Blue for a complete Schengen visa consultation.`,
   },
   {
     slug: "sweden-talent-visa-right-for-you",

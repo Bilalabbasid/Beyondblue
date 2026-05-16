@@ -4,7 +4,7 @@ import ServicesPageClient from "./ServicesPageClient";
 export const metadata: Metadata = {
   title: "Our Services | Beyond Blue IELTS & Consultancy",
   description:
-    "Explore our comprehensive immigration and IELTS services — visit visas, study abroad, skilled immigration, jobseeker visas, IELTS coaching, and spouse/family visas.",
+    "Explore our comprehensive immigration services — visit visas, study abroad, skilled immigration, jobseeker visas, and spouse/family visas.",
 };
 
 export default function ServicesPage() {

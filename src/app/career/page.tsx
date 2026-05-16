@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Careers | Beyond Blue IELTS & Consultancy",
+  title: "Careers | Beyond Blue Consultancy",
   description:
-    "Join the Beyond Blue team. We're looking for passionate consultants, IELTS trainers, and visa specialists to help Pakistanis reach the world.",
+    "Join the Beyond Blue team. We're looking for passionate consultants and visa specialists to help Pakistanis reach the world.",
 };
 
 export default function CareerPage() {
@@ -30,12 +30,6 @@ export default function CareerPage() {
               type: "Full-time",
               location: "Bahria Ph 7, Rawalpindi",
               desc: "Guide clients through visa applications for USA, Canada, UK, and Schengen countries. Minimum 2 years experience in immigration consultancy required.",
-            },
-            {
-              title: "IELTS Trainer",
-              type: "Full-time / Part-time",
-              location: "Bahria Ph 7, Rawalpindi",
-              desc: "Deliver IELTS coaching sessions for all four modules. Band 8+ required. Experience with IELTS preparation courses preferred.",
             },
             {
               title: "Marketing Executive",
@@ -67,7 +61,7 @@ export default function CareerPage() {
               </div>
               <p className="text-slate-600 text-sm mb-4">{job.desc}</p>
               <a
-                href="mailto:beyondblue83@gmail.com?subject=Application: ${job.title}"
+                href={`mailto:beyondblue83@gmail.com?subject=Application: ${job.title}&body=I am applying for the ${job.title} position at Beyond Blue Consultancy.`}
                 className="inline-block text-sm font-semibold text-brand-navy border border-brand-navy rounded-full px-5 py-2 hover:bg-brand-navy hover:text-white transition-colors"
               >
                 Apply Now

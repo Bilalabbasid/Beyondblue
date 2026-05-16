@@ -21,7 +21,7 @@ function TeamCard({ member }: { member: typeof TEAM[number] }) {
       <div className="relative h-64 overflow-hidden">
         <Image
           src={member.photo}
-          alt={`${member.name} — ${member.role} at Beyond Blue IELTS & Consultancy`}
+          alt={`${member.name} — ${member.role} at Beyond Blue Consultancy`}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, 25vw"
@@ -90,7 +90,7 @@ export default function AboutPageClient() {
             <cite className="text-white/50 text-sm not-italic">— Beyond Blue, est. in Rawalpindi</cite>
             <div className="mt-8 h-px bg-white/10" />
             <p className="text-white/60 text-sm leading-relaxed mt-6">
-              Pakistan&apos;s most trusted IELTS and immigration consultancy with 5+ years of expertise and 400+ successful approvals.
+              Pakistan&apos;s most trusted immigration consultancy with 5+ years of expertise and 400+ successful approvals.
             </p>
           </motion.div>
         </div>
@@ -119,7 +119,7 @@ export default function AboutPageClient() {
               We believe that looking for perfect opportunities for you is our utmost responsibility. We work according to your profile and search for the best opportunities in Pakistan and overseas. Beyond Blue also works in study visas — we help you find the best universities around the globe.
             </p>
             <p className="text-slate-500 leading-relaxed mb-8">
-              We also deal in tour packages, visit visas, and our services include Hajj &amp; Umrah. Founded in Rawalpindi with 5+ years of experience and 400+ successful cases, we remain Pakistan&apos;s most trusted IELTS and immigration consultancy.
+              We also deal in tour packages, visit visas, and our services include Hajj &amp; Umrah. Founded in Rawalpindi with 5+ years of experience and 400+ successful cases, we remain Pakistan&apos;s most trusted immigration consultancy.
             </p>
             <Link href="/contact" className="btn-gold inline-block">
               Book Free Consultation →
@@ -191,7 +191,7 @@ export default function AboutPageClient() {
           <SectionHeader
             label="Our Team"
             title="Meet the Experts Behind Your Approval"
-            subtitle="A dedicated team of certified immigration specialists and IELTS coaches."
+            subtitle="A dedicated team of certified immigration specialists."
           />
           <motion.div
             variants={staggerContainer}
@@ -242,13 +242,12 @@ export default function AboutPageClient() {
               We&apos;re Hiring — <span className="text-brand-gold italic">Grow With Us</span>
             </h2>
             <p className="text-white/60 text-lg leading-relaxed">
-              Passionate about immigration? Love helping people achieve their dreams? Beyond Blue is always looking for talented visa consultants, IELTS coaches, and client support specialists to join our growing team.
+              Passionate about immigration? Love helping people achieve their dreams? Beyond Blue is always looking for talented visa consultants and client support specialists to join our growing team.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {[
               { icon: "🧑‍💼", title: "Visa Consultant", type: "Full-time · Rawalpindi", desc: "Handle client cases for UK, USA, Canada and Schengen visas. Prior consultancy experience preferred." },
-              { icon: "📚", title: "IELTS Coach", type: "Full-time / Part-time", desc: "Prepare students for Band 7+. IELTS trainer certification required or equivalent teaching experience." },
               { icon: "🤝", title: "Client Relations", type: "Full-time · Rawalpindi", desc: "First point of contact for new inquiries. Excellent communication and follow-up skills essential." },
             ].map((job) => (
               <div key={job.title} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">

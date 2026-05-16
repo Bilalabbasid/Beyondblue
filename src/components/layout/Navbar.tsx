@@ -25,9 +25,9 @@ const NAV_LINKS = [
     label: "Immigration",
     href: "/services#skilled-immigration",
     sub: [
-      { label: "USA EB2 NIW", href: "/countries/usa" },
-      { label: "Canada Immigration", href: "/countries/canada" },
       { label: "Australia Immigration", href: "/countries/australia" },
+      { label: "Canada Immigration", href: "/countries/canada" },
+      { label: "USA EB2 NIW", href: "/countries/usa" },
       { label: "UK Immigration", href: "/countries/uk" },
     ],
   },
@@ -35,8 +35,9 @@ const NAV_LINKS = [
     label: "Jobseeker",
     href: "/services#jobseeker-visa",
     sub: [
-      { label: "Sweden Talent Visa", href: "/countries/sweden" },
       { label: "Germany Jobseeker", href: "/countries/germany" },
+      { label: "Austria Job Seeker", href: "/countries/austria" },
+      { label: "Sweden Talent Visa", href: "/countries/sweden" },
     ],
   },
   {
