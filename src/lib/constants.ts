@@ -1182,6 +1182,260 @@ Best for: Those already on Subclass 482 (TSS) work visa in Australia.
 
 Beyond Blue's Australia immigration team can assess your eligibility and recommend the optimal pathway for your profile.`,
   },
+  {
+    slug: "australia-national-innovation-visa-subclass-858-guide",
+    title: "Complete Guide to Australia National Innovation Visa (NIV) Subclass 858",
+    excerpt:
+      "Everything you need to know about the Australia National Innovation Visa (NIV) Subclass 858 — eligibility, benefits, required documents, and step-by-step application process for Pakistani applicants.",
+    image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600&q=85&auto=format&fit=crop",
+    category: "Immigration",
+    date: "June 3, 2026",
+    readTime: "10 min read",
+    content: `Australia remains one of the most attractive destinations for skilled professionals, innovators, researchers, entrepreneurs, and exceptional talent seeking long-term career opportunities and permanent residency pathways.
+
+For many individuals in Pakistan, Australia offers significant advantages including quality education, world-class healthcare, strong career growth opportunities, economic stability, and a high standard of living.
+
+One of the most prestigious pathways to Australian Permanent Residency (PR) is the National Innovation Visa (NIV) Subclass 858.
+
+Previously known under the Global Talent pathway, the Australian Government introduced major reforms in December 2024 and replaced the Global Talent Visa with the National Innovation Visa (NIV) while retaining the Subclass 858 category. The updated program is designed to attract exceptionally talented individuals who can contribute to Australia's innovation, productivity, and future economic development.
+
+## What is the Australia National Innovation Visa (NIV) Subclass 858?
+
+The National Innovation Visa (NIV) Subclass 858 is a permanent residency visa designed for exceptionally talented individuals who have an internationally recognized record of achievement and can contribute significantly to Australia's future growth.
+
+Unlike many skilled migration pathways, this visa focuses less on points-based systems and more on:
+
+- International recognition
+- Outstanding achievements
+- Leadership ability
+- Innovation capability
+- Contribution potential to Australia
+
+Successful applicants receive direct Australian Permanent Residency.
+
+## Benefits of National Innovation Visa (NIV) Subclass 858
+
+**Direct Permanent Residency**
+
+Applicants receive Australian Permanent Residency upon approval.
+
+**Live and Work Anywhere in Australia**
+
+Visa holders can live, work, and study anywhere in Australia.
+
+**Include Family Members**
+
+Applicants may include their spouse, children, and eligible dependent family members.
+
+**Access to Healthcare**
+
+Successful applicants may access Australia's public healthcare system, Medicare.
+
+**Pathway to Citizenship**
+
+After fulfilling residency requirements, applicants may become eligible for Australian citizenship.
+
+**No Traditional Points Test**
+
+Unlike many skilled migration programs, NIV focuses on exceptional achievements rather than a points-based system.
+
+## Who Can Apply for a National Innovation Visa (NIV)?
+
+This visa may be suitable for individuals with exceptional skills and achievements such as:
+
+- Researchers
+- Scientists
+- Entrepreneurs
+- Technology professionals
+- Engineers
+- Medical specialists
+- Artificial Intelligence experts
+- Cybersecurity professionals
+- Data scientists
+- Innovative investors
+- Academics
+- Creative professionals
+- Athletes with exceptional achievements
+
+## Eligibility Requirements
+
+**International Recognition**
+
+Applicants must demonstrate international recognition within their field through evidence that highlights their professional excellence and achievements. This recognition may be shown through prestigious awards, published research papers, media coverage, leadership positions, participation in international projects, significant professional accomplishments, and industry-wide recognition that reflects their expertise and contribution to their sector.
+
+**Outstanding Achievements**
+
+Applicants should demonstrate a strong record of professional excellence.
+
+**Potential Contribution to Australia**
+
+You must show how your expertise can contribute to Australia's economy, innovation, research, or development goals.
+
+**Ability to Establish Yourself in Australia**
+
+Applicants should demonstrate their ability to continue their professional activities in Australia.
+
+## Nomination Requirements
+
+Applicants must have support from an eligible nominator who has a recognized reputation in Australia. Eligible nominators may include:
+
+- Australian citizens
+- Australian permanent residents
+- Eligible New Zealand citizens
+- Australian organizations
+- Professional institutions
+
+The nominator supports your application by confirming your achievements and your potential contribution to Australia.
+
+## Required Documents
+
+**Personal Documents**
+
+- Passport
+- National ID card
+
+**Educational Documents**
+
+- Degrees
+- Diplomas
+- Academic transcripts
+
+**Professional Documents**
+
+- Employment letters
+- Salary evidence
+- Experience certificates
+- Updated CV/Resume
+
+**Achievement Evidence**
+
+- Awards
+- Publications
+- Research papers
+- Conference participation
+- Media coverage
+- International recognition proof
+
+**Supporting Documents**
+
+- Nomination-related documentation
+- Professional references
+
+## Step-by-Step Application Process
+
+### Step 1: Profile Assessment
+
+Evaluate your qualifications and achievements including education, work experience, leadership roles, international achievements, salary level, and industry recognition.
+
+### Step 2: Gather Supporting Documents
+
+Prepare complete documentation and evidence supporting your application.
+
+### Step 3: Submit Expression of Interest (EOI)
+
+Applicants submit an Expression of Interest outlining qualifications, achievements, and potential contribution to Australia.
+
+### Step 4: Government Assessment and Invitation
+
+Following EOI submission, the Australian Government reviews the profile and assesses its suitability. Strong candidates may receive an Invitation to Apply (ITA).
+
+### Step 5: Nomination Requirement
+
+Applicants must complete the nomination requirements through an eligible nominator.
+
+### Step 6: Lodge Visa Application
+
+After receiving an invitation and completing nomination requirements, applicants can submit their complete Subclass 858 visa application.
+
+### Step 7: Health and Character Requirements
+
+Applicants may need medical examinations and police clearance certificates.
+
+### Step 8: Visa Decision and Permanent Residency Grant
+
+Successful applicants receive approval and direct Australian Permanent Residency.
+
+## Common Mistakes to Avoid
+
+**Weak Documentation**
+
+Insufficient evidence can reduce application strength.
+
+**Poorly Organized Applications**
+
+Unclear presentation of achievements can affect outcomes.
+
+**Misleading Information**
+
+Always provide accurate and genuine information.
+
+**Weak Nomination Support**
+
+Strong nomination support may significantly strengthen the application.
+
+**Applying Without Proper Assessment**
+
+Many applicants proceed without understanding their eligibility profile.
+
+## Practical Tips for Applicants from Pakistan
+
+**Maintain an Updated LinkedIn Profile**
+
+Professional online presence can strengthen credibility.
+
+**Keep Salary Records**
+
+Income evidence can support your profile.
+
+**Save Professional Achievements**
+
+Maintain records of awards, publications, certifications, and conference participation.
+
+**Obtain Strong References**
+
+Professional references help strengthen credibility.
+
+**Seek Professional Guidance**
+
+Proper guidance may help avoid common mistakes.
+
+## How Beyond Blue Helps You
+
+Applying for an Australian immigration pathway can sometimes feel complex. Professional support can help applicants navigate requirements with greater confidence. Our services include:
+
+- Profile Assessment — Detailed review of your eligibility and profile strength
+- Documentation Assistance — Support in organizing and preparing strong documentation
+- Visa Filing Assistance — Guidance throughout the application process
+- Immigration Consultation — Recommendations based on your profile and long-term goals
+
+At Beyond Blue, our mission remains: "Transforming borders into pathways — one visa at a time."
+
+## Frequently Asked Questions (FAQs)
+
+**Is National Innovation Visa (NIV) Subclass 858 a PR visa?**
+
+Yes. It grants direct Australian Permanent Residency.
+
+**Can applicants from Pakistan apply?**
+
+Yes, if they meet the eligibility criteria.
+
+**Is IELTS mandatory?**
+
+English ability may be required depending on circumstances, but the visa is not primarily based on English scores.
+
+**Can family members be included?**
+
+Yes. Eligible family members may be included.
+
+**Do I need a job offer?**
+
+Not necessarily. Many applicants qualify based on achievements and international recognition.
+
+**Is this better than regular skilled migration?**
+
+For highly accomplished individuals, it may provide a more suitable pathway.`,
+  },
 ];
 
 // ─── How It Works Steps ───────────────────────────────────────────────────────
