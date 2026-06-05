@@ -920,12 +920,13 @@ export interface BlogPost {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  /*
   {
     slug: "canada-visit-visa-pakistan-2025-guide",
     title: "Canada Visit Visa from Pakistan: Complete 2025 Guide",
     excerpt:
       "Everything you need to know about applying for a Canadian visit visa from Pakistan — documents, eligibility, bank balance requirements, and tips.",
-    image: "https://images.unsplash.com/photo-1517090504586-fde19ea6066f?w=600&q=85&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&q=85&auto=format&fit=crop",
     category: "Visit Visa",
     date: "March 15, 2025",
     readTime: "6 min read",
@@ -973,6 +974,8 @@ There is no officially stated minimum, but as a general guideline:
 
 ## Tips to Maximize Approval Chances
 
+![Canada — a top destination for Pakistani visitors](https://images.unsplash.com/photo-1517935706615-2717063c2225?w=900&q=85&auto=format&fit=crop)
+
 - Apply at least 6 weeks before your intended travel date
 - Show strong ties to Pakistan (property, family, business)
 - Provide detailed travel itinerary
@@ -986,7 +989,7 @@ Beyond Blue's UK visa team has a 92%+ approval rate. Book your free consultation
     title: "Germany Jobseeker Visa: The New Opportunity for Pakistanis",
     excerpt:
       "Germany's Jobseeker Visa allows qualified professionals to live in Germany for 6 months while searching for employment. Here's how to apply.",
-    image: "https://images.unsplash.com/photo-1587330979470-3595ac045ab0?w=600&q=85&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=85&auto=format&fit=crop",
     category: "Jobseeker Visa",
     date: "February 28, 2025",
     readTime: "5 min read",
@@ -1010,6 +1013,8 @@ The CRS score is out of 1200 points, broken down as:
 
 ## What CRS Score Do You Need?
 
+![Germany — a hub for skilled professionals seeking opportunities](https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=900&q=85&auto=format&fit=crop)
+
 Recent draws have selected candidates with scores between 470–510. However, targeted draws for specific occupations (healthcare, STEM, trades) can have lower cutoffs.
 
 ## Maximizing Your CRS Score as a Pakistani
@@ -1029,7 +1034,7 @@ Book a free profile assessment with Beyond Blue today.`,
     title: "Schengen Tourist Visa from Pakistan: Italy, Spain, France",
     excerpt:
       "Planning to visit Europe? Our step-by-step guide covers Schengen visa requirements, documents, and tips for Pakistani applicants.",
-    image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&q=85&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=85&auto=format&fit=crop",
     category: "Visit Visa",
     date: "January 25, 2025",
     readTime: "7 min read",
@@ -1081,7 +1086,7 @@ Contact Beyond Blue for a complete Schengen visa consultation.`,
     title: "Sweden Talent Visa: Is It Right for You?",
     excerpt:
       "Sweden's Talent Visa is one of the most flexible work visas in Europe. Find out if your profile qualifies and how Beyond Blue can help.",
-    image: "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=600&q=85&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=800&q=85&auto=format&fit=crop",
     category: "Jobseeker Visa",
     date: "January 12, 2025",
     readTime: "5 min read",
@@ -1133,13 +1138,15 @@ Contact Beyond Blue for a complete Schengen visa consultation.`,
     title: "Australia PR vs Canada PR: Which Is Better for Pakistanis?",
     excerpt:
       "Comparing Australia's skilled migration with Canada's Express Entry system — points, timelines, costs, and lifestyle considerations.",
-    image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=85&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800&q=85&auto=format&fit=crop",
     category: "Immigration",
     date: "December 20, 2024",
     readTime: "8 min read",
     content: `Australia remains one of the world's top immigration destinations, offering multiple pathways to permanent residence for skilled workers, students, and families. Here's how to find the right pathway for you.
 
 ## Australia's Points Test
+
+![Sydney Opera House — Australia's iconic landmark](https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=900&q=85&auto=format&fit=crop)
 
 Australia uses a points-based system. The minimum is 65 points but invitations typically go to applicants with 80–95+ points.
 
@@ -1182,12 +1189,13 @@ Best for: Those already on Subclass 482 (TSS) work visa in Australia.
 
 Beyond Blue's Australia immigration team can assess your eligibility and recommend the optimal pathway for your profile.`,
   },
+  */
   {
     slug: "australia-national-innovation-visa-subclass-858-guide",
     title: "Complete Guide to Australia National Innovation Visa (NIV) Subclass 858",
     excerpt:
       "Everything you need to know about the Australia National Innovation Visa (NIV) Subclass 858 — eligibility, benefits, required documents, and step-by-step application process for Pakistani applicants.",
-    image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600&q=85&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800&q=85&auto=format&fit=crop",
     category: "Immigration",
     date: "June 3, 2026",
     readTime: "10 min read",
@@ -1435,6 +1443,1308 @@ Not necessarily. Many applicants qualify based on achievements and international
 **Is this better than regular skilled migration?**
 
 For highly accomplished individuals, it may provide a more suitable pathway.`,
+  },
+  {
+    slug: "australia-skilled-independent-visa-subclass-189-guide",
+    title: "Complete Guide to Australia Skilled Independent Visa (Subclass 189)",
+    excerpt:
+      "Everything you need to know about the Australia Skilled Independent Visa (Subclass 189) — eligibility, points test, required documents, and step-by-step application process for Pakistani applicants.",
+    image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800&q=85&auto=format&fit=crop",
+    category: "Immigration",
+    date: "June 5, 2026",
+    readTime: "12 min read",
+    content: `Australia remains one of the most popular destinations for skilled professionals from Pakistan. With a strong economy, excellent healthcare system, high-quality education, and attractive lifestyle, many people dream of building a successful future in Australia.
+
+If you are looking for a direct pathway to Australian Permanent Residency (PR), the Australia Skilled Independent Visa (Subclass 189) is one of the best options available.
+
+This visa allows skilled workers to live and work permanently anywhere in Australia without requiring sponsorship from an employer, state, or family member.
+
+In this comprehensive guide, you will learn everything about the Australia Subclass 189 Visa, including eligibility requirements, points calculation, required documents, application process, costs, and practical tips to improve your chances of success.
+
+![Australia — Sydney Harbour, one of the most iconic cities in the world](https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=900&q=85&auto=format&fit=crop)
+
+## What is the Australia Skilled Independent Visa (Subclass 189)?
+
+The Skilled Independent Visa (Subclass 189) is a permanent residency visa designed for skilled workers whose occupations are in demand in Australia.
+
+Unlike many other immigration pathways, this visa does not require:
+- Employer sponsorship
+- State nomination
+- Family sponsorship
+
+Once granted, you can live, work, and study anywhere in Australia permanently.
+
+**Key Features**
+- Permanent Residency from day one
+- Work anywhere in Australia
+- Study in Australia
+- Access public healthcare
+- Sponsor eligible family members
+- Apply for Australian citizenship when eligible
+
+## Benefits of the Subclass 189 Visa
+
+Many applicants choose this visa because of its flexibility and long-term benefits.
+
+**Permanent Residency**
+
+You receive an Australian PR immediately after visa approval.
+
+**Freedom of Location**
+
+Live in Sydney, Melbourne, Perth, Brisbane, Adelaide, Canberra, or anywhere else in Australia.
+
+**Family Inclusion**
+
+You can include your spouse, dependent children, and eligible family members.
+
+**Pathway to Citizenship**
+
+After meeting residency requirements, you may become eligible for Australian citizenship.
+
+**Access to Healthcare**
+
+Eligible visa holders can access Australia's healthcare system.
+
+## Who Can Apply for Subclass 189?
+
+The visa is suitable for professionals with skills that Australia currently needs.
+
+Examples include:
+- Engineers
+- IT Professionals
+- Accountants
+- Teachers
+- Nurses
+- Medical Professionals
+- Construction Managers
+- Tradespeople
+- Architects
+
+The occupation must appear on Australia's Skilled Occupation List.
+
+![Skilled professionals in technology and engineering are highly sought after in Australia](https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=900&q=85&auto=format&fit=crop)
+
+## Eligibility Requirements
+
+To qualify for the Skilled Independent Visa (Subclass 189), applicants generally must meet several requirements.
+
+**Age Requirement**
+
+You must be under 45 years old when invited to apply.
+
+**Occupation Requirement**
+
+Your occupation must be listed on the relevant skilled occupation list.
+
+**Skills Assessment**
+
+You must receive a positive skills assessment from the appropriate assessing authority.
+
+**English Language Requirement**
+
+You must demonstrate competent English. Accepted tests include:
+- IELTS
+- PTE Academic
+- TOEFL iBT
+- OET
+- Cambridge English
+
+**Points Test**
+
+You must score at least 65 points. However, higher scores usually improve your chances of receiving an invitation.
+
+**Health and Character Requirements**
+
+Applicants must satisfy Australia's health and character requirements.
+
+## Occupations Eligible for Subclass 189
+
+Australia regularly updates its skilled occupation lists. Popular occupations often include:
+
+**Information Technology**
+- Software Engineer
+- ICT Business Analyst
+- Systems Analyst
+- Developer Programmer
+
+**Engineering**
+- Civil Engineer
+- Mechanical Engineer
+- Electrical Engineer
+
+**Healthcare**
+- Registered Nurse
+- Medical Laboratory Scientist
+- Physiotherapist
+
+**Education**
+- Secondary School Teacher
+- Early Childhood Teacher
+
+**Business and Finance**
+- Accountant
+- External Auditor
+- Finance Manager
+
+## Understanding the Points Test
+
+The points test is one of the most important parts of the Subclass 189 visa process.
+
+![Points-based immigration — understand how your profile scores](https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&q=85&auto=format&fit=crop)
+
+Points are awarded based on:
+
+**Age**
+
+Applicants between 25 and 32 years usually receive the highest points.
+
+**English Proficiency**
+
+Higher English scores can significantly increase your total points.
+
+**Work Experience**
+
+Both Australian and overseas work experience may earn points.
+
+**Educational Qualifications**
+- Diploma
+- Bachelor's Degree
+- Master's Degree
+- PhD
+
+**Partner Skills**
+
+Additional points may be available through an eligible spouse.
+
+**Other Factors**
+- Australian study
+- Regional study
+- Community language skills
+- Professional year programs
+
+## Step-by-Step Application Process
+
+### Step 1: Check Eligibility
+
+Review your occupation, age, qualifications, and work experience.
+
+### Step 2: Skills Assessment
+
+Obtain a positive assessment from the relevant authority.
+
+### Step 3: English Test
+
+Take an approved English language examination.
+
+### Step 4: Calculate Your Points
+
+Ensure you meet the required threshold.
+
+### Step 5: Submit Expression of Interest (EOI)
+
+Create and submit an EOI through SkillSelect.
+
+### Step 6: Receive Invitation
+
+Wait for an invitation to apply.
+
+### Step 7: Lodge Visa Application
+
+Submit your application with supporting documents.
+
+### Step 8: Medical and Police Clearance
+
+Complete all required checks.
+
+### Step 9: Visa Decision
+
+The Department of Home Affairs reviews the application and issues a decision.
+
+## Required Documents
+
+Proper documentation is essential for successful visa approval.
+
+**Identity Documents**
+- Passport
+- National Identity Card
+- Birth Certificate
+
+**Education Documents**
+- Degrees
+- Diplomas
+- Transcripts
+
+**Employment Documents**
+- Experience letters
+- Salary slips
+- Employment contracts
+
+**English Test Results**
+
+Valid language test report.
+
+**Skills Assessment**
+
+Positive assessment outcome.
+
+**Character Documents**
+
+Police clearance certificates.
+
+**Health Documents**
+
+Medical examination reports if requested.
+
+## Skills Assessment Process
+
+Skills assessment verifies that your qualifications and work experience meet Australian standards.
+
+Different occupations have different assessing authorities. Examples include:
+- Engineers Australia
+- ACS (Australian Computer Society)
+- VETASSESS
+- CPA Australia
+
+A positive assessment is usually mandatory before submitting your EOI.
+
+## English Language Requirements
+
+Strong English scores can improve your visa competitiveness.
+
+**Popular English Tests**
+- IELTS Academic or General
+- PTE Academic
+- TOEFL iBT
+- OET
+
+Higher scores can provide additional points:
+- Competent English
+- Proficient English
+- Superior English
+
+The better your score, the higher your overall points may become.
+
+![English proficiency is a key factor in the Australia Subclass 189 points test](https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=900&q=85&auto=format&fit=crop)
+
+## What is an Expression of Interest (EOI)?
+
+An Expression of Interest is not a visa application. Instead, it is an online profile submitted through SkillSelect.
+
+The EOI contains:
+- Personal information
+- Qualifications
+- Work experience
+- English scores
+- Claimed points
+
+The Australian Government uses this information to select candidates for invitation rounds.
+
+## Invitation to Apply
+
+After submitting your EOI, you enter the invitation pool.
+
+Candidates with stronger profiles generally receive invitations sooner. Important factors include:
+- Occupation demand
+- Total points
+- Competition levels
+
+Receiving an invitation allows you to proceed with the actual visa application.
+
+## Visa Processing Time
+
+Processing times can vary depending on:
+- Application volume
+- Occupation demand
+- Document quality
+- Health checks
+- Character checks
+
+Applications with complete and accurate documentation are generally processed more smoothly.
+
+## Cost of Australia Subclass 189 Visa
+
+Visa fees may change periodically. Costs typically include:
+- Visa application charges
+- Skills assessment fees
+- English test fees
+- Medical examination fees
+- Police certificates
+
+Applicants should always verify the latest fees through official Australian immigration sources.
+
+## Common Mistakes to Avoid
+
+**Incorrect Points Calculation**
+
+Always verify points before submitting an EOI.
+
+**Incomplete Documentation**
+
+Missing documents can cause delays.
+
+**Poor Skills Assessment Preparation**
+
+Ensure all evidence supports your claims.
+
+**Expired English Test Results**
+
+Check validity before submission.
+
+**Incorrect Employment Evidence**
+
+Provide detailed and accurate work experience records.
+
+## Practical Tips to Improve Your Chances
+
+- Improve English Scores — higher English scores can significantly increase your points
+- Gain Additional Work Experience — more experience often means more points
+- Update Qualifications — advanced education may improve eligibility
+- Prepare Documents Early — avoid last-minute complications
+- Seek Professional Guidance — professional support can help reduce errors and improve application quality
+
+![Beyond Blue helps Pakistani applicants navigate the Australian immigration process](https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop)
+
+## How Beyond Blue Can Help
+
+Australian immigration can be complex, especially for first-time applicants. At Beyond Blue, we help applicants throughout the entire migration journey.
+
+**Our Services Include**
+
+Profile Assessment — we evaluate your eligibility and identify the best migration pathway.
+
+Immigration Consultation — receive personalized guidance from experienced consultants.
+
+Documentation Assistance — we help organize and prepare supporting documents correctly.
+
+Visa Application Support — our team assists with visa preparation and filing.
+
+Skilled Migration Guidance — we help skilled professionals understand their options for immigration to Australia from Pakistan.
+
+Whether you are an engineer, IT professional, accountant, teacher, healthcare worker, or business professional, Beyond Blue can guide you through each step of the process.
+
+## Why Pakistanis Prefer Australia for Immigration
+
+Thousands of Pakistanis choose Australia because of:
+- Strong economy
+- Better career opportunities
+- High quality of life
+- Excellent healthcare
+- World-class education
+- Safe environment
+- Multicultural society
+
+For skilled professionals seeking permanent residency, the Subclass 189 Visa remains one of the most attractive pathways available.
+
+## Conclusion
+
+The Australia Skilled Independent Visa (Subclass 189) is one of the most respected and rewarding pathways to Australian Permanent Residency.
+
+It offers freedom, stability, career opportunities, and a clear route toward Australian citizenship. However, the process requires careful planning, accurate documentation, strong English scores, and a competitive points profile.
+
+Working with experienced immigration professionals can help reduce mistakes and improve your chances of success.
+
+At Beyond Blue, we are committed to helping individuals and families turn their Australian immigration dreams into reality.
+
+## Frequently Asked Questions (FAQs)
+
+**Is Subclass 189 a permanent residency visa?**
+
+Yes. The Skilled Independent Visa (Subclass 189) grants Australian Permanent Residency.
+
+**Do I need employer sponsorship for Subclass 189?**
+
+No. This visa does not require employer sponsorship.
+
+**What is the minimum points requirement?**
+
+The minimum requirement is generally 65 points, although higher scores improve invitation chances.
+
+**Can I include my family members?**
+
+Yes. Eligible family members can be included in the application.
+
+**How long does the process take?**
+
+Processing times vary depending on individual circumstances and application volumes.
+
+**Can I live anywhere in Australia?**
+
+Yes. Subclass 189 visa holders can live and work anywhere in Australia.
+
+**Is English mandatory?**
+
+Yes. Applicants must demonstrate the required level of English proficiency.
+
+**Can Beyond Blue help with my application?**
+
+Absolutely. Beyond Blue provides profile assessments, documentation support, visa guidance, and immigration consultation services for applicants seeking Australian immigration from Pakistan.`,
+  },
+  {
+    slug: "australia-skilled-nominated-visa-subclass-190-guide",
+    title: "Complete Guide to Australia Skilled Nominated Visa (Subclass 190)",
+    excerpt:
+      "Everything you need to know about the Australia Skilled Nominated Visa (Subclass 190) — state nomination, eligibility, points test, required documents, and step-by-step application process for Pakistani applicants.",
+    image: "https://images.unsplash.com/photo-1524293581917-878a6d017c71?w=800&q=85&auto=format&fit=crop",
+    category: "Immigration",
+    date: "June 5, 2026",
+    readTime: "13 min read",
+    content: `Australia continues to be one of the most attractive destinations for skilled professionals from Pakistan. Every year, thousands of people apply for Australian Permanent Residency (PR) to build a better future for themselves and their families.
+
+If you are a skilled worker looking for a pathway to an Australian PR Visa, the Australian Skilled Nominated Visa (Subclass 190) can be an excellent option.
+
+This visa allows qualified professionals to live, work, and study in Australia as permanent residents. Unlike some other visa categories, the Subclass 190 visa requires nomination from an Australian state or territory government.
+
+For many applicants who may not qualify for the Skilled Independent Visa (Subclass 189), the Subclass 190 visa provides another strong pathway to Australian Permanent Residency.
+
+![Melbourne, Australia — a top destination for skilled migrants from Pakistan](https://images.unsplash.com/photo-1524293581917-878a6d017c71?w=900&q=85&auto=format&fit=crop)
+
+## What is the Australia Subclass 190 Visa?
+
+The Skilled Nominated Visa (Subclass 190) is a points-tested permanent residency visa for skilled workers.
+
+The visa is designed for people whose occupations are needed in specific Australian states and territories.
+
+To apply, you must receive a nomination from an Australian state or territory government.
+
+Once approved, you become an Australian Permanent Resident.
+
+**Key Features of Subclass 190**
+- Permanent Residency from day one
+- Live and work in Australia permanently
+- Access Australia's healthcare system
+- Sponsor eligible family members
+- Travel freely in and out of Australia
+- Pathway to Australian citizenship
+
+## Benefits of the Australia Subclass 190 Visa
+
+Many skilled professionals choose Subclass 190 because it provides several advantages.
+
+**Permanent Residency**
+
+One of the biggest benefits is immediate permanent residency. You do not need to wait years before becoming a permanent resident.
+
+**Additional Points**
+
+State nomination provides an extra 5 points toward your migration score. These additional points can make a significant difference in receiving an invitation.
+
+**Family Benefits**
+
+You can include your spouse, dependent children, and eligible family members.
+
+**Access to Medicare**
+
+Successful applicants may access Australia's healthcare system.
+
+**Freedom to Work**
+
+You can work in your nominated state and enjoy excellent career opportunities.
+
+## Difference Between Subclass 189, Subclass 190, Subclass 491, and Subclass 858
+
+Many applicants are confused about which Australian visa is the right option for them. Understanding the differences can help you choose the most suitable pathway.
+
+**Subclass 189 — Skilled Independent Visa**
+- Permanent Residency: Yes
+- State Nomination Required: No
+- Employer Sponsorship Required: No
+- Points Test Required: Yes
+- Additional Points: None
+- Occupation List Required: Yes
+
+**Subclass 190 — Skilled Nominated Visa**
+- Permanent Residency: Yes
+- State Nomination Required: Yes
+- Employer Sponsorship Required: No
+- Points Test Required: Yes
+- Additional Points: +5 Points
+- Occupation List Required: Yes
+
+**Subclass 491 — Skilled Work Regional Visa**
+- Permanent Residency: No (Pathway to PR)
+- State Nomination Required: Yes
+- Employer Sponsorship Required: No
+- Points Test Required: Yes
+- Additional Points: +15 Points
+- Regional Living Requirement: Yes
+
+**Subclass 858 — National Innovation Visa**
+- Permanent Residency: Yes
+- State Nomination Required: No
+- Points Test Required: Not Applicable
+- Suitable For: Highly Talented Individuals, Researchers, Innovators, Entrepreneurs, Athletes, and Creatives
+
+**Which Visa is Best for You?**
+
+Subclass 189 — best for applicants with strong points and an occupation that receives regular invitations.
+
+Subclass 190 — best for skilled professionals who can obtain a nomination from an Australian state or territory.
+
+Subclass 491 — best for applicants willing to live and work in regional Australia. It provides an additional 15 migration points, making it attractive for applicants with lower scores.
+
+Subclass 858 — best for individuals with internationally recognized achievements in technology and AI, research and academia, business and entrepreneurship, arts and creative industries, sports and athletics, and innovation and leadership. The National Innovation Visa (Subclass 858) is not points-tested and focuses on exceptional talent and international recognition.
+
+## Who Can Apply for the Australia Subclass 190?
+
+This visa is suitable for skilled professionals whose occupations are needed in Australian states and territories.
+
+![Skilled professionals in IT, engineering, and healthcare are in high demand across Australia](https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=900&q=85&auto=format&fit=crop)
+
+Common occupations include:
+
+**Information Technology**
+- Software Engineer
+- Developer Programmer
+- ICT Business Analyst
+- Systems Analyst
+
+**Engineering**
+- Civil Engineer
+- Mechanical Engineer
+- Electrical Engineer
+
+**Healthcare**
+- Registered Nurse
+- Physiotherapist
+- Medical Laboratory Scientist
+
+**Education**
+- Early Childhood Teacher
+- Secondary School Teacher
+
+**Finance and Business**
+- Accountant
+- Auditor
+- Finance Manager
+
+Australia regularly updates occupation lists based on labor market needs.
+
+## Eligibility Requirements for Subclass 190
+
+Before applying, you must meet several important requirements.
+
+**Age Requirement**
+
+You must generally be under 45 years of age when invited to apply.
+
+**Occupation Requirement**
+
+Your occupation must appear on the relevant skilled occupation list.
+
+**Skills Assessment**
+
+You must obtain a positive skills assessment from the appropriate assessing authority. Examples include:
+- Engineers Australia
+- Australian Computer Society (ACS)
+- VETASSESS
+- CPA Australia
+
+**English Language Requirement**
+
+You must demonstrate competent English. Accepted tests include:
+- IELTS
+- PTE Academic
+- TOEFL iBT
+- OET
+- Cambridge English
+
+Higher English scores can increase your migration points.
+
+**Health Requirements**
+
+Applicants must meet Australia's health standards.
+
+**Character Requirements**
+
+Police clearance certificates are generally required.
+
+**State Nomination Requirement**
+
+You must receive a nomination from an Australian state or territory government.
+
+## Understanding State Nomination
+
+State nomination is one of the most important parts of the Subclass 190 process. Each Australian state has its own requirements and occupation lists.
+
+![Australia's diverse states and territories each have their own skilled worker needs](https://images.unsplash.com/photo-1529108190281-9a4f620bc2d8?w=900&q=85&auto=format&fit=crop)
+
+Examples include:
+- New South Wales (NSW)
+- Victoria (VIC)
+- Queensland (QLD)
+- South Australia (SA)
+- Western Australia (WA)
+- Tasmania (TAS)
+- Australian Capital Territory (ACT)
+- Northern Territory (NT)
+
+Each state chooses skilled workers based on local labor shortages.
+
+**Why States Nominate Applicants**
+
+States nominate people who can contribute to economic growth, workforce shortages, and regional development.
+
+Receiving a state nomination gives you an additional 5 migration points.
+
+## Australia Points Test Explained
+
+The Skilled Nominated Visa is points-tested. You must score at least 65 points. However, competitive occupations usually require higher scores.
+
+**Points for Age**
+
+Applicants aged 25–32 generally receive the highest points.
+
+**Points for English**
+
+Higher English proficiency means more points:
+- Competent English — basic eligibility level
+- Proficient English — additional points awarded
+- Superior English — maximum English points awarded
+
+**Points for Work Experience**
+
+Both overseas and Australian work experience can earn points.
+
+**Points for Education**
+- Diploma
+- Bachelor's Degree
+- Master's Degree
+- PhD
+
+**Partner Skills Points**
+
+Additional points may be available through an eligible spouse.
+
+**State Nomination Points**
+
+Subclass 190 provides an additional 5 migration points through state nomination.
+
+## Required Documents for Subclass 190 Visa
+
+Preparing documents correctly can help avoid delays and refusals.
+
+**Identity Documents**
+- Passport
+- National Identity Card
+- Birth Certificate
+
+**Educational Documents**
+- Degrees
+- Diplomas
+- Academic transcripts
+
+**Employment Documents**
+- Experience letters
+- Employment contracts
+- Salary evidence
+
+**English Test Results**
+
+Valid language test reports.
+
+**Skills Assessment**
+
+Positive assessment outcome.
+
+**Character Documents**
+
+Police clearance certificates.
+
+**Health Documents**
+
+Medical examinations, if requested.
+
+## Step-by-Step Australia Subclass 190 Application Process
+
+### Step 1: Check Eligibility
+
+Review your age, occupation, qualifications, and English level.
+
+### Step 2: Obtain Skills Assessment
+
+Submit your qualifications and experience for assessment.
+
+### Step 3: Take an English Test
+
+Achieve the highest score possible to maximize points.
+
+### Step 4: Calculate Your Points
+
+Confirm your migration points.
+
+### Step 5: Submit Expression of Interest (EOI)
+
+Create an EOI through SkillSelect.
+
+### Step 6: Apply for State Nomination
+
+Choose the state that best matches your profile.
+
+### Step 7: Receive Nomination
+
+If approved, the state will nominate you.
+
+### Step 8: Receive Invitation to Apply
+
+The Australian Government may issue an invitation.
+
+### Step 9: Lodge Visa Application
+
+Submit all supporting documents.
+
+### Step 10: Complete Health and Character Checks
+
+Provide medical and police clearances.
+
+### Step 11: Wait for Visa Decision
+
+The Department of Home Affairs reviews your application.
+
+![Immigration professionals reviewing documents — Beyond Blue guides you through every step](https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop)
+
+## How Beyond Blue Can Help
+
+Australian immigration can feel complicated, especially for first-time applicants. At Beyond Blue, Rawalpindi, we help clients throughout the entire migration process.
+
+Our services include:
+- Profile Assessment
+- Occupation Eligibility Review
+- Points Calculation
+- Documentation Support
+- Skills Assessment Guidance
+- State Nomination Assistance
+- Visa Filing Support
+- Immigration Consultation
+
+Whether you are an IT professional, engineer, accountant, healthcare worker, teacher, or business professional, our team can help you understand your migration options and improve your chances of success.
+
+## Conclusion
+
+The Australia Skilled Nominated Visa (Subclass 190) is one of the most popular pathways to Australian Permanent Residency for skilled professionals. With the support of state nomination, eligible applicants can increase their migration points and improve their chances of receiving an invitation.
+
+However, the process involves multiple stages, including skills assessment, English language testing, state nomination, Expression of Interest (EOI), visa application, and supporting documentation. Even small mistakes can lead to delays or missed opportunities.
+
+That is why careful planning and professional guidance are important.
+
+If you are considering immigration to Australia from Pakistan, now is the perfect time to assess your eligibility and explore your options. Whether you are an engineer, IT professional, accountant, teacher, healthcare worker, or skilled tradesperson, the Subclass 190 visa could be your pathway to a brighter future in Australia.
+
+At Beyond Blue, we are committed to helping individuals and families achieve their immigration goals through honest advice, professional support, and personalized guidance.
+
+## Frequently Asked Questions (FAQs)
+
+**What is the Australia Subclass 190 Visa?**
+
+The Australia Skilled Nominated Visa (Subclass 190) is a permanent residency visa for skilled workers who receive a nomination from an Australian state or territory government.
+
+**Is Subclass 190 a Permanent Residency Visa?**
+
+Yes. Once granted, the Subclass 190 visa gives you Australian Permanent Residency (PR).
+
+**How many points are required for Subclass 190?**
+
+The minimum requirement is usually 65 points. However, higher scores often improve your chances of receiving an invitation.
+
+**Does Subclass 190 require state nomination?**
+
+Yes. Unlike the Subclass 189, the Subclass 190 visa requires nomination from an Australian state or territory government.
+
+**Can I include my spouse and children in my application?**
+
+Yes. Eligible family members, including your spouse and dependent children, can be included in your visa application.
+
+**What English test is accepted for Subclass 190?**
+
+Australia accepts IELTS, PTE Academic, TOEFL iBT, OET, and Cambridge English.
+
+**How long does the Subclass 190 visa process take?**
+
+Processing times vary depending on the applicant's profile, documentation, occupation, and application volume.
+
+**Can I apply for Australian citizenship after getting a Subclass 190?**
+
+Yes. After meeting the residency requirements, you may become eligible to apply for Australian citizenship.
+
+**What is the difference between Subclass 189 and Subclass 190?**
+
+Subclass 189 does not require state nomination, while Subclass 190 requires nomination from an Australian state or territory and provides an additional 5 migration points.
+
+**How can Beyond Blue help with Australia's immigration from Pakistan?**
+
+Beyond Blue provides profile assessment, occupation eligibility review, documentation support, skills assessment guidance, state nomination assistance, visa filing support, and immigration consultation. Our team helps applicants understand their options and navigate the Australian immigration process with confidence.`,
+  },
+  {
+    slug: "australia-skilled-work-regional-visa-subclass-491-guide",
+    title: "Complete Guide to Australia Skilled Work Regional Visa (Subclass 491)",
+    excerpt:
+      "Everything you need to know about the Australia Skilled Work Regional Visa (Subclass 491) — 15 extra points, state nomination, family sponsorship, eligibility, and a clear pathway to Australian Permanent Residency.",
+    image: "https://images.unsplash.com/photo-1529108190281-9a4f620bc2d8?w=800&q=85&auto=format&fit=crop",
+    category: "Immigration",
+    date: "June 5, 2026",
+    readTime: "11 min read",
+    content: `Many skilled professionals in Pakistan dream of moving to Australia but often worry about high points requirements for permanent residency visas.
+
+The good news is that Australia offers another excellent pathway for skilled workers through the Skilled Work Regional Visa (Subclass 491).
+
+This visa has become increasingly popular because it offers additional migration points, lower competition in many occupations, and a clear pathway to Australian Permanent Residency.
+
+For applicants who may not qualify for Subclass 189 or who want to improve their chances of receiving an invitation, Subclass 491 can be a valuable option.
+
+The visa allows skilled workers and their families to live, work, and study in designated regional areas of Australia while building a future toward permanent residency.
+
+![Regional Australia — beautiful landscapes and growing career opportunities await skilled migrants](https://images.unsplash.com/photo-1529108190281-9a4f620bc2d8?w=900&q=85&auto=format&fit=crop)
+
+## What is the Australia Subclass 491 Visa?
+
+The Skilled Work Regional Visa (Subclass 491) is a temporary skilled migration visa designed for workers whose skills are needed in regional Australia.
+
+Unlike the Subclass 189 and Subclass 190 visas, the Subclass 491 visa is not an immediate permanent residency visa.
+
+However, it provides a strong pathway toward permanent residency after meeting specific requirements.
+
+The visa allows eligible applicants and their families to:
+- Live in regional Australia
+- Work in regional Australia
+- Study in regional Australia
+- Travel freely in and out of Australia
+
+One of the biggest attractions of this visa is the additional 15 migration points awarded through nomination or sponsorship.
+
+## Why Regional Australia is Becoming More Popular
+
+Many people think only Sydney and Melbourne offer good opportunities. That is no longer true.
+
+Regional Australia has experienced significant growth in recent years. Cities and regions outside major metropolitan areas now offer:
+- Strong employment opportunities
+- Affordable housing
+- Better work-life balance
+- Lower living costs
+- Growing economies
+- High demand for skilled workers
+
+Many migrants discover that regional Australia offers a better quality of life compared to crowded major cities.
+
+![Regional Australian cities offer affordable living, strong job markets, and a high quality of life](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=85&auto=format&fit=crop)
+
+## Benefits of the Australia Subclass 491 Visa
+
+The Subclass 491 visa offers several advantages that make it attractive for skilled workers.
+
+**Additional 15 Migration Points**
+
+This is one of the biggest benefits. Applicants receive an additional 15 migration points through state nomination or eligible family sponsorship. This can significantly improve your chances of receiving an invitation. For many applicants, these extra points can be the difference between receiving an invitation and remaining in the EOI pool.
+
+**Wider Occupation Opportunities**
+
+Many occupations unavailable under other programs may be available through regional pathways. This creates opportunities for professionals across different industries.
+
+**Lower Competition**
+
+Competition is often lower compared to highly sought-after metropolitan visa programs. This can increase your chances of success.
+
+**Family Inclusion**
+
+Eligible family members can be included in the visa application, including your spouse, dependent children, and eligible family members.
+
+**Clear PR Pathway**
+
+After meeting eligibility requirements, Subclass 491 holders may become eligible for permanent residency through a future visa pathway.
+
+## Who Should Consider the Subclass 491 Visa?
+
+The Subclass 491 visa may be suitable for professionals in a wide range of fields.
+
+**IT Professionals**
+- Software Engineers
+- Systems Analysts
+- ICT Business Analysts
+- Developers
+
+**Engineers**
+- Civil Engineers
+- Mechanical Engineers
+- Electrical Engineers
+
+**Healthcare Professionals**
+- Registered Nurses
+- Physiotherapists
+- Medical Scientists
+
+**Teachers**
+- Early Childhood Teachers
+- Secondary School Teachers
+
+**Trades Workers**
+- Electricians
+- Plumbers
+- Construction Professionals
+
+**Accountants and Finance Professionals**
+- Accountants
+- Auditors
+- Finance Specialists
+
+If your occupation is in demand within regional Australia, this pathway may offer excellent opportunities.
+
+## Eligibility Requirements for Australia Subclass 491 Visa
+
+Applicants must generally meet several requirements.
+
+**Age Requirement**
+
+You must be under 45 years of age when invited.
+
+**Occupation Requirement**
+
+Your occupation must appear on the relevant skilled occupation list.
+
+**Skills Assessment**
+
+You must receive a positive skills assessment. Examples of assessing authorities include:
+- ACS
+- Engineers Australia
+- CPA Australia
+- VETASSESS
+
+**English Language Requirement**
+
+You must demonstrate competent English through an approved language test. Accepted tests include:
+- IELTS
+- PTE Academic
+- TOEFL iBT
+- OET
+
+Higher English scores can improve your points score.
+
+**Points Requirement**
+
+Applicants must achieve the required migration points threshold.
+
+**Health and Character Requirements**
+
+You must meet Australian health and character standards.
+
+**Nomination or Sponsorship Requirement**
+
+You must receive either state or territory nomination, or eligible family sponsorship in a designated regional area.
+
+## State Nomination vs Family Sponsorship
+
+One unique feature of the Subclass 491 visa is that applicants may qualify through two different pathways.
+
+![Australia's regions are actively seeking skilled migrants through state nomination programs](https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=900&q=85&auto=format&fit=crop)
+
+**State Nomination Pathway**
+
+Australian states and territories nominate applicants whose occupations are needed in regional areas. Examples include:
+- South Australia
+- Tasmania
+- Western Australia
+- Northern Territory
+- Australian Capital Territory
+
+**Family Sponsorship Pathway**
+
+Applicants may also qualify if sponsored by an eligible relative living in a designated regional area. Eligible relatives may include a brother, sister, parent, child, aunt, uncle, or first cousin.
+
+This flexibility makes the Subclass 491 visa attractive for many Pakistani families with relatives already living in Australia.
+
+## Australia Points Test for Subclass 491
+
+The Subclass 491 visa uses Australia's skilled migration points system.
+
+Points are awarded for:
+- Age
+- English language ability
+- Work experience
+- Educational qualifications
+- Partner skills
+- Australian study
+- Community language skills
+- Regional nomination or sponsorship
+
+The major advantage is the additional 15 points provided through the 491 pathway. This can dramatically improve your overall score compared to other visa options.
+
+![Skilled professionals benefit from Australia's points-based migration system](https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&q=85&auto=format&fit=crop)
+
+## Conclusion
+
+The Australia Skilled Work Regional Visa (Subclass 491) has become one of the most attractive pathways for skilled professionals who want to build a future in Australia.
+
+With an additional 15 migration points, lower competition in many occupations, and a clear pathway to permanent residency, this visa creates opportunities for applicants who may not qualify for other skilled migration programs.
+
+Regional Australia is no longer just an alternative option. It offers excellent career opportunities, affordable living, growing communities, and a high quality of life for migrants and their families.
+
+Whether you are an engineer, IT professional, healthcare worker, teacher, accountant, or skilled tradesperson, the Subclass 491 visa could be the pathway that brings you closer to your Australian dream.
+
+However, understanding occupation requirements, state nomination criteria, documentation, and visa regulations can be challenging. A well-prepared application can significantly improve your chances of success.
+
+At Beyond Blue, we help skilled professionals and families from Pakistan navigate every stage of the Australian immigration journey with expert guidance and personalized support.
+
+## Frequently Asked Questions (FAQs)
+
+**What is the Australia Subclass 491 Visa?**
+
+The Skilled Work Regional Visa (Subclass 491) is a points-tested visa that allows skilled workers and their families to live, work, and study in designated regional areas of Australia.
+
+**Is Subclass 491 a Permanent Residency Visa?**
+
+No. The Subclass 491 visa is a temporary visa. However, it provides a pathway to Australian Permanent Residency through the Subclass 191 visa if the eligibility requirements are met.
+
+**How many extra points does Subclass 491 provide?**
+
+Applicants receive an additional 15 migration points through state nomination or eligible family sponsorship, making it one of the most attractive skilled migration pathways.
+
+**Can I include my spouse and children in my application?**
+
+Yes. Eligible family members, including your spouse and dependent children, can be included in your visa application.
+
+**Do I need a job offer for Subclass 491?**
+
+No. A job offer is generally not required. However, you must receive either state nomination or eligible family sponsorship.
+
+**Can I live anywhere in Australia on a Subclass 491 Visa?**
+
+No. Visa holders are expected to live, work, and study in designated regional areas of Australia.
+
+**What is the age limit for Subclass 491?**
+
+Applicants must generally be under 45 years of age at the time of invitation.
+
+**What English test is accepted for Subclass 491?**
+
+Australia accepts IELTS, PTE Academic, TOEFL iBT, OET, and Cambridge English.
+
+**What is the difference between Subclass 189, 190, 491, and 858?**
+
+Subclass 189 is a Skilled Independent PR Visa. Subclass 190 is a State Nominated PR Visa. Subclass 491 is a Regional Skilled Visa with a PR pathway. Subclass 858 (National Innovation Visa) is designed for exceptionally talented individuals with internationally recognized achievements.
+
+**How can Beyond Blue help with Australia's immigration from Pakistan?**
+
+Beyond Blue provides complete immigration support, including profile assessment, occupation eligibility review, skills assessment guidance, state nomination assistance, documentation support, visa filing services, and immigration consultation. Our experienced team helps skilled professionals navigate the Australian immigration process with confidence.`,
+  },
+  {
+    slug: "sweden-job-seeker-residence-permit-pakistan-2026-guide",
+    title: "Sweden Job Seeker Residence Permit for Pakistanis (2026) – Complete Guide",
+    excerpt:
+      "A complete guide to Sweden's Residence Permit for Looking for Work or Starting a Business — eligibility, financial requirements, required documents, and how Pakistani professionals can use it as a first step toward a career in Sweden.",
+    image: "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=800&q=85&auto=format&fit=crop",
+    category: "Jobseeker Visa",
+    date: "June 5, 2026",
+    readTime: "10 min read",
+    content: `Many skilled professionals and graduates in Pakistan look for international opportunities that offer career growth, better salaries, high living standards, and long-term professional development. Sweden has become an attractive destination because of its strong economy, innovation-driven industries, and excellent work-life balance.
+
+For highly qualified individuals, Sweden offers a Residence Permit for Looking for Work or Starting a Business, allowing eligible applicants to stay in Sweden for a temporary period while searching for employment opportunities or exploring business options. This route can become an important first step toward building a professional future in Sweden.
+
+![Stockholm, Sweden — a hub of innovation, technology, and career opportunities](https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=900&q=85&auto=format&fit=crop)
+
+## What is Sweden's Residence Permit?
+
+The Sweden Job Seeker route is not a traditional visitor visa. It is a temporary residence permit designed for highly qualified individuals who want to search for employment or explore business opportunities in Sweden.
+
+The permit may allow applicants to:
+- Stay legally in Sweden for a temporary period
+- Search for employment opportunities
+- Attend professional interviews
+- Build industry connections
+- Explore business opportunities
+
+If you secure qualifying employment during the validity period, you may apply for an appropriate work permit according to Swedish immigration regulations.
+
+## Why Sweden is Becoming Popular Among Pakistani Professionals
+
+**Strong Economy**
+
+Sweden has one of Europe's strongest economies and hosts globally recognized industries in technology, engineering, healthcare, manufacturing, and innovation.
+
+**High Quality of Life**
+
+Sweden consistently ranks highly for safety, healthcare standards, education quality, clean environment, social benefits, and work-life balance.
+
+**International Work Environment**
+
+Many international companies in Sweden employ professionals from different countries, and English is commonly used in many workplaces.
+
+**Career Growth Opportunities**
+
+Sweden offers opportunities for professional development and skill enhancement across multiple industries.
+
+![Sweden consistently ranks among the world's best countries for quality of life and work-life balance](https://images.unsplash.com/photo-1530841344095-5b879e3bb18c?w=900&q=85&auto=format&fit=crop)
+
+## Benefits of the Sweden Job Seeker Residence Permit
+
+Some advantages include:
+- Legal temporary stay in Sweden
+- Direct access to employers and recruiters
+- Opportunity to attend interviews and networking events
+- Access to international career opportunities
+- Possibility of transitioning to another eligible permit category if requirements are met
+
+Please note that receiving this permit does not automatically guarantee employment or permanent residence status.
+
+## Benefits After Securing Employment or Starting a Business in Sweden
+
+After obtaining eligible employment or establishing a business in Sweden, additional opportunities and benefits may become available, including:
+- Possibility of bringing eligible family members
+- Access to healthcare and social benefits according to eligibility requirements
+- Potential pathway toward long-term residence opportunities
+- Employee protections and labor rights
+- Access to education opportunities for dependent children
+- Better work-life balance and family-friendly policies
+- International career growth and networking opportunities
+- Business expansion and access to Sweden's innovation ecosystem
+
+These benefits depend on your residence status, employment category, and Swedish immigration regulations.
+
+## Who Can Apply?
+
+Applicants must meet specific requirements set by Swedish immigration authorities.
+
+Basic eligibility generally includes:
+- Valid passport
+- Qualification equivalent to a second-cycle degree
+- Intention to seek employment or explore business opportunities
+- Sufficient financial resources
+- Comprehensive health insurance
+- Application submitted from outside Sweden
+
+**Educational Requirement**
+
+Applicants generally need completed studies equivalent to a second-cycle qualification, such as a Master's degree (60-credit or 120-credit level), certain professional degrees, or postgraduate and PhD-level qualifications. Applicants should verify that their qualifications meet Swedish equivalency standards.
+
+## Financial Requirement
+
+Applicants must demonstrate sufficient funds to support themselves during their stay.
+
+Current requirements indicate financial resources of approximately SEK 13,000 per month of intended stay. Applicants should also have funds available for return travel expenses.
+
+Financial evidence may include:
+- Bank statements
+- Savings certificates
+- Financial documents
+
+## Health Insurance Requirement
+
+Applicants must hold comprehensive health insurance valid throughout their intended stay in Sweden.
+
+Insurance should generally cover:
+- Emergency treatment
+- Hospitalization
+- Medical care
+- Emergency dental treatment
+- Medical transportation if required
+
+![Comprehensive health insurance and strong financial proof are key requirements for the Sweden Job Seeker permit](https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=85&auto=format&fit=crop)
+
+## Required Documents Checklist
+
+**Personal Documents**
+- Valid passport
+- Passport-size photographs
+- National identity documents if required
+
+**Educational Documents**
+- Degree certificates
+- Academic transcripts
+- Professional qualifications
+
+**Financial Documents**
+- Bank statements
+- Savings proof
+- Supporting financial documentation
+
+**Professional Documents**
+- Updated CV or resume
+- Experience certificates
+- Employment letters if applicable
+
+**Supporting Documents**
+- Statement of Purpose (SOP)
+- Health insurance documents
+- Required application forms
+
+All documents should be complete, accurate, and professionally prepared.
+
+## Sweden Job Seeker Application Journey
+
+The Sweden Job Seeker application process generally involves several important stages. Applicants should understand the overall process and prepare accordingly.
+
+1. Eligibility review and profile assessment
+2. Documentation preparation
+3. Professional CV and SOP development
+4. Official application submission
+5. Fee payment and verification procedures
+6. Processing and final decision
+
+Professional guidance can help applicants organize their documentation and avoid common mistakes.
+
+## Popular Job Opportunities in Sweden
+
+Sweden offers employment opportunities across various industries for skilled international professionals. Sectors such as technology, healthcare, engineering, business, and logistics continue to attract qualified candidates from around the world.
+
+![Sweden's technology and engineering sectors actively seek skilled international professionals](https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=900&q=85&auto=format&fit=crop)
+
+Key areas with opportunities often include:
+- Information Technology and Software Development
+- Healthcare and Medical Services
+- Engineering and Technical Fields
+- Business and Finance
+- Construction, Skilled Trades, and Logistics
+
+Note: Employment opportunities may vary depending on qualifications, professional experience, language skills, and current labor market demand.
+
+## How to Find Jobs in Sweden
+
+**Professional Networking**
+
+Create a strong professional profile and build industry connections.
+
+**Job Portals**
+
+Use recognized employment websites and Swedish recruitment platforms.
+
+**Company Career Pages**
+
+Apply directly through employer websites.
+
+**Recruitment Agencies**
+
+Some agencies assist international professionals in finding opportunities.
+
+## Maximizing Your Chances of Success
+
+Before applying, take time to strengthen your professional profile and prepare the required documentation. Being well-prepared for job opportunities, interviews, and life in Sweden can improve your chances of achieving your career goals.
+
+## Common Mistakes to Avoid
+
+**Submitting Incomplete Documents**
+
+Missing documents frequently delay applications.
+
+**Weak Statement of Purpose**
+
+An unclear or generic SOP may negatively affect your case.
+
+**Incorrect Information**
+
+Ensure that all information is accurate and consistent.
+
+**Fake Documents**
+
+Submitting fraudulent documentation can lead to refusal and future immigration issues.
+
+## How Beyond Blue (IELTS and Consultancy) Can Assist
+
+Applying for international immigration pathways requires careful planning and proper documentation. Professional guidance may help applicants with:
+- Eligibility assessment
+- Document preparation
+- CV and SOP guidance
+- Application support
+- Interview preparation
+
+**Disclaimer**
+
+Immigration rules and requirements may change over time. Visa or residence permit approval decisions are made solely by Swedish immigration authorities based on individual circumstances and eligibility criteria.`,
   },
 ];
 
