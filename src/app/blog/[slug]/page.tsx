@@ -22,26 +22,50 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-/** Parse inline markdown: **bold**, *italic* */
+/** Parse inline markdown: links, **bold**, *italic* */
 function parseInline(text: string): React.ReactNode {
-  // Split by bold and italic markers
-  const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
-  return parts.map((part, idx) => {
-    if (part.startsWith("**") && part.endsWith("**")) {
-      return (
-        <strong key={idx} className="font-semibold text-brand-navy">
-          {part.slice(2, -2)}
-        </strong>
-      );
-    }
-    if (part.startsWith("*") && part.endsWith("*")) {
-      return (
-        <em key={idx} className="italic">
-          {part.slice(1, -1)}
-        </em>
-      );
-    }
-    return part;
+  const parseEmphasis = (segment: string, keyPrefix: string): React.ReactNode[] => {
+    const parts = segment.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
+    return parts.map((part, idx) => {
+      if (part.startsWith("**") && part.endsWith("**")) {
+        return (
+          <strong key={`${keyPrefix}-b-${idx}`} className="font-semibold text-brand-navy">
+            {part.slice(2, -2)}
+          </strong>
+        );
+      }
+      if (part.startsWith("*") && part.endsWith("*")) {
+        return (
+          <em key={`${keyPrefix}-i-${idx}`} className="italic">
+            {part.slice(1, -1)}
+          </em>
+        );
+      }
+      return part;
+    });
+  };
+
+  const linkPattern = /(\[[^\]]+\]\([^)]+\))/g;
+  const segments = text.split(linkPattern);
+
+  return segments.flatMap((segment, idx) => {
+    const match = segment.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (!match) return parseEmphasis(segment, `txt-${idx}`);
+
+    const [, label, href] = match;
+    const isExternal = /^https?:\/\//i.test(href);
+
+    return (
+      <a
+        key={`lnk-${idx}`}
+        href={href}
+        target={isExternal ? "_blank" : undefined}
+        rel={isExternal ? "noopener noreferrer" : undefined}
+        className="text-brand hover:text-brand-navy underline underline-offset-2 decoration-brand/40 hover:decoration-brand"
+      >
+        {parseEmphasis(label, `lnk-label-${idx}`)}
+      </a>
+    );
   });
 }
 
